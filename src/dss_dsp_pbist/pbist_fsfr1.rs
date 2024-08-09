@@ -13,7 +13,7 @@ impl R {
 Fail Status Fail Register- Port 1 This register indicates if a failure occurred during a memory self-test. Value 0 = No failure occurred Value 1 = Indicates a failure"]
     #[inline(always)]
     pub fn pbist_fsfr1(&self) -> PbistFsfr1R {
-        PbistFsfr1R::new(self.bits)
+        PbistFsfr1R::new(self.bits > 0)
     }
 }
 impl W {
