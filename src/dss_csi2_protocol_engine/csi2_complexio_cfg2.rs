@@ -174,10 +174,10 @@ where
         self.variant(Lane3UlpsSig1::Active)
     }
 }
-#[doc = "Field `RESERVED2` reader - "]
-pub type Reserved2R = crate::BitReader;
-#[doc = "Field `RESERVED2` writer - "]
-pub type Reserved2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `RESERVED_2_2` reader - "]
+pub type Reserved2_2R = crate::BitReader;
+#[doc = "Field `RESERVED_2_2` writer - "]
+pub type Reserved2_2W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "3:3\\]
 Enables the ULPS for the lane #4. The HW shall change the state of the lane to ULPS only when it is in stop state and there is no data pending inside the CSI2 protocol engine and the CSI2 protocol engine has control of the bus (BTA has not been sent). The state of the signal TxULPSExit is changed if the lane #4 is a clock lane. There will be a latency depending on the frequency of TxClkExc. This bit should be read back to confirm a write has been effective.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
@@ -730,8 +730,8 @@ Enables the ULPS for the lane #3. The HW shall change the state of the lane to U
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    pub fn reserved2(&self) -> Reserved2R {
-        Reserved2R::new(((self.bits >> 3) & 1) != 0)
+    pub fn reserved_2_2(&self) -> Reserved2_2R {
+        Reserved2_2R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 Enables the ULPS for the lane #4. The HW shall change the state of the lane to ULPS only when it is in stop state and there is no data pending inside the CSI2 protocol engine and the CSI2 protocol engine has control of the bus (BTA has not been sent). The state of the signal TxULPSExit is changed if the lane #4 is a clock lane. There will be a latency depending on the frequency of TxClkExc. This bit should be read back to confirm a write has been effective."]
@@ -845,8 +845,8 @@ Enables the ULPS for the lane #3. The HW shall change the state of the lane to U
     #[doc = "Bit 3"]
     #[inline(always)]
     #[must_use]
-    pub fn reserved2(&mut self) -> Reserved2W<Csi2ComplexioCfg2Spec> {
-        Reserved2W::new(self, 3)
+    pub fn reserved_2_2(&mut self) -> Reserved2_2W<Csi2ComplexioCfg2Spec> {
+        Reserved2_2W::new(self, 3)
     }
     #[doc = "Bit 3 - 3:3\\]
 Enables the ULPS for the lane #4. The HW shall change the state of the lane to ULPS only when it is in stop state and there is no data pending inside the CSI2 protocol engine and the CSI2 protocol engine has control of the bus (BTA has not been sent). The state of the signal TxULPSExit is changed if the lane #4 is a clock lane. There will be a latency depending on the frequency of TxClkExc. This bit should be read back to confirm a write has been effective."]
