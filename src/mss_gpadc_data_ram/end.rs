@@ -1,0 +1,44 @@
+#[doc = "Register `END` reader"]
+pub type R = crate::R<EndSpec>;
+#[doc = "Register `END` writer"]
+pub type W = crate::W<EndSpec>;
+#[doc = "Field `end` reader - 31:0\\]
+Memory end address"]
+pub type EndR = crate::FieldReader<u32>;
+#[doc = "Field `end` writer - 31:0\\]
+Memory end address"]
+pub type EndW<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+impl R {
+    #[doc = "Bits 0:31 - 31:0\\]
+Memory end address"]
+    #[inline(always)]
+    pub fn end(&self) -> EndR {
+        EndR::new(self.bits)
+    }
+}
+impl W {
+    #[doc = "Bits 0:31 - 31:0\\]
+Memory end address"]
+    #[inline(always)]
+    #[must_use]
+    pub fn end(&mut self) -> EndW<EndSpec> {
+        EndW::new(self, 0)
+    }
+}
+#[doc = "END\n\nYou can [`read`](crate::Reg::read) this register and get [`end::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`end::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct EndSpec;
+impl crate::RegisterSpec for EndSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`end::R`](R) reader structure"]
+impl crate::Readable for EndSpec {}
+#[doc = "`write(|w| ..)` method takes [`end::W`](W) writer structure"]
+impl crate::Writable for EndSpec {
+    type Safety = crate::Unsafe;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+}
+#[doc = "`reset()` method sets END to value 0"]
+impl crate::Resettable for EndSpec {
+    const RESET_VALUE: u32 = 0;
+}

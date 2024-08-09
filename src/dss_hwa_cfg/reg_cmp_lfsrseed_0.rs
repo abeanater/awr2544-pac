@@ -1,0 +1,44 @@
+#[doc = "Register `REG_CMP_LFSRSEED_0` reader"]
+pub type R = crate::R<RegCmpLfsrseed0Spec>;
+#[doc = "Register `REG_CMP_LFSRSEED_0` writer"]
+pub type W = crate::W<RegCmpLfsrseed0Spec>;
+#[doc = "Field `REG_CMP_LFSRSEED_0` reader - 28:0\\]
+This register is the first seed for the 29-bit LFSR used for compression"]
+pub type RegCmpLfsrseed0R = crate::FieldReader<u32>;
+#[doc = "Field `REG_CMP_LFSRSEED_0` writer - 28:0\\]
+This register is the first seed for the 29-bit LFSR used for compression"]
+pub type RegCmpLfsrseed0W<'a, REG> = crate::FieldWriter<'a, REG, 29, u32>;
+impl R {
+    #[doc = "Bits 0:28 - 28:0\\]
+This register is the first seed for the 29-bit LFSR used for compression"]
+    #[inline(always)]
+    pub fn reg_cmp_lfsrseed_0(&self) -> RegCmpLfsrseed0R {
+        RegCmpLfsrseed0R::new(self.bits & 0x1fff_ffff)
+    }
+}
+impl W {
+    #[doc = "Bits 0:28 - 28:0\\]
+This register is the first seed for the 29-bit LFSR used for compression"]
+    #[inline(always)]
+    #[must_use]
+    pub fn reg_cmp_lfsrseed_0(&mut self) -> RegCmpLfsrseed0W<RegCmpLfsrseed0Spec> {
+        RegCmpLfsrseed0W::new(self, 0)
+    }
+}
+#[doc = "REG_CMP_LFSRSEED_0\n\nYou can [`read`](crate::Reg::read) this register and get [`reg_cmp_lfsrseed_0::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`reg_cmp_lfsrseed_0::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct RegCmpLfsrseed0Spec;
+impl crate::RegisterSpec for RegCmpLfsrseed0Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`reg_cmp_lfsrseed_0::R`](R) reader structure"]
+impl crate::Readable for RegCmpLfsrseed0Spec {}
+#[doc = "`write(|w| ..)` method takes [`reg_cmp_lfsrseed_0::W`](W) writer structure"]
+impl crate::Writable for RegCmpLfsrseed0Spec {
+    type Safety = crate::Unsafe;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+}
+#[doc = "`reset()` method sets REG_CMP_LFSRSEED_0 to value 0"]
+impl crate::Resettable for RegCmpLfsrseed0Spec {
+    const RESET_VALUE: u32 = 0;
+}

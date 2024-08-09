@@ -1,0 +1,101 @@
+#[doc = "Register `SPIDELAY` reader"]
+pub type R = crate::R<SpidelaySpec>;
+#[doc = "Register `SPIDELAY` writer"]
+pub type W = crate::W<SpidelaySpec>;
+#[doc = "Field `C2EDELAY` reader - 7:0\\]
+Chip-select-active-to-ENA-signal-active-time-out C2EDELAY is utilized only in master mode and it applies only if the addressed slave generates an ENA signal as a hardware handshake response. C2EDELAY defines the maximum time between the SPI / MibSPI activating the chip select signal and the addressed slave responding by activating the ENA signal. C2EDELAY defines a time-out value as a multiple of SPI clocks. The SPI clock depends on whether data format 0 or data format 1 is selected. If the slave device is not responding with the ENA signal before the time-out value is reached, the TIMEOUT flag in SPIFLG register is set and an interrupt is asserted if enabled. If a time-out occurs the MibSPI clears the transmit request of the timed-out buffer, sets the TIMEOUT flag for the current buffer and continues with the transfer of the next buffer in the sequence that is enabled. If C2TDELAY is programmed a non-zero value, then C2EDELAY will start only after the C2TDELAY completes. This should be taken into consideration to determine an optimum value of C2EDELAY. Note: Zero C2EDELAY If C2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI waits until the SPIENA pin to asserted before it can start the transfer. If the SPIENA pin is not asserted due to a malfunctioning Slave, the Master will wait forever. This might cause hang-up situation. it is recommended to program to C2EDELAY to a suitable value whenever SPIENA pin is used as functional."]
+pub type C2edelayR = crate::FieldReader;
+#[doc = "Field `C2EDELAY` writer - 7:0\\]
+Chip-select-active-to-ENA-signal-active-time-out C2EDELAY is utilized only in master mode and it applies only if the addressed slave generates an ENA signal as a hardware handshake response. C2EDELAY defines the maximum time between the SPI / MibSPI activating the chip select signal and the addressed slave responding by activating the ENA signal. C2EDELAY defines a time-out value as a multiple of SPI clocks. The SPI clock depends on whether data format 0 or data format 1 is selected. If the slave device is not responding with the ENA signal before the time-out value is reached, the TIMEOUT flag in SPIFLG register is set and an interrupt is asserted if enabled. If a time-out occurs the MibSPI clears the transmit request of the timed-out buffer, sets the TIMEOUT flag for the current buffer and continues with the transfer of the next buffer in the sequence that is enabled. If C2TDELAY is programmed a non-zero value, then C2EDELAY will start only after the C2TDELAY completes. This should be taken into consideration to determine an optimum value of C2EDELAY. Note: Zero C2EDELAY If C2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI waits until the SPIENA pin to asserted before it can start the transfer. If the SPIENA pin is not asserted due to a malfunctioning Slave, the Master will wait forever. This might cause hang-up situation. it is recommended to program to C2EDELAY to a suitable value whenever SPIENA pin is used as functional."]
+pub type C2edelayW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `T2EDELAY` reader - 15:8\\]
+Transmit-data-finished-to-ENA-pin-inactive-time-out. T2EDELAY is used in master mode only. It defines a time-out value as a multiple of SPI clock before the ENAble signal has to become inactive and after the CS becomes inactive. The SPI clock depends on which data format is selected. If the slave device is missing one or more clock edges, it is becoming de-synchronized. Although the master has finished the data transfer the slave is still waiting for the missed clock pulses and the ENA signal isnΓÇÖt disabled. The T2EDELAY defines a time-out value that triggers the DESYNC flag, if the ENA signal isnΓÇÖt deactivated in time. DESYNC flag is set to indicate that the Slave device did not deassert its SPIENA pin in time to acknowledge that it has received all the bits of the sent character. If T2CDELAY is programmed a non-zero value, then T2EDELAY will start only after the T2CDELAY completes. This should be taken into consideration to determine an optimum value of T2EDELAY. Note: Zero T2EDELAY If T2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI does not wait for SPIENA pin to be deasserted. It ignores the state of the SPIENA pin after the transmission is completed."]
+pub type T2edelayR = crate::FieldReader;
+#[doc = "Field `T2EDELAY` writer - 15:8\\]
+Transmit-data-finished-to-ENA-pin-inactive-time-out. T2EDELAY is used in master mode only. It defines a time-out value as a multiple of SPI clock before the ENAble signal has to become inactive and after the CS becomes inactive. The SPI clock depends on which data format is selected. If the slave device is missing one or more clock edges, it is becoming de-synchronized. Although the master has finished the data transfer the slave is still waiting for the missed clock pulses and the ENA signal isnΓÇÖt disabled. The T2EDELAY defines a time-out value that triggers the DESYNC flag, if the ENA signal isnΓÇÖt deactivated in time. DESYNC flag is set to indicate that the Slave device did not deassert its SPIENA pin in time to acknowledge that it has received all the bits of the sent character. If T2CDELAY is programmed a non-zero value, then T2EDELAY will start only after the T2CDELAY completes. This should be taken into consideration to determine an optimum value of T2EDELAY. Note: Zero T2EDELAY If T2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI does not wait for SPIENA pin to be deasserted. It ignores the state of the SPIENA pin after the transmission is completed."]
+pub type T2edelayW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `T2CDELAY` reader - 23:16\\]
+Transmit-end-to-chip-select-inactive-delay. T2CDELAY is used in master mode only. It defines a hold time for the slave device that delays the chip select deactivation by a multiple of VBUSPCLK cycles after the last bit is transferred. T2CDELAY can be configured between 2 and 256 VBUSPCLK cycles. If Phase = ΓÇÿ0ΓÇÖ, then between the last edge of SPICLK and rise-edge of SCS, there will be an additional delay of 0.5 SPICLK period. This is as per the SPI protocol Both C2TDELAY and T2CDELAY counters do not have any dependancy on SPIENA pin value. Even if the SPIENA pin is asserted by the Slave, Master will continue to delay the start of SPICLK until the C2TDELAY counter overflows. Similarly, even if the SPIENA pin is deasserted by the Slave, Master will continue to hold the SPISCS pins active until the T2CDELAY counter overflows. This way, it is guaranteed that the setup/hold times of the SPISCS pins is determined by the Delay timers alone. To achieve better throughput, it should be ensured that these two timers are kept at the minimum possible values."]
+pub type T2cdelayR = crate::FieldReader;
+#[doc = "Field `T2CDELAY` writer - 23:16\\]
+Transmit-end-to-chip-select-inactive-delay. T2CDELAY is used in master mode only. It defines a hold time for the slave device that delays the chip select deactivation by a multiple of VBUSPCLK cycles after the last bit is transferred. T2CDELAY can be configured between 2 and 256 VBUSPCLK cycles. If Phase = ΓÇÿ0ΓÇÖ, then between the last edge of SPICLK and rise-edge of SCS, there will be an additional delay of 0.5 SPICLK period. This is as per the SPI protocol Both C2TDELAY and T2CDELAY counters do not have any dependancy on SPIENA pin value. Even if the SPIENA pin is asserted by the Slave, Master will continue to delay the start of SPICLK until the C2TDELAY counter overflows. Similarly, even if the SPIENA pin is deasserted by the Slave, Master will continue to hold the SPISCS pins active until the T2CDELAY counter overflows. This way, it is guaranteed that the setup/hold times of the SPISCS pins is determined by the Delay timers alone. To achieve better throughput, it should be ensured that these two timers are kept at the minimum possible values."]
+pub type T2cdelayW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `C2TDELAY` reader - 31:24\\]
+Chip-select-active-to-transmit-start-delay. C2TDELAY is used in master mode only. It defines a setup time for the slave device that delays the data transmission from the chip select active edge by a multiple of VBUSPCLK cycles. ChipSelect-active-to-transmission delays between 2 to 257 VBUSPCLK cycles can be achieved. If Phase = ΓÇÿ1ΓÇÖ, the delay between SCS fall-edge to the first edge of SPICLK will have an additional 0.5 SPICLK Period delay. This delay is as per the SPI protocol."]
+pub type C2tdelayR = crate::FieldReader;
+#[doc = "Field `C2TDELAY` writer - 31:24\\]
+Chip-select-active-to-transmit-start-delay. C2TDELAY is used in master mode only. It defines a setup time for the slave device that delays the data transmission from the chip select active edge by a multiple of VBUSPCLK cycles. ChipSelect-active-to-transmission delays between 2 to 257 VBUSPCLK cycles can be achieved. If Phase = ΓÇÿ1ΓÇÖ, the delay between SCS fall-edge to the first edge of SPICLK will have an additional 0.5 SPICLK Period delay. This delay is as per the SPI protocol."]
+pub type C2tdelayW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+impl R {
+    #[doc = "Bits 0:7 - 7:0\\]
+Chip-select-active-to-ENA-signal-active-time-out C2EDELAY is utilized only in master mode and it applies only if the addressed slave generates an ENA signal as a hardware handshake response. C2EDELAY defines the maximum time between the SPI / MibSPI activating the chip select signal and the addressed slave responding by activating the ENA signal. C2EDELAY defines a time-out value as a multiple of SPI clocks. The SPI clock depends on whether data format 0 or data format 1 is selected. If the slave device is not responding with the ENA signal before the time-out value is reached, the TIMEOUT flag in SPIFLG register is set and an interrupt is asserted if enabled. If a time-out occurs the MibSPI clears the transmit request of the timed-out buffer, sets the TIMEOUT flag for the current buffer and continues with the transfer of the next buffer in the sequence that is enabled. If C2TDELAY is programmed a non-zero value, then C2EDELAY will start only after the C2TDELAY completes. This should be taken into consideration to determine an optimum value of C2EDELAY. Note: Zero C2EDELAY If C2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI waits until the SPIENA pin to asserted before it can start the transfer. If the SPIENA pin is not asserted due to a malfunctioning Slave, the Master will wait forever. This might cause hang-up situation. it is recommended to program to C2EDELAY to a suitable value whenever SPIENA pin is used as functional."]
+    #[inline(always)]
+    pub fn c2edelay(&self) -> C2edelayR {
+        C2edelayR::new((self.bits & 0xff) as u8)
+    }
+    #[doc = "Bits 8:15 - 15:8\\]
+Transmit-data-finished-to-ENA-pin-inactive-time-out. T2EDELAY is used in master mode only. It defines a time-out value as a multiple of SPI clock before the ENAble signal has to become inactive and after the CS becomes inactive. The SPI clock depends on which data format is selected. If the slave device is missing one or more clock edges, it is becoming de-synchronized. Although the master has finished the data transfer the slave is still waiting for the missed clock pulses and the ENA signal isnΓÇÖt disabled. The T2EDELAY defines a time-out value that triggers the DESYNC flag, if the ENA signal isnΓÇÖt deactivated in time. DESYNC flag is set to indicate that the Slave device did not deassert its SPIENA pin in time to acknowledge that it has received all the bits of the sent character. If T2CDELAY is programmed a non-zero value, then T2EDELAY will start only after the T2CDELAY completes. This should be taken into consideration to determine an optimum value of T2EDELAY. Note: Zero T2EDELAY If T2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI does not wait for SPIENA pin to be deasserted. It ignores the state of the SPIENA pin after the transmission is completed."]
+    #[inline(always)]
+    pub fn t2edelay(&self) -> T2edelayR {
+        T2edelayR::new(((self.bits >> 8) & 0xff) as u8)
+    }
+    #[doc = "Bits 16:23 - 23:16\\]
+Transmit-end-to-chip-select-inactive-delay. T2CDELAY is used in master mode only. It defines a hold time for the slave device that delays the chip select deactivation by a multiple of VBUSPCLK cycles after the last bit is transferred. T2CDELAY can be configured between 2 and 256 VBUSPCLK cycles. If Phase = ΓÇÿ0ΓÇÖ, then between the last edge of SPICLK and rise-edge of SCS, there will be an additional delay of 0.5 SPICLK period. This is as per the SPI protocol Both C2TDELAY and T2CDELAY counters do not have any dependancy on SPIENA pin value. Even if the SPIENA pin is asserted by the Slave, Master will continue to delay the start of SPICLK until the C2TDELAY counter overflows. Similarly, even if the SPIENA pin is deasserted by the Slave, Master will continue to hold the SPISCS pins active until the T2CDELAY counter overflows. This way, it is guaranteed that the setup/hold times of the SPISCS pins is determined by the Delay timers alone. To achieve better throughput, it should be ensured that these two timers are kept at the minimum possible values."]
+    #[inline(always)]
+    pub fn t2cdelay(&self) -> T2cdelayR {
+        T2cdelayR::new(((self.bits >> 16) & 0xff) as u8)
+    }
+    #[doc = "Bits 24:31 - 31:24\\]
+Chip-select-active-to-transmit-start-delay. C2TDELAY is used in master mode only. It defines a setup time for the slave device that delays the data transmission from the chip select active edge by a multiple of VBUSPCLK cycles. ChipSelect-active-to-transmission delays between 2 to 257 VBUSPCLK cycles can be achieved. If Phase = ΓÇÿ1ΓÇÖ, the delay between SCS fall-edge to the first edge of SPICLK will have an additional 0.5 SPICLK Period delay. This delay is as per the SPI protocol."]
+    #[inline(always)]
+    pub fn c2tdelay(&self) -> C2tdelayR {
+        C2tdelayR::new(((self.bits >> 24) & 0xff) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:7 - 7:0\\]
+Chip-select-active-to-ENA-signal-active-time-out C2EDELAY is utilized only in master mode and it applies only if the addressed slave generates an ENA signal as a hardware handshake response. C2EDELAY defines the maximum time between the SPI / MibSPI activating the chip select signal and the addressed slave responding by activating the ENA signal. C2EDELAY defines a time-out value as a multiple of SPI clocks. The SPI clock depends on whether data format 0 or data format 1 is selected. If the slave device is not responding with the ENA signal before the time-out value is reached, the TIMEOUT flag in SPIFLG register is set and an interrupt is asserted if enabled. If a time-out occurs the MibSPI clears the transmit request of the timed-out buffer, sets the TIMEOUT flag for the current buffer and continues with the transfer of the next buffer in the sequence that is enabled. If C2TDELAY is programmed a non-zero value, then C2EDELAY will start only after the C2TDELAY completes. This should be taken into consideration to determine an optimum value of C2EDELAY. Note: Zero C2EDELAY If C2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI waits until the SPIENA pin to asserted before it can start the transfer. If the SPIENA pin is not asserted due to a malfunctioning Slave, the Master will wait forever. This might cause hang-up situation. it is recommended to program to C2EDELAY to a suitable value whenever SPIENA pin is used as functional."]
+    #[inline(always)]
+    #[must_use]
+    pub fn c2edelay(&mut self) -> C2edelayW<SpidelaySpec> {
+        C2edelayW::new(self, 0)
+    }
+    #[doc = "Bits 8:15 - 15:8\\]
+Transmit-data-finished-to-ENA-pin-inactive-time-out. T2EDELAY is used in master mode only. It defines a time-out value as a multiple of SPI clock before the ENAble signal has to become inactive and after the CS becomes inactive. The SPI clock depends on which data format is selected. If the slave device is missing one or more clock edges, it is becoming de-synchronized. Although the master has finished the data transfer the slave is still waiting for the missed clock pulses and the ENA signal isnΓÇÖt disabled. The T2EDELAY defines a time-out value that triggers the DESYNC flag, if the ENA signal isnΓÇÖt deactivated in time. DESYNC flag is set to indicate that the Slave device did not deassert its SPIENA pin in time to acknowledge that it has received all the bits of the sent character. If T2CDELAY is programmed a non-zero value, then T2EDELAY will start only after the T2CDELAY completes. This should be taken into consideration to determine an optimum value of T2EDELAY. Note: Zero T2EDELAY If T2EDELAY is not programmed or programmed to ΓÇÿ0ΓÇÖ, then the Master SPI/MibSPI does not wait for SPIENA pin to be deasserted. It ignores the state of the SPIENA pin after the transmission is completed."]
+    #[inline(always)]
+    #[must_use]
+    pub fn t2edelay(&mut self) -> T2edelayW<SpidelaySpec> {
+        T2edelayW::new(self, 8)
+    }
+    #[doc = "Bits 16:23 - 23:16\\]
+Transmit-end-to-chip-select-inactive-delay. T2CDELAY is used in master mode only. It defines a hold time for the slave device that delays the chip select deactivation by a multiple of VBUSPCLK cycles after the last bit is transferred. T2CDELAY can be configured between 2 and 256 VBUSPCLK cycles. If Phase = ΓÇÿ0ΓÇÖ, then between the last edge of SPICLK and rise-edge of SCS, there will be an additional delay of 0.5 SPICLK period. This is as per the SPI protocol Both C2TDELAY and T2CDELAY counters do not have any dependancy on SPIENA pin value. Even if the SPIENA pin is asserted by the Slave, Master will continue to delay the start of SPICLK until the C2TDELAY counter overflows. Similarly, even if the SPIENA pin is deasserted by the Slave, Master will continue to hold the SPISCS pins active until the T2CDELAY counter overflows. This way, it is guaranteed that the setup/hold times of the SPISCS pins is determined by the Delay timers alone. To achieve better throughput, it should be ensured that these two timers are kept at the minimum possible values."]
+    #[inline(always)]
+    #[must_use]
+    pub fn t2cdelay(&mut self) -> T2cdelayW<SpidelaySpec> {
+        T2cdelayW::new(self, 16)
+    }
+    #[doc = "Bits 24:31 - 31:24\\]
+Chip-select-active-to-transmit-start-delay. C2TDELAY is used in master mode only. It defines a setup time for the slave device that delays the data transmission from the chip select active edge by a multiple of VBUSPCLK cycles. ChipSelect-active-to-transmission delays between 2 to 257 VBUSPCLK cycles can be achieved. If Phase = ΓÇÿ1ΓÇÖ, the delay between SCS fall-edge to the first edge of SPICLK will have an additional 0.5 SPICLK Period delay. This delay is as per the SPI protocol."]
+    #[inline(always)]
+    #[must_use]
+    pub fn c2tdelay(&mut self) -> C2tdelayW<SpidelaySpec> {
+        C2tdelayW::new(self, 24)
+    }
+}
+#[doc = "SPI / MibSPI Delay Register\n\nYou can [`read`](crate::Reg::read) this register and get [`spidelay::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spidelay::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct SpidelaySpec;
+impl crate::RegisterSpec for SpidelaySpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`spidelay::R`](R) reader structure"]
+impl crate::Readable for SpidelaySpec {}
+#[doc = "`write(|w| ..)` method takes [`spidelay::W`](W) writer structure"]
+impl crate::Writable for SpidelaySpec {
+    type Safety = crate::Unsafe;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+}
+#[doc = "`reset()` method sets SPIDELAY to value 0"]
+impl crate::Resettable for SpidelaySpec {
+    const RESET_VALUE: u32 = 0;
+}
