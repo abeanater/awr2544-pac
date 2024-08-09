@@ -2,12 +2,12 @@
 pub type R = crate::R<AggrEnableSetSpec>;
 #[doc = "Register `aggr_enable_set` writer"]
 pub type W = crate::W<AggrEnableSetSpec>;
-#[doc = "Field `INTERRUPT_ENABLE_SET` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_ENABLE_SET_1` reader - 0:0\\]
 interrupt enable set for parity errors"]
-pub type InterruptEnableSetR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_SET` writer - 0:0\\]
+pub type InterruptEnableSet1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_SET_1` writer - 0:0\\]
 interrupt enable set for parity errors"]
-pub type InterruptEnableSetW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptEnableSet1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_ENABLE_SET` reader - 1:1\\]
 interrupt enable set for svbus timeout errors"]
 pub type InterruptEnableSetR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 interrupt enable set for parity errors"]
     #[inline(always)]
-    pub fn interrupt_enable_set(&self) -> InterruptEnableSetR {
-        InterruptEnableSetR::new((self.bits & 1) != 0)
+    pub fn interrupt_enable_set_1(&self) -> InterruptEnableSet1R {
+        InterruptEnableSet1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 interrupt enable set for svbus timeout errors"]
@@ -33,8 +33,8 @@ impl W {
 interrupt enable set for parity errors"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_set(&mut self) -> InterruptEnableSetW<AggrEnableSetSpec> {
-        InterruptEnableSetW::new(self, 0)
+    pub fn interrupt_enable_set_1(&mut self) -> InterruptEnableSet1W<AggrEnableSetSpec> {
+        InterruptEnableSet1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 interrupt enable set for svbus timeout errors"]

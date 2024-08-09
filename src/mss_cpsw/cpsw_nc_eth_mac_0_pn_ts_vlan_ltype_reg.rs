@@ -2,12 +2,12 @@
 pub type R = crate::R<CpswNcEthMac0PnTsVlanLtypeRegSpec>;
 #[doc = "Register `CPSW_NC_ETH_MAC_0_PN_TS_VLAN_LTYPE_REG` writer"]
 pub type W = crate::W<CpswNcEthMac0PnTsVlanLtypeRegSpec>;
-#[doc = "Field `TIME_SYNC_VLAN` reader - 15:0\\]
+#[doc = "Field `TIME_SYNC_VLAN_1` reader - 15:0\\]
 Time Sync VLAN LTYPE1"]
-pub type TimeSyncVlanR = crate::FieldReader<u16>;
-#[doc = "Field `TIME_SYNC_VLAN` writer - 15:0\\]
+pub type TimeSyncVlan1R = crate::FieldReader<u16>;
+#[doc = "Field `TIME_SYNC_VLAN_1` writer - 15:0\\]
 Time Sync VLAN LTYPE1"]
-pub type TimeSyncVlanW<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
+pub type TimeSyncVlan1W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 #[doc = "Field `TIME_SYNC_VLAN` reader - 31:16\\]
 Time Sync VLAN LTYPE2"]
 pub type TimeSyncVlanR = crate::FieldReader<u16>;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bits 0:15 - 15:0\\]
 Time Sync VLAN LTYPE1"]
     #[inline(always)]
-    pub fn time_sync_vlan(&self) -> TimeSyncVlanR {
-        TimeSyncVlanR::new((self.bits & 0xffff) as u16)
+    pub fn time_sync_vlan_1(&self) -> TimeSyncVlan1R {
+        TimeSyncVlan1R::new((self.bits & 0xffff) as u16)
     }
     #[doc = "Bits 16:31 - 31:16\\]
 Time Sync VLAN LTYPE2"]
@@ -33,8 +33,8 @@ impl W {
 Time Sync VLAN LTYPE1"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_vlan(&mut self) -> TimeSyncVlanW<CpswNcEthMac0PnTsVlanLtypeRegSpec> {
-        TimeSyncVlanW::new(self, 0)
+    pub fn time_sync_vlan_1(&mut self) -> TimeSyncVlan1W<CpswNcEthMac0PnTsVlanLtypeRegSpec> {
+        TimeSyncVlan1W::new(self, 0)
     }
     #[doc = "Bits 16:31 - 31:16\\]
 Time Sync VLAN LTYPE2"]

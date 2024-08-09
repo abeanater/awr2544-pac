@@ -2,96 +2,96 @@
 pub type R = crate::R<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec>;
 #[doc = "Register `CPSW_CPDMA_INT_CPDMA_TH_INTSTAT_MASKED_REG` writer"]
 pub type W = crate::W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 0:0\\]
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_15` reader - 0:0\\]
 CPDMA Receive Channel 0 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 0:0\\]
+pub type CpdmaReceiveChannel15R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_15` writer - 0:0\\]
 CPDMA Receive Channel 0 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 1:1\\]
+pub type CpdmaReceiveChannel15W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_14` reader - 1:1\\]
 CPDMA Receive Channel 1 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 1:1\\]
+pub type CpdmaReceiveChannel14R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_14` writer - 1:1\\]
 CPDMA Receive Channel 1 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 2:2\\]
+pub type CpdmaReceiveChannel14W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_13` reader - 2:2\\]
 CPDMA Receive Channel 2 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 2:2\\]
+pub type CpdmaReceiveChannel13R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_13` writer - 2:2\\]
 CPDMA Receive Channel 2 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 3:3\\]
+pub type CpdmaReceiveChannel13W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_12` reader - 3:3\\]
 CPDMA Receive Channel 3 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 3:3\\]
+pub type CpdmaReceiveChannel12R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_12` writer - 3:3\\]
 CPDMA Receive Channel 3 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 4:4\\]
+pub type CpdmaReceiveChannel12W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_11` reader - 4:4\\]
 CPDMA Receive Channel 4 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 4:4\\]
+pub type CpdmaReceiveChannel11R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_11` writer - 4:4\\]
 CPDMA Receive Channel 4 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 5:5\\]
+pub type CpdmaReceiveChannel11W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_10` reader - 5:5\\]
 CPDMA Receive Channel 5 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 5:5\\]
+pub type CpdmaReceiveChannel10R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_10` writer - 5:5\\]
 CPDMA Receive Channel 5 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 6:6\\]
+pub type CpdmaReceiveChannel10W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_9` reader - 6:6\\]
 CPDMA Receive Channel 6 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 6:6\\]
+pub type CpdmaReceiveChannel9R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_9` writer - 6:6\\]
 CPDMA Receive Channel 6 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 7:7\\]
+pub type CpdmaReceiveChannel9W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_8` reader - 7:7\\]
 CPDMA Receive Channel 7 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 7:7\\]
+pub type CpdmaReceiveChannel8R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_8` writer - 7:7\\]
 CPDMA Receive Channel 7 Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 8:8\\]
+pub type CpdmaReceiveChannel8W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_7` reader - 8:8\\]
 CPDMA Receive Channel 0 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 8:8\\]
+pub type CpdmaReceiveChannel7R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_7` writer - 8:8\\]
 CPDMA Receive Channel 0 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 9:9\\]
+pub type CpdmaReceiveChannel7W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_6` reader - 9:9\\]
 CPDMA Receive Channel 1 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 9:9\\]
+pub type CpdmaReceiveChannel6R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_6` writer - 9:9\\]
 CPDMA Receive Channel 1 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 10:10\\]
+pub type CpdmaReceiveChannel6W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_5` reader - 10:10\\]
 CPDMA Receive Channel 2 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 10:10\\]
+pub type CpdmaReceiveChannel5R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_5` writer - 10:10\\]
 CPDMA Receive Channel 2 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 11:11\\]
+pub type CpdmaReceiveChannel5W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_4` reader - 11:11\\]
 CPDMA Receive Channel 3 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 11:11\\]
+pub type CpdmaReceiveChannel4R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_4` writer - 11:11\\]
 CPDMA Receive Channel 3 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 12:12\\]
+pub type CpdmaReceiveChannel4W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_3` reader - 12:12\\]
 CPDMA Receive Channel 4 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 12:12\\]
+pub type CpdmaReceiveChannel3R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_3` writer - 12:12\\]
 CPDMA Receive Channel 4 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 13:13\\]
+pub type CpdmaReceiveChannel3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_2` reader - 13:13\\]
 CPDMA Receive Channel 5 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 13:13\\]
+pub type CpdmaReceiveChannel2R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_2` writer - 13:13\\]
 CPDMA Receive Channel 5 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 14:14\\]
+pub type CpdmaReceiveChannel2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_1` reader - 14:14\\]
 CPDMA Receive Channel 6 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_RECEIVE_CHANNEL` writer - 14:14\\]
+pub type CpdmaReceiveChannel1R = crate::BitReader;
+#[doc = "Field `CPDMA_RECEIVE_CHANNEL_1` writer - 14:14\\]
 CPDMA Receive Channel 6 Threshold Interrupt Pending MASKED"]
-pub type CpdmaReceiveChannelW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CpdmaReceiveChannel1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CPDMA_RECEIVE_CHANNEL` reader - 15:15\\]
 CPDMA Receive Channel 7 Threshold Interrupt Pending MASKED"]
 pub type CpdmaReceiveChannelR = crate::BitReader;
@@ -102,92 +102,92 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 CPDMA Receive Channel 0 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new((self.bits & 1) != 0)
+    pub fn cpdma_receive_channel_15(&self) -> CpdmaReceiveChannel15R {
+        CpdmaReceiveChannel15R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA Receive Channel 1 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 1) & 1) != 0)
+    pub fn cpdma_receive_channel_14(&self) -> CpdmaReceiveChannel14R {
+        CpdmaReceiveChannel14R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 CPDMA Receive Channel 2 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 2) & 1) != 0)
+    pub fn cpdma_receive_channel_13(&self) -> CpdmaReceiveChannel13R {
+        CpdmaReceiveChannel13R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 CPDMA Receive Channel 3 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 3) & 1) != 0)
+    pub fn cpdma_receive_channel_12(&self) -> CpdmaReceiveChannel12R {
+        CpdmaReceiveChannel12R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 CPDMA Receive Channel 4 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 4) & 1) != 0)
+    pub fn cpdma_receive_channel_11(&self) -> CpdmaReceiveChannel11R {
+        CpdmaReceiveChannel11R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 5:5\\]
 CPDMA Receive Channel 5 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 5) & 1) != 0)
+    pub fn cpdma_receive_channel_10(&self) -> CpdmaReceiveChannel10R {
+        CpdmaReceiveChannel10R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 CPDMA Receive Channel 6 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 6) & 1) != 0)
+    pub fn cpdma_receive_channel_9(&self) -> CpdmaReceiveChannel9R {
+        CpdmaReceiveChannel9R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 7:7\\]
 CPDMA Receive Channel 7 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 7) & 1) != 0)
+    pub fn cpdma_receive_channel_8(&self) -> CpdmaReceiveChannel8R {
+        CpdmaReceiveChannel8R::new(((self.bits >> 7) & 1) != 0)
     }
     #[doc = "Bit 8 - 8:8\\]
 CPDMA Receive Channel 0 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 8) & 1) != 0)
+    pub fn cpdma_receive_channel_7(&self) -> CpdmaReceiveChannel7R {
+        CpdmaReceiveChannel7R::new(((self.bits >> 8) & 1) != 0)
     }
     #[doc = "Bit 9 - 9:9\\]
 CPDMA Receive Channel 1 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 9) & 1) != 0)
+    pub fn cpdma_receive_channel_6(&self) -> CpdmaReceiveChannel6R {
+        CpdmaReceiveChannel6R::new(((self.bits >> 9) & 1) != 0)
     }
     #[doc = "Bit 10 - 10:10\\]
 CPDMA Receive Channel 2 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 10) & 1) != 0)
+    pub fn cpdma_receive_channel_5(&self) -> CpdmaReceiveChannel5R {
+        CpdmaReceiveChannel5R::new(((self.bits >> 10) & 1) != 0)
     }
     #[doc = "Bit 11 - 11:11\\]
 CPDMA Receive Channel 3 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 11) & 1) != 0)
+    pub fn cpdma_receive_channel_4(&self) -> CpdmaReceiveChannel4R {
+        CpdmaReceiveChannel4R::new(((self.bits >> 11) & 1) != 0)
     }
     #[doc = "Bit 12 - 12:12\\]
 CPDMA Receive Channel 4 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 12) & 1) != 0)
+    pub fn cpdma_receive_channel_3(&self) -> CpdmaReceiveChannel3R {
+        CpdmaReceiveChannel3R::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bit 13 - 13:13\\]
 CPDMA Receive Channel 5 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 13) & 1) != 0)
+    pub fn cpdma_receive_channel_2(&self) -> CpdmaReceiveChannel2R {
+        CpdmaReceiveChannel2R::new(((self.bits >> 13) & 1) != 0)
     }
     #[doc = "Bit 14 - 14:14\\]
 CPDMA Receive Channel 6 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_receive_channel(&self) -> CpdmaReceiveChannelR {
-        CpdmaReceiveChannelR::new(((self.bits >> 14) & 1) != 0)
+    pub fn cpdma_receive_channel_1(&self) -> CpdmaReceiveChannel1R {
+        CpdmaReceiveChannel1R::new(((self.bits >> 14) & 1) != 0)
     }
     #[doc = "Bit 15 - 15:15\\]
 CPDMA Receive Channel 7 Threshold Interrupt Pending MASKED"]
@@ -201,136 +201,136 @@ impl W {
 CPDMA Receive Channel 0 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_15(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 0)
+    ) -> CpdmaReceiveChannel15W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel15W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA Receive Channel 1 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_14(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 1)
+    ) -> CpdmaReceiveChannel14W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel14W::new(self, 1)
     }
     #[doc = "Bit 2 - 2:2\\]
 CPDMA Receive Channel 2 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_13(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 2)
+    ) -> CpdmaReceiveChannel13W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel13W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 CPDMA Receive Channel 3 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_12(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 3)
+    ) -> CpdmaReceiveChannel12W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel12W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 CPDMA Receive Channel 4 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_11(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 4)
+    ) -> CpdmaReceiveChannel11W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel11W::new(self, 4)
     }
     #[doc = "Bit 5 - 5:5\\]
 CPDMA Receive Channel 5 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_10(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 5)
+    ) -> CpdmaReceiveChannel10W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel10W::new(self, 5)
     }
     #[doc = "Bit 6 - 6:6\\]
 CPDMA Receive Channel 6 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_9(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 6)
+    ) -> CpdmaReceiveChannel9W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel9W::new(self, 6)
     }
     #[doc = "Bit 7 - 7:7\\]
 CPDMA Receive Channel 7 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_8(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 7)
+    ) -> CpdmaReceiveChannel8W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel8W::new(self, 7)
     }
     #[doc = "Bit 8 - 8:8\\]
 CPDMA Receive Channel 0 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_7(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 8)
+    ) -> CpdmaReceiveChannel7W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel7W::new(self, 8)
     }
     #[doc = "Bit 9 - 9:9\\]
 CPDMA Receive Channel 1 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_6(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 9)
+    ) -> CpdmaReceiveChannel6W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel6W::new(self, 9)
     }
     #[doc = "Bit 10 - 10:10\\]
 CPDMA Receive Channel 2 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_5(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 10)
+    ) -> CpdmaReceiveChannel5W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel5W::new(self, 10)
     }
     #[doc = "Bit 11 - 11:11\\]
 CPDMA Receive Channel 3 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_4(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 11)
+    ) -> CpdmaReceiveChannel4W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel4W::new(self, 11)
     }
     #[doc = "Bit 12 - 12:12\\]
 CPDMA Receive Channel 4 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_3(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 12)
+    ) -> CpdmaReceiveChannel3W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel3W::new(self, 12)
     }
     #[doc = "Bit 13 - 13:13\\]
 CPDMA Receive Channel 5 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_2(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 13)
+    ) -> CpdmaReceiveChannel2W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel2W::new(self, 13)
     }
     #[doc = "Bit 14 - 14:14\\]
 CPDMA Receive Channel 6 Threshold Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_receive_channel(
+    pub fn cpdma_receive_channel_1(
         &mut self,
-    ) -> CpdmaReceiveChannelW<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
-        CpdmaReceiveChannelW::new(self, 14)
+    ) -> CpdmaReceiveChannel1W<CpswCpdmaIntCpdmaThIntstatMaskedRegSpec> {
+        CpdmaReceiveChannel1W::new(self, 14)
     }
     #[doc = "Bit 15 - 15:15\\]
 CPDMA Receive Channel 7 Threshold Interrupt Pending MASKED"]

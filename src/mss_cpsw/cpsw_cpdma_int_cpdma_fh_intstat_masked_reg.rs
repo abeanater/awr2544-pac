@@ -2,48 +2,48 @@
 pub type R = crate::R<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec>;
 #[doc = "Register `CPSW_CPDMA_INT_CPDMA_FH_INTSTAT_MASKED_REG` writer"]
 pub type W = crate::W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec>;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 0:0\\]
+#[doc = "Field `CPDMA_FHOST_CHANNEL_7` reader - 0:0\\]
 CPDMA FHost Channel 0 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` writer - 0:0\\]
+pub type CpdmaFhostChannel7R = crate::BitReader;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_7` writer - 0:0\\]
 CPDMA FHost Channel 0 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 1:1\\]
+pub type CpdmaFhostChannel7W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_6` reader - 1:1\\]
 CPDMA FHost Channel 1 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` writer - 1:1\\]
+pub type CpdmaFhostChannel6R = crate::BitReader;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_6` writer - 1:1\\]
 CPDMA FHost Channel 1 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 2:2\\]
+pub type CpdmaFhostChannel6W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_5` reader - 2:2\\]
 CPDMA FHost Channel 2 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` writer - 2:2\\]
+pub type CpdmaFhostChannel5R = crate::BitReader;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_5` writer - 2:2\\]
 CPDMA FHost Channel 2 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 3:3\\]
+pub type CpdmaFhostChannel5W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_4` reader - 3:3\\]
 CPDMA FHost Channel 3 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` writer - 3:3\\]
+pub type CpdmaFhostChannel4R = crate::BitReader;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_4` writer - 3:3\\]
 CPDMA FHost Channel 3 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 4:4\\]
+pub type CpdmaFhostChannel4W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_3` reader - 4:4\\]
 CPDMA FHost Channel 4 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` writer - 4:4\\]
+pub type CpdmaFhostChannel3R = crate::BitReader;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_3` writer - 4:4\\]
 CPDMA FHost Channel 4 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 5:5\\]
+pub type CpdmaFhostChannel3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_2` reader - 5:5\\]
 CPDMA FHost Channel 5 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` writer - 5:5\\]
+pub type CpdmaFhostChannel2R = crate::BitReader;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_2` writer - 5:5\\]
 CPDMA FHost Channel 5 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 6:6\\]
+pub type CpdmaFhostChannel2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_1` reader - 6:6\\]
 CPDMA FHost Channel 6 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_FHOST_CHANNEL` writer - 6:6\\]
+pub type CpdmaFhostChannel1R = crate::BitReader;
+#[doc = "Field `CPDMA_FHOST_CHANNEL_1` writer - 6:6\\]
 CPDMA FHost Channel 6 Interrupt Pending MASKED"]
-pub type CpdmaFhostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CpdmaFhostChannel1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CPDMA_FHOST_CHANNEL` reader - 7:7\\]
 CPDMA FHost Channel 7 Interrupt Pending MASKED"]
 pub type CpdmaFhostChannelR = crate::BitReader;
@@ -54,44 +54,44 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 CPDMA FHost Channel 0 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_fhost_channel(&self) -> CpdmaFhostChannelR {
-        CpdmaFhostChannelR::new((self.bits & 1) != 0)
+    pub fn cpdma_fhost_channel_7(&self) -> CpdmaFhostChannel7R {
+        CpdmaFhostChannel7R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA FHost Channel 1 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_fhost_channel(&self) -> CpdmaFhostChannelR {
-        CpdmaFhostChannelR::new(((self.bits >> 1) & 1) != 0)
+    pub fn cpdma_fhost_channel_6(&self) -> CpdmaFhostChannel6R {
+        CpdmaFhostChannel6R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 CPDMA FHost Channel 2 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_fhost_channel(&self) -> CpdmaFhostChannelR {
-        CpdmaFhostChannelR::new(((self.bits >> 2) & 1) != 0)
+    pub fn cpdma_fhost_channel_5(&self) -> CpdmaFhostChannel5R {
+        CpdmaFhostChannel5R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 CPDMA FHost Channel 3 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_fhost_channel(&self) -> CpdmaFhostChannelR {
-        CpdmaFhostChannelR::new(((self.bits >> 3) & 1) != 0)
+    pub fn cpdma_fhost_channel_4(&self) -> CpdmaFhostChannel4R {
+        CpdmaFhostChannel4R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 CPDMA FHost Channel 4 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_fhost_channel(&self) -> CpdmaFhostChannelR {
-        CpdmaFhostChannelR::new(((self.bits >> 4) & 1) != 0)
+    pub fn cpdma_fhost_channel_3(&self) -> CpdmaFhostChannel3R {
+        CpdmaFhostChannel3R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 5:5\\]
 CPDMA FHost Channel 5 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_fhost_channel(&self) -> CpdmaFhostChannelR {
-        CpdmaFhostChannelR::new(((self.bits >> 5) & 1) != 0)
+    pub fn cpdma_fhost_channel_2(&self) -> CpdmaFhostChannel2R {
+        CpdmaFhostChannel2R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 CPDMA FHost Channel 6 Interrupt Pending MASKED"]
     #[inline(always)]
-    pub fn cpdma_fhost_channel(&self) -> CpdmaFhostChannelR {
-        CpdmaFhostChannelR::new(((self.bits >> 6) & 1) != 0)
+    pub fn cpdma_fhost_channel_1(&self) -> CpdmaFhostChannel1R {
+        CpdmaFhostChannel1R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 7:7\\]
 CPDMA FHost Channel 7 Interrupt Pending MASKED"]
@@ -105,64 +105,64 @@ impl W {
 CPDMA FHost Channel 0 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_channel(
+    pub fn cpdma_fhost_channel_7(
         &mut self,
-    ) -> CpdmaFhostChannelW<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
-        CpdmaFhostChannelW::new(self, 0)
+    ) -> CpdmaFhostChannel7W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
+        CpdmaFhostChannel7W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA FHost Channel 1 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_channel(
+    pub fn cpdma_fhost_channel_6(
         &mut self,
-    ) -> CpdmaFhostChannelW<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
-        CpdmaFhostChannelW::new(self, 1)
+    ) -> CpdmaFhostChannel6W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
+        CpdmaFhostChannel6W::new(self, 1)
     }
     #[doc = "Bit 2 - 2:2\\]
 CPDMA FHost Channel 2 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_channel(
+    pub fn cpdma_fhost_channel_5(
         &mut self,
-    ) -> CpdmaFhostChannelW<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
-        CpdmaFhostChannelW::new(self, 2)
+    ) -> CpdmaFhostChannel5W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
+        CpdmaFhostChannel5W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 CPDMA FHost Channel 3 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_channel(
+    pub fn cpdma_fhost_channel_4(
         &mut self,
-    ) -> CpdmaFhostChannelW<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
-        CpdmaFhostChannelW::new(self, 3)
+    ) -> CpdmaFhostChannel4W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
+        CpdmaFhostChannel4W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 CPDMA FHost Channel 4 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_channel(
+    pub fn cpdma_fhost_channel_3(
         &mut self,
-    ) -> CpdmaFhostChannelW<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
-        CpdmaFhostChannelW::new(self, 4)
+    ) -> CpdmaFhostChannel3W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
+        CpdmaFhostChannel3W::new(self, 4)
     }
     #[doc = "Bit 5 - 5:5\\]
 CPDMA FHost Channel 5 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_channel(
+    pub fn cpdma_fhost_channel_2(
         &mut self,
-    ) -> CpdmaFhostChannelW<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
-        CpdmaFhostChannelW::new(self, 5)
+    ) -> CpdmaFhostChannel2W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
+        CpdmaFhostChannel2W::new(self, 5)
     }
     #[doc = "Bit 6 - 6:6\\]
 CPDMA FHost Channel 6 Interrupt Pending MASKED"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_channel(
+    pub fn cpdma_fhost_channel_1(
         &mut self,
-    ) -> CpdmaFhostChannelW<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
-        CpdmaFhostChannelW::new(self, 6)
+    ) -> CpdmaFhostChannel1W<CpswCpdmaIntCpdmaFhIntstatMaskedRegSpec> {
+        CpdmaFhostChannel1W::new(self, 6)
     }
     #[doc = "Bit 7 - 7:7\\]
 CPDMA FHost Channel 7 Interrupt Pending MASKED"]

@@ -2,12 +2,12 @@
 pub type R = crate::R<CpswCpdmaRegsCpdmaThTeardownRegSpec>;
 #[doc = "Register `CPSW_CPDMA_REGS_CPDMA_TH_TEARDOWN_REG` writer"]
 pub type W = crate::W<CpswCpdmaRegsCpdmaThTeardownRegSpec>;
-#[doc = "Field `CPDMA_THOST_TEARDOWN` reader - 2:0\\]
+#[doc = "Field `CPDMA_THOST_TEARDOWN_1` reader - 2:0\\]
 CPDMA THost Teardown Channel"]
-pub type CpdmaThostTeardownR = crate::FieldReader;
-#[doc = "Field `CPDMA_THOST_TEARDOWN` writer - 2:0\\]
+pub type CpdmaThostTeardown1R = crate::FieldReader;
+#[doc = "Field `CPDMA_THOST_TEARDOWN_1` writer - 2:0\\]
 CPDMA THost Teardown Channel"]
-pub type CpdmaThostTeardownW<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CpdmaThostTeardown1W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `CPDMA_THOST_TEARDOWN` reader - 31:31\\]
 CPDMA THost Teardown Ready"]
 pub type CpdmaThostTeardownR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bits 0:2 - 2:0\\]
 CPDMA THost Teardown Channel"]
     #[inline(always)]
-    pub fn cpdma_thost_teardown(&self) -> CpdmaThostTeardownR {
-        CpdmaThostTeardownR::new((self.bits & 7) as u8)
+    pub fn cpdma_thost_teardown_1(&self) -> CpdmaThostTeardown1R {
+        CpdmaThostTeardown1R::new((self.bits & 7) as u8)
     }
     #[doc = "Bit 31 - 31:31\\]
 CPDMA THost Teardown Ready"]
@@ -33,10 +33,10 @@ impl W {
 CPDMA THost Teardown Channel"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_teardown(
+    pub fn cpdma_thost_teardown_1(
         &mut self,
-    ) -> CpdmaThostTeardownW<CpswCpdmaRegsCpdmaThTeardownRegSpec> {
-        CpdmaThostTeardownW::new(self, 0)
+    ) -> CpdmaThostTeardown1W<CpswCpdmaRegsCpdmaThTeardownRegSpec> {
+        CpdmaThostTeardown1W::new(self, 0)
     }
     #[doc = "Bit 31 - 31:31\\]
 CPDMA THost Teardown Ready"]

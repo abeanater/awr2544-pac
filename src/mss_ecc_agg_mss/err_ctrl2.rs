@@ -2,12 +2,12 @@
 pub type R = crate::R<ErrCtrl2Spec>;
 #[doc = "Register `err_ctrl2` writer"]
 pub type W = crate::W<ErrCtrl2Spec>;
-#[doc = "Field `DATA_BIT_THAT` reader - 15:0\\]
+#[doc = "Field `DATA_BIT_THAT_1` reader - 15:0\\]
 Data bit that needs to be flipped when force_sec is set"]
-pub type DataBitThatR = crate::FieldReader<u16>;
-#[doc = "Field `DATA_BIT_THAT` writer - 15:0\\]
+pub type DataBitThat1R = crate::FieldReader<u16>;
+#[doc = "Field `DATA_BIT_THAT_1` writer - 15:0\\]
 Data bit that needs to be flipped when force_sec is set"]
-pub type DataBitThatW<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
+pub type DataBitThat1W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 #[doc = "Field `DATA_BIT_THAT` reader - 31:16\\]
 Data bit that needs to be flipped if double bit error needs to be forced"]
 pub type DataBitThatR = crate::FieldReader<u16>;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bits 0:15 - 15:0\\]
 Data bit that needs to be flipped when force_sec is set"]
     #[inline(always)]
-    pub fn data_bit_that(&self) -> DataBitThatR {
-        DataBitThatR::new((self.bits & 0xffff) as u16)
+    pub fn data_bit_that_1(&self) -> DataBitThat1R {
+        DataBitThat1R::new((self.bits & 0xffff) as u16)
     }
     #[doc = "Bits 16:31 - 31:16\\]
 Data bit that needs to be flipped if double bit error needs to be forced"]
@@ -33,8 +33,8 @@ impl W {
 Data bit that needs to be flipped when force_sec is set"]
     #[inline(always)]
     #[must_use]
-    pub fn data_bit_that(&mut self) -> DataBitThatW<ErrCtrl2Spec> {
-        DataBitThatW::new(self, 0)
+    pub fn data_bit_that_1(&mut self) -> DataBitThat1W<ErrCtrl2Spec> {
+        DataBitThat1W::new(self, 0)
     }
     #[doc = "Bits 16:31 - 31:16\\]
 Data bit that needs to be flipped if double bit error needs to be forced"]

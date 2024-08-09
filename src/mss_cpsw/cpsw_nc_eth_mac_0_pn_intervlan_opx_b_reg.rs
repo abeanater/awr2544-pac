@@ -2,24 +2,24 @@
 pub type R = crate::R<CpswNcEthMac0PnIntervlanOpxBRegSpec>;
 #[doc = "Register `CPSW_NC_ETH_MAC_0_PN_INTERVLAN_OPX_B_REG` writer"]
 pub type W = crate::W<CpswNcEthMac0PnIntervlanOpxBRegSpec>;
-#[doc = "Field `DESTINATION_ADDRESS_BITS` reader - 7:0\\]
+#[doc = "Field `DESTINATION_ADDRESS_BITS_1` reader - 7:0\\]
 Destination Address bits 15:8"]
-pub type DestinationAddressBitsR = crate::FieldReader;
-#[doc = "Field `DESTINATION_ADDRESS_BITS` writer - 7:0\\]
+pub type DestinationAddressBits1R = crate::FieldReader;
+#[doc = "Field `DESTINATION_ADDRESS_BITS_1` writer - 7:0\\]
 Destination Address bits 15:8"]
-pub type DestinationAddressBitsW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+pub type DestinationAddressBits1W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `DESTINATION_ADDRESS_BITS` reader - 15:8\\]
 Destination Address bits 7:0"]
 pub type DestinationAddressBitsR = crate::FieldReader;
 #[doc = "Field `DESTINATION_ADDRESS_BITS` writer - 15:8\\]
 Destination Address bits 7:0"]
 pub type DestinationAddressBitsW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SOURCE_ADDRESS_BITS` reader - 23:16\\]
+#[doc = "Field `SOURCE_ADDRESS_BITS_1` reader - 23:16\\]
 Source Address bits 47:40"]
-pub type SourceAddressBitsR = crate::FieldReader;
-#[doc = "Field `SOURCE_ADDRESS_BITS` writer - 23:16\\]
+pub type SourceAddressBits1R = crate::FieldReader;
+#[doc = "Field `SOURCE_ADDRESS_BITS_1` writer - 23:16\\]
 Source Address bits 47:40"]
-pub type SourceAddressBitsW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+pub type SourceAddressBits1W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `SOURCE_ADDRESS_BITS` reader - 31:24\\]
 Source Address bits 39:32"]
 pub type SourceAddressBitsR = crate::FieldReader;
@@ -30,8 +30,8 @@ impl R {
     #[doc = "Bits 0:7 - 7:0\\]
 Destination Address bits 15:8"]
     #[inline(always)]
-    pub fn destination_address_bits(&self) -> DestinationAddressBitsR {
-        DestinationAddressBitsR::new((self.bits & 0xff) as u8)
+    pub fn destination_address_bits_1(&self) -> DestinationAddressBits1R {
+        DestinationAddressBits1R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - 15:8\\]
 Destination Address bits 7:0"]
@@ -42,8 +42,8 @@ Destination Address bits 7:0"]
     #[doc = "Bits 16:23 - 23:16\\]
 Source Address bits 47:40"]
     #[inline(always)]
-    pub fn source_address_bits(&self) -> SourceAddressBitsR {
-        SourceAddressBitsR::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn source_address_bits_1(&self) -> SourceAddressBits1R {
+        SourceAddressBits1R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 24:31 - 31:24\\]
 Source Address bits 39:32"]
@@ -57,10 +57,10 @@ impl W {
 Destination Address bits 15:8"]
     #[inline(always)]
     #[must_use]
-    pub fn destination_address_bits(
+    pub fn destination_address_bits_1(
         &mut self,
-    ) -> DestinationAddressBitsW<CpswNcEthMac0PnIntervlanOpxBRegSpec> {
-        DestinationAddressBitsW::new(self, 0)
+    ) -> DestinationAddressBits1W<CpswNcEthMac0PnIntervlanOpxBRegSpec> {
+        DestinationAddressBits1W::new(self, 0)
     }
     #[doc = "Bits 8:15 - 15:8\\]
 Destination Address bits 7:0"]
@@ -75,10 +75,10 @@ Destination Address bits 7:0"]
 Source Address bits 47:40"]
     #[inline(always)]
     #[must_use]
-    pub fn source_address_bits(
+    pub fn source_address_bits_1(
         &mut self,
-    ) -> SourceAddressBitsW<CpswNcEthMac0PnIntervlanOpxBRegSpec> {
-        SourceAddressBitsW::new(self, 16)
+    ) -> SourceAddressBits1W<CpswNcEthMac0PnIntervlanOpxBRegSpec> {
+        SourceAddressBits1W::new(self, 16)
     }
     #[doc = "Bits 24:31 - 31:24\\]
 Source Address bits 39:32"]

@@ -2,12 +2,12 @@
 pub type R = crate::R<CpswNcCppiP0RxGapRegSpec>;
 #[doc = "Register `CPSW_NC_CPPI_P0_RX_GAP_REG` writer"]
 pub type W = crate::W<CpswNcCppiP0RxGapRegSpec>;
-#[doc = "Field `PORT_0_RECEIVE` reader - 7:0\\]
+#[doc = "Field `PORT_0_RECEIVE_1` reader - 7:0\\]
 Port 0 Receive Gap Enable"]
-pub type Port0ReceiveR = crate::FieldReader;
-#[doc = "Field `PORT_0_RECEIVE` writer - 7:0\\]
+pub type Port0Receive1R = crate::FieldReader;
+#[doc = "Field `PORT_0_RECEIVE_1` writer - 7:0\\]
 Port 0 Receive Gap Enable"]
-pub type Port0ReceiveW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+pub type Port0Receive1W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `PORT_0_RECEIVE` reader - 25:16\\]
 Port 0 Receive Gap Count"]
 pub type Port0ReceiveR = crate::FieldReader<u16>;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bits 0:7 - 7:0\\]
 Port 0 Receive Gap Enable"]
     #[inline(always)]
-    pub fn port_0_receive(&self) -> Port0ReceiveR {
-        Port0ReceiveR::new((self.bits & 0xff) as u8)
+    pub fn port_0_receive_1(&self) -> Port0Receive1R {
+        Port0Receive1R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 16:25 - 25:16\\]
 Port 0 Receive Gap Count"]
@@ -33,8 +33,8 @@ impl W {
 Port 0 Receive Gap Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn port_0_receive(&mut self) -> Port0ReceiveW<CpswNcCppiP0RxGapRegSpec> {
-        Port0ReceiveW::new(self, 0)
+    pub fn port_0_receive_1(&mut self) -> Port0Receive1W<CpswNcCppiP0RxGapRegSpec> {
+        Port0Receive1W::new(self, 0)
     }
     #[doc = "Bits 16:25 - 25:16\\]
 Port 0 Receive Gap Count"]

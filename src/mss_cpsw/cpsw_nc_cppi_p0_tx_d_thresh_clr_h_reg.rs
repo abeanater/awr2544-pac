@@ -2,24 +2,24 @@
 pub type R = crate::R<CpswNcCppiP0TxDThreshClrHRegSpec>;
 #[doc = "Register `CPSW_NC_CPPI_P0_TX_D_THRESH_CLR_H_REG` writer"]
 pub type W = crate::W<CpswNcCppiP0TxDThreshClrHRegSpec>;
-#[doc = "Field `PORT_PRIORITY_BASED` reader - 4:0\\]
+#[doc = "Field `PORT_PRIORITY_BASED_3` reader - 4:0\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 4"]
-pub type PortPriorityBasedR = crate::FieldReader;
-#[doc = "Field `PORT_PRIORITY_BASED` writer - 4:0\\]
+pub type PortPriorityBased3R = crate::FieldReader;
+#[doc = "Field `PORT_PRIORITY_BASED_3` writer - 4:0\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 4"]
-pub type PortPriorityBasedW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
-#[doc = "Field `PORT_PRIORITY_BASED` reader - 12:8\\]
+pub type PortPriorityBased3W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `PORT_PRIORITY_BASED_2` reader - 12:8\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 5"]
-pub type PortPriorityBasedR = crate::FieldReader;
-#[doc = "Field `PORT_PRIORITY_BASED` writer - 12:8\\]
+pub type PortPriorityBased2R = crate::FieldReader;
+#[doc = "Field `PORT_PRIORITY_BASED_2` writer - 12:8\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 5"]
-pub type PortPriorityBasedW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
-#[doc = "Field `PORT_PRIORITY_BASED` reader - 20:16\\]
+pub type PortPriorityBased2W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `PORT_PRIORITY_BASED_1` reader - 20:16\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 6"]
-pub type PortPriorityBasedR = crate::FieldReader;
-#[doc = "Field `PORT_PRIORITY_BASED` writer - 20:16\\]
+pub type PortPriorityBased1R = crate::FieldReader;
+#[doc = "Field `PORT_PRIORITY_BASED_1` writer - 20:16\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 6"]
-pub type PortPriorityBasedW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type PortPriorityBased1W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `PORT_PRIORITY_BASED` reader - 28:24\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 7"]
 pub type PortPriorityBasedR = crate::FieldReader;
@@ -30,20 +30,20 @@ impl R {
     #[doc = "Bits 0:4 - 4:0\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 4"]
     #[inline(always)]
-    pub fn port_priority_based(&self) -> PortPriorityBasedR {
-        PortPriorityBasedR::new((self.bits & 0x1f) as u8)
+    pub fn port_priority_based_3(&self) -> PortPriorityBased3R {
+        PortPriorityBased3R::new((self.bits & 0x1f) as u8)
     }
     #[doc = "Bits 8:12 - 12:8\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 5"]
     #[inline(always)]
-    pub fn port_priority_based(&self) -> PortPriorityBasedR {
-        PortPriorityBasedR::new(((self.bits >> 8) & 0x1f) as u8)
+    pub fn port_priority_based_2(&self) -> PortPriorityBased2R {
+        PortPriorityBased2R::new(((self.bits >> 8) & 0x1f) as u8)
     }
     #[doc = "Bits 16:20 - 20:16\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 6"]
     #[inline(always)]
-    pub fn port_priority_based(&self) -> PortPriorityBasedR {
-        PortPriorityBasedR::new(((self.bits >> 16) & 0x1f) as u8)
+    pub fn port_priority_based_1(&self) -> PortPriorityBased1R {
+        PortPriorityBased1R::new(((self.bits >> 16) & 0x1f) as u8)
     }
     #[doc = "Bits 24:28 - 28:24\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 7"]
@@ -57,22 +57,28 @@ impl W {
 Port Priority Based Flow Control Threshold Clear Value for Priority 4"]
     #[inline(always)]
     #[must_use]
-    pub fn port_priority_based(&mut self) -> PortPriorityBasedW<CpswNcCppiP0TxDThreshClrHRegSpec> {
-        PortPriorityBasedW::new(self, 0)
+    pub fn port_priority_based_3(
+        &mut self,
+    ) -> PortPriorityBased3W<CpswNcCppiP0TxDThreshClrHRegSpec> {
+        PortPriorityBased3W::new(self, 0)
     }
     #[doc = "Bits 8:12 - 12:8\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 5"]
     #[inline(always)]
     #[must_use]
-    pub fn port_priority_based(&mut self) -> PortPriorityBasedW<CpswNcCppiP0TxDThreshClrHRegSpec> {
-        PortPriorityBasedW::new(self, 8)
+    pub fn port_priority_based_2(
+        &mut self,
+    ) -> PortPriorityBased2W<CpswNcCppiP0TxDThreshClrHRegSpec> {
+        PortPriorityBased2W::new(self, 8)
     }
     #[doc = "Bits 16:20 - 20:16\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 6"]
     #[inline(always)]
     #[must_use]
-    pub fn port_priority_based(&mut self) -> PortPriorityBasedW<CpswNcCppiP0TxDThreshClrHRegSpec> {
-        PortPriorityBasedW::new(self, 16)
+    pub fn port_priority_based_1(
+        &mut self,
+    ) -> PortPriorityBased1W<CpswNcCppiP0TxDThreshClrHRegSpec> {
+        PortPriorityBased1W::new(self, 16)
     }
     #[doc = "Bits 24:28 - 28:24\\]
 Port Priority Based Flow Control Threshold Clear Value for Priority 7"]

@@ -8,12 +8,12 @@ pub type TheTotalNumberR = crate::FieldReader;
 #[doc = "Field `THE_TOTAL_NUMBER` writer - 7:0\\]
 The total number of ports including the host port 0"]
 pub type TheTotalNumberW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `THE_NUMBER_OF` reader - 12:8\\]
+#[doc = "Field `THE_NUMBER_OF_1` reader - 12:8\\]
 The number of CPTS GENF outputs"]
-pub type TheNumberOfR = crate::FieldReader;
-#[doc = "Field `THE_NUMBER_OF` writer - 12:8\\]
+pub type TheNumberOf1R = crate::FieldReader;
+#[doc = "Field `THE_NUMBER_OF_1` writer - 12:8\\]
 The number of CPTS GENF outputs"]
-pub type TheNumberOfW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type TheNumberOf1W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `RMII_IS_INCLUDED` reader - 16:16\\]
 RMII is included in the CPSW_NUSS"]
 pub type RmiiIsIncludedR = crate::BitReader;
@@ -54,8 +54,8 @@ The total number of ports including the host port 0"]
     #[doc = "Bits 8:12 - 12:8\\]
 The number of CPTS GENF outputs"]
     #[inline(always)]
-    pub fn the_number_of(&self) -> TheNumberOfR {
-        TheNumberOfR::new(((self.bits >> 8) & 0x1f) as u8)
+    pub fn the_number_of_1(&self) -> TheNumberOf1R {
+        TheNumberOf1R::new(((self.bits >> 8) & 0x1f) as u8)
     }
     #[doc = "Bit 16 - 16:16\\]
 RMII is included in the CPSW_NUSS"]
@@ -100,8 +100,8 @@ The total number of ports including the host port 0"]
 The number of CPTS GENF outputs"]
     #[inline(always)]
     #[must_use]
-    pub fn the_number_of(&mut self) -> TheNumberOfW<SubsystemConfigRegSpec> {
-        TheNumberOfW::new(self, 8)
+    pub fn the_number_of_1(&mut self) -> TheNumberOf1W<SubsystemConfigRegSpec> {
+        TheNumberOf1W::new(self, 8)
     }
     #[doc = "Bit 16 - 16:16\\]
 RMII is included in the CPSW_NUSS"]

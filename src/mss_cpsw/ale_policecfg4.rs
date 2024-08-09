@@ -2,12 +2,12 @@
 pub type R = crate::R<AlePolicecfg4Spec>;
 #[doc = "Register `ALE_POLICECFG4` writer"]
 pub type W = crate::W<AlePolicecfg4Spec>;
-#[doc = "Field `IP_DESTINATION_ADDRESS` reader - 20:16\\]
+#[doc = "Field `IP_DESTINATION_ADDRESS_1` reader - 20:16\\]
 IP Destination Address Table Entry Index - Specifies the ALE IP Destination address lookup table index to match for the selected policing/classifier entry"]
-pub type IpDestinationAddressR = crate::FieldReader;
-#[doc = "Field `IP_DESTINATION_ADDRESS` writer - 20:16\\]
+pub type IpDestinationAddress1R = crate::FieldReader;
+#[doc = "Field `IP_DESTINATION_ADDRESS_1` writer - 20:16\\]
 IP Destination Address Table Entry Index - Specifies the ALE IP Destination address lookup table index to match for the selected policing/classifier entry"]
-pub type IpDestinationAddressW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type IpDestinationAddress1W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `IP_DESTINATION_ADDRESS` reader - 31:31\\]
 IP Destination Address Match Enable - Enables frame IP Destination address match for the selected policing/classifier entry"]
 pub type IpDestinationAddressR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bits 16:20 - 20:16\\]
 IP Destination Address Table Entry Index - Specifies the ALE IP Destination address lookup table index to match for the selected policing/classifier entry"]
     #[inline(always)]
-    pub fn ip_destination_address(&self) -> IpDestinationAddressR {
-        IpDestinationAddressR::new(((self.bits >> 16) & 0x1f) as u8)
+    pub fn ip_destination_address_1(&self) -> IpDestinationAddress1R {
+        IpDestinationAddress1R::new(((self.bits >> 16) & 0x1f) as u8)
     }
     #[doc = "Bit 31 - 31:31\\]
 IP Destination Address Match Enable - Enables frame IP Destination address match for the selected policing/classifier entry"]
@@ -33,8 +33,8 @@ impl W {
 IP Destination Address Table Entry Index - Specifies the ALE IP Destination address lookup table index to match for the selected policing/classifier entry"]
     #[inline(always)]
     #[must_use]
-    pub fn ip_destination_address(&mut self) -> IpDestinationAddressW<AlePolicecfg4Spec> {
-        IpDestinationAddressW::new(self, 16)
+    pub fn ip_destination_address_1(&mut self) -> IpDestinationAddress1W<AlePolicecfg4Spec> {
+        IpDestinationAddress1W::new(self, 16)
     }
     #[doc = "Bit 31 - 31:31\\]
 IP Destination Address Match Enable - Enables frame IP Destination address match for the selected policing/classifier entry"]

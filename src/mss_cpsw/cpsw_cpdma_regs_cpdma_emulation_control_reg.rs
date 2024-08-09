@@ -2,12 +2,12 @@
 pub type R = crate::R<CpswCpdmaRegsCpdmaEmulationControlRegSpec>;
 #[doc = "Register `CPSW_CPDMA_REGS_CPDMA_EMULATION_CONTROL_REG` writer"]
 pub type W = crate::W<CpswCpdmaRegsCpdmaEmulationControlRegSpec>;
-#[doc = "Field `CPDMA_THOST_BUFFER` reader - 0:0\\]
+#[doc = "Field `CPDMA_THOST_BUFFER_1` reader - 0:0\\]
 CPDMA THost Buffer Offset Register"]
-pub type CpdmaThostBufferR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_BUFFER` writer - 0:0\\]
+pub type CpdmaThostBuffer1R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_BUFFER_1` writer - 0:0\\]
 CPDMA THost Buffer Offset Register"]
-pub type CpdmaThostBufferW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CpdmaThostBuffer1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CPDMA_THOST_BUFFER` reader - 1:1\\]
 CPDMA THost Buffer Offset Register"]
 pub type CpdmaThostBufferR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 CPDMA THost Buffer Offset Register"]
     #[inline(always)]
-    pub fn cpdma_thost_buffer(&self) -> CpdmaThostBufferR {
-        CpdmaThostBufferR::new((self.bits & 1) != 0)
+    pub fn cpdma_thost_buffer_1(&self) -> CpdmaThostBuffer1R {
+        CpdmaThostBuffer1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA THost Buffer Offset Register"]
@@ -33,10 +33,10 @@ impl W {
 CPDMA THost Buffer Offset Register"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_buffer(
+    pub fn cpdma_thost_buffer_1(
         &mut self,
-    ) -> CpdmaThostBufferW<CpswCpdmaRegsCpdmaEmulationControlRegSpec> {
-        CpdmaThostBufferW::new(self, 0)
+    ) -> CpdmaThostBuffer1W<CpswCpdmaRegsCpdmaEmulationControlRegSpec> {
+        CpdmaThostBuffer1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA THost Buffer Offset Register"]

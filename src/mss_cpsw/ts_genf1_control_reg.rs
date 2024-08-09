@@ -2,12 +2,12 @@
 pub type R = crate::R<TsGenf1ControlRegSpec>;
 #[doc = "Register `TS_GENF1_CONTROL_REG` writer"]
 pub type W = crate::W<TsGenf1ControlRegSpec>;
-#[doc = "Field `TIME_STAMP_GENERATE` reader - 0:0\\]
+#[doc = "Field `TIME_STAMP_GENERATE_1` reader - 0:0\\]
 Time Stamp Generate Function PPM Direction"]
-pub type TimeStampGenerateR = crate::BitReader;
-#[doc = "Field `TIME_STAMP_GENERATE` writer - 0:0\\]
+pub type TimeStampGenerate1R = crate::BitReader;
+#[doc = "Field `TIME_STAMP_GENERATE_1` writer - 0:0\\]
 Time Stamp Generate Function PPM Direction"]
-pub type TimeStampGenerateW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TimeStampGenerate1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TIME_STAMP_GENERATE` reader - 1:1\\]
 Time Stamp Generate Function Polarity Invert"]
 pub type TimeStampGenerateR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Time Stamp Generate Function PPM Direction"]
     #[inline(always)]
-    pub fn time_stamp_generate(&self) -> TimeStampGenerateR {
-        TimeStampGenerateR::new((self.bits & 1) != 0)
+    pub fn time_stamp_generate_1(&self) -> TimeStampGenerate1R {
+        TimeStampGenerate1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Time Stamp Generate Function Polarity Invert"]
@@ -33,8 +33,8 @@ impl W {
 Time Stamp Generate Function PPM Direction"]
     #[inline(always)]
     #[must_use]
-    pub fn time_stamp_generate(&mut self) -> TimeStampGenerateW<TsGenf1ControlRegSpec> {
-        TimeStampGenerateW::new(self, 0)
+    pub fn time_stamp_generate_1(&mut self) -> TimeStampGenerate1W<TsGenf1ControlRegSpec> {
+        TimeStampGenerate1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Time Stamp Generate Function Polarity Invert"]

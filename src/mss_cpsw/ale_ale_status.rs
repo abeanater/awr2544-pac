@@ -2,18 +2,18 @@
 pub type R = crate::R<AleAleStatusSpec>;
 #[doc = "Register `ALE_ALE_STATUS` writer"]
 pub type W = crate::W<AleAleStatusSpec>;
-#[doc = "Field `THIS_IS_THE` reader - 4:0\\]
+#[doc = "Field `THIS_IS_THE_1` reader - 4:0\\]
 This is the number of table entries total divided by 1024. A value of 1 indicates 1024 table entries. A value of 8 indicates 8192 table entries."]
-pub type ThisIsTheR = crate::FieldReader;
-#[doc = "Field `THIS_IS_THE` writer - 4:0\\]
+pub type ThisIsThe1R = crate::FieldReader;
+#[doc = "Field `THIS_IS_THE_1` writer - 4:0\\]
 This is the number of table entries total divided by 1024. A value of 1 indicates 1024 table entries. A value of 8 indicates 8192 table entries."]
-pub type ThisIsTheW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
-#[doc = "Field `THE_NUMBER_OF` reader - 6:6\\]
+pub type ThisIsThe1W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `THE_NUMBER_OF_1` reader - 6:6\\]
 The number of ALE entries per slice of the table when this is set it indicates the depth is 32 if both ramdepth128 and ramdepth32 are zero the depth is 64."]
-pub type TheNumberOfR = crate::BitReader;
-#[doc = "Field `THE_NUMBER_OF` writer - 6:6\\]
+pub type TheNumberOf1R = crate::BitReader;
+#[doc = "Field `THE_NUMBER_OF_1` writer - 6:6\\]
 The number of ALE entries per slice of the table when this is set it indicates the depth is 32 if both ramdepth128 and ramdepth32 are zero the depth is 64."]
-pub type TheNumberOfW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TheNumberOf1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `THE_NUMBER_OF` reader - 7:7\\]
 The number of ALE entries per slice of the table when this is set it indicates the depth is 128 if both ramdepth128 and ramdepth32 are zero the depth is 64."]
 pub type TheNumberOfR = crate::BitReader;
@@ -26,12 +26,12 @@ pub type ThisIsTheR = crate::FieldReader;
 #[doc = "Field `THIS_IS_THE` writer - 15:8\\]
 This is the number of Classifiers the ALE implements divided by 8. A value of 4 indicates 32 policer engines total."]
 pub type ThisIsTheW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `WHEN_SET__THE` reader - 30:30\\]
+#[doc = "Field `WHEN_SET__THE_1` reader - 30:30\\]
 When set, the unregistered multicast field is a mask versus an index on 8 bit boundary in the ALE table."]
-pub type WhenSet_TheR = crate::BitReader;
-#[doc = "Field `WHEN_SET__THE` writer - 30:30\\]
+pub type WhenSet_The1R = crate::BitReader;
+#[doc = "Field `WHEN_SET__THE_1` writer - 30:30\\]
 When set, the unregistered multicast field is a mask versus an index on 8 bit boundary in the ALE table."]
-pub type WhenSet_TheW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type WhenSet_The1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `WHEN_SET__THE` reader - 31:31\\]
 When set, the unregistered multicast field is a mask versus an index on 12 bit boundary in the ALE table."]
 pub type WhenSet_TheR = crate::BitReader;
@@ -42,14 +42,14 @@ impl R {
     #[doc = "Bits 0:4 - 4:0\\]
 This is the number of table entries total divided by 1024. A value of 1 indicates 1024 table entries. A value of 8 indicates 8192 table entries."]
     #[inline(always)]
-    pub fn this_is_the(&self) -> ThisIsTheR {
-        ThisIsTheR::new((self.bits & 0x1f) as u8)
+    pub fn this_is_the_1(&self) -> ThisIsThe1R {
+        ThisIsThe1R::new((self.bits & 0x1f) as u8)
     }
     #[doc = "Bit 6 - 6:6\\]
 The number of ALE entries per slice of the table when this is set it indicates the depth is 32 if both ramdepth128 and ramdepth32 are zero the depth is 64."]
     #[inline(always)]
-    pub fn the_number_of(&self) -> TheNumberOfR {
-        TheNumberOfR::new(((self.bits >> 6) & 1) != 0)
+    pub fn the_number_of_1(&self) -> TheNumberOf1R {
+        TheNumberOf1R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 7:7\\]
 The number of ALE entries per slice of the table when this is set it indicates the depth is 128 if both ramdepth128 and ramdepth32 are zero the depth is 64."]
@@ -66,8 +66,8 @@ This is the number of Classifiers the ALE implements divided by 8. A value of 4 
     #[doc = "Bit 30 - 30:30\\]
 When set, the unregistered multicast field is a mask versus an index on 8 bit boundary in the ALE table."]
     #[inline(always)]
-    pub fn when_set__the(&self) -> WhenSet_TheR {
-        WhenSet_TheR::new(((self.bits >> 30) & 1) != 0)
+    pub fn when_set__the_1(&self) -> WhenSet_The1R {
+        WhenSet_The1R::new(((self.bits >> 30) & 1) != 0)
     }
     #[doc = "Bit 31 - 31:31\\]
 When set, the unregistered multicast field is a mask versus an index on 12 bit boundary in the ALE table."]
@@ -81,15 +81,15 @@ impl W {
 This is the number of table entries total divided by 1024. A value of 1 indicates 1024 table entries. A value of 8 indicates 8192 table entries."]
     #[inline(always)]
     #[must_use]
-    pub fn this_is_the(&mut self) -> ThisIsTheW<AleAleStatusSpec> {
-        ThisIsTheW::new(self, 0)
+    pub fn this_is_the_1(&mut self) -> ThisIsThe1W<AleAleStatusSpec> {
+        ThisIsThe1W::new(self, 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 The number of ALE entries per slice of the table when this is set it indicates the depth is 32 if both ramdepth128 and ramdepth32 are zero the depth is 64."]
     #[inline(always)]
     #[must_use]
-    pub fn the_number_of(&mut self) -> TheNumberOfW<AleAleStatusSpec> {
-        TheNumberOfW::new(self, 6)
+    pub fn the_number_of_1(&mut self) -> TheNumberOf1W<AleAleStatusSpec> {
+        TheNumberOf1W::new(self, 6)
     }
     #[doc = "Bit 7 - 7:7\\]
 The number of ALE entries per slice of the table when this is set it indicates the depth is 128 if both ramdepth128 and ramdepth32 are zero the depth is 64."]
@@ -109,8 +109,8 @@ This is the number of Classifiers the ALE implements divided by 8. A value of 4 
 When set, the unregistered multicast field is a mask versus an index on 8 bit boundary in the ALE table."]
     #[inline(always)]
     #[must_use]
-    pub fn when_set__the(&mut self) -> WhenSet_TheW<AleAleStatusSpec> {
-        WhenSet_TheW::new(self, 30)
+    pub fn when_set__the_1(&mut self) -> WhenSet_The1W<AleAleStatusSpec> {
+        WhenSet_The1W::new(self, 30)
     }
     #[doc = "Bit 31 - 31:31\\]
 When set, the unregistered multicast field is a mask versus an index on 12 bit boundary in the ALE table."]

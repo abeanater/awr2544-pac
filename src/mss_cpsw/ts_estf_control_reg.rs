@@ -2,12 +2,12 @@
 pub type R = crate::R<TsEstfControlRegSpec>;
 #[doc = "Register `TS_ESTF_CONTROL_REG` writer"]
 pub type W = crate::W<TsEstfControlRegSpec>;
-#[doc = "Field `TIME_STAMP_ESTF` reader - 0:0\\]
+#[doc = "Field `TIME_STAMP_ESTF_1` reader - 0:0\\]
 Time Stamp ESTF Generate Function PPM Direction"]
-pub type TimeStampEstfR = crate::BitReader;
-#[doc = "Field `TIME_STAMP_ESTF` writer - 0:0\\]
+pub type TimeStampEstf1R = crate::BitReader;
+#[doc = "Field `TIME_STAMP_ESTF_1` writer - 0:0\\]
 Time Stamp ESTF Generate Function PPM Direction"]
-pub type TimeStampEstfW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TimeStampEstf1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TIME_STAMP_ESTF` reader - 1:1\\]
 Time Stamp ESTF Generate Function Polarity Invert"]
 pub type TimeStampEstfR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Time Stamp ESTF Generate Function PPM Direction"]
     #[inline(always)]
-    pub fn time_stamp_estf(&self) -> TimeStampEstfR {
-        TimeStampEstfR::new((self.bits & 1) != 0)
+    pub fn time_stamp_estf_1(&self) -> TimeStampEstf1R {
+        TimeStampEstf1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Time Stamp ESTF Generate Function Polarity Invert"]
@@ -33,8 +33,8 @@ impl W {
 Time Stamp ESTF Generate Function PPM Direction"]
     #[inline(always)]
     #[must_use]
-    pub fn time_stamp_estf(&mut self) -> TimeStampEstfW<TsEstfControlRegSpec> {
-        TimeStampEstfW::new(self, 0)
+    pub fn time_stamp_estf_1(&mut self) -> TimeStampEstf1W<TsEstfControlRegSpec> {
+        TimeStampEstf1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Time Stamp ESTF Generate Function Polarity Invert"]

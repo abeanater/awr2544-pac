@@ -8,42 +8,42 @@ pub type TimeSyncLtype2R = crate::FieldReader<u16>;
 #[doc = "Field `TIME_SYNC_LTYPE2` writer - 15:0\\]
 Time Sync LTYPE2"]
 pub type TimeSyncLtype2W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
-#[doc = "Field `TIME_SYNC_DESTINATION` reader - 16:16\\]
+#[doc = "Field `TIME_SYNC_DESTINATION_6` reader - 16:16\\]
 Time Sync Destination IP Address 107 Enable"]
-pub type TimeSyncDestinationR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_DESTINATION` writer - 16:16\\]
+pub type TimeSyncDestination6R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_DESTINATION_6` writer - 16:16\\]
 Time Sync Destination IP Address 107 Enable"]
-pub type TimeSyncDestinationW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_DESTINATION` reader - 17:17\\]
+pub type TimeSyncDestination6W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_DESTINATION_5` reader - 17:17\\]
 Time Sync Destination IP Address 129 Enable"]
-pub type TimeSyncDestinationR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_DESTINATION` writer - 17:17\\]
+pub type TimeSyncDestination5R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_DESTINATION_5` writer - 17:17\\]
 Time Sync Destination IP Address 129 Enable"]
-pub type TimeSyncDestinationW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_DESTINATION` reader - 18:18\\]
+pub type TimeSyncDestination5W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_DESTINATION_4` reader - 18:18\\]
 Time Sync Destination IP Address 130 Enable"]
-pub type TimeSyncDestinationR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_DESTINATION` writer - 18:18\\]
+pub type TimeSyncDestination4R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_DESTINATION_4` writer - 18:18\\]
 Time Sync Destination IP Address 130 Enable"]
-pub type TimeSyncDestinationW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_DESTINATION` reader - 19:19\\]
+pub type TimeSyncDestination4W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_DESTINATION_3` reader - 19:19\\]
 Time Sync Destination IP Address 131 Enable"]
-pub type TimeSyncDestinationR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_DESTINATION` writer - 19:19\\]
+pub type TimeSyncDestination3R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_DESTINATION_3` writer - 19:19\\]
 Time Sync Destination IP Address 131 Enable"]
-pub type TimeSyncDestinationW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_DESTINATION` reader - 20:20\\]
+pub type TimeSyncDestination3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_DESTINATION_2` reader - 20:20\\]
 Time Sync Destination IP Address 132 Enable"]
-pub type TimeSyncDestinationR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_DESTINATION` writer - 20:20\\]
+pub type TimeSyncDestination2R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_DESTINATION_2` writer - 20:20\\]
 Time Sync Destination IP Address 132 Enable"]
-pub type TimeSyncDestinationW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_DESTINATION` reader - 21:21\\]
+pub type TimeSyncDestination2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_DESTINATION_1` reader - 21:21\\]
 Time Sync Destination IP Address 319 Enable"]
-pub type TimeSyncDestinationR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_DESTINATION` writer - 21:21\\]
+pub type TimeSyncDestination1R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_DESTINATION_1` writer - 21:21\\]
 Time Sync Destination IP Address 319 Enable"]
-pub type TimeSyncDestinationW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TimeSyncDestination1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TIME_SYNC_DESTINATION` reader - 22:22\\]
 Time Sync Destination IP Address 320 Enable"]
 pub type TimeSyncDestinationR = crate::BitReader;
@@ -72,38 +72,38 @@ Time Sync LTYPE2"]
     #[doc = "Bit 16 - 16:16\\]
 Time Sync Destination IP Address 107 Enable"]
     #[inline(always)]
-    pub fn time_sync_destination(&self) -> TimeSyncDestinationR {
-        TimeSyncDestinationR::new(((self.bits >> 16) & 1) != 0)
+    pub fn time_sync_destination_6(&self) -> TimeSyncDestination6R {
+        TimeSyncDestination6R::new(((self.bits >> 16) & 1) != 0)
     }
     #[doc = "Bit 17 - 17:17\\]
 Time Sync Destination IP Address 129 Enable"]
     #[inline(always)]
-    pub fn time_sync_destination(&self) -> TimeSyncDestinationR {
-        TimeSyncDestinationR::new(((self.bits >> 17) & 1) != 0)
+    pub fn time_sync_destination_5(&self) -> TimeSyncDestination5R {
+        TimeSyncDestination5R::new(((self.bits >> 17) & 1) != 0)
     }
     #[doc = "Bit 18 - 18:18\\]
 Time Sync Destination IP Address 130 Enable"]
     #[inline(always)]
-    pub fn time_sync_destination(&self) -> TimeSyncDestinationR {
-        TimeSyncDestinationR::new(((self.bits >> 18) & 1) != 0)
+    pub fn time_sync_destination_4(&self) -> TimeSyncDestination4R {
+        TimeSyncDestination4R::new(((self.bits >> 18) & 1) != 0)
     }
     #[doc = "Bit 19 - 19:19\\]
 Time Sync Destination IP Address 131 Enable"]
     #[inline(always)]
-    pub fn time_sync_destination(&self) -> TimeSyncDestinationR {
-        TimeSyncDestinationR::new(((self.bits >> 19) & 1) != 0)
+    pub fn time_sync_destination_3(&self) -> TimeSyncDestination3R {
+        TimeSyncDestination3R::new(((self.bits >> 19) & 1) != 0)
     }
     #[doc = "Bit 20 - 20:20\\]
 Time Sync Destination IP Address 132 Enable"]
     #[inline(always)]
-    pub fn time_sync_destination(&self) -> TimeSyncDestinationR {
-        TimeSyncDestinationR::new(((self.bits >> 20) & 1) != 0)
+    pub fn time_sync_destination_2(&self) -> TimeSyncDestination2R {
+        TimeSyncDestination2R::new(((self.bits >> 20) & 1) != 0)
     }
     #[doc = "Bit 21 - 21:21\\]
 Time Sync Destination IP Address 319 Enable"]
     #[inline(always)]
-    pub fn time_sync_destination(&self) -> TimeSyncDestinationR {
-        TimeSyncDestinationR::new(((self.bits >> 21) & 1) != 0)
+    pub fn time_sync_destination_1(&self) -> TimeSyncDestination1R {
+        TimeSyncDestination1R::new(((self.bits >> 21) & 1) != 0)
     }
     #[doc = "Bit 22 - 22:22\\]
 Time Sync Destination IP Address 320 Enable"]
@@ -136,55 +136,55 @@ Time Sync LTYPE2"]
 Time Sync Destination IP Address 107 Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_destination(
+    pub fn time_sync_destination_6(
         &mut self,
-    ) -> TimeSyncDestinationW<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
-        TimeSyncDestinationW::new(self, 16)
+    ) -> TimeSyncDestination6W<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
+        TimeSyncDestination6W::new(self, 16)
     }
     #[doc = "Bit 17 - 17:17\\]
 Time Sync Destination IP Address 129 Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_destination(
+    pub fn time_sync_destination_5(
         &mut self,
-    ) -> TimeSyncDestinationW<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
-        TimeSyncDestinationW::new(self, 17)
+    ) -> TimeSyncDestination5W<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
+        TimeSyncDestination5W::new(self, 17)
     }
     #[doc = "Bit 18 - 18:18\\]
 Time Sync Destination IP Address 130 Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_destination(
+    pub fn time_sync_destination_4(
         &mut self,
-    ) -> TimeSyncDestinationW<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
-        TimeSyncDestinationW::new(self, 18)
+    ) -> TimeSyncDestination4W<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
+        TimeSyncDestination4W::new(self, 18)
     }
     #[doc = "Bit 19 - 19:19\\]
 Time Sync Destination IP Address 131 Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_destination(
+    pub fn time_sync_destination_3(
         &mut self,
-    ) -> TimeSyncDestinationW<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
-        TimeSyncDestinationW::new(self, 19)
+    ) -> TimeSyncDestination3W<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
+        TimeSyncDestination3W::new(self, 19)
     }
     #[doc = "Bit 20 - 20:20\\]
 Time Sync Destination IP Address 132 Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_destination(
+    pub fn time_sync_destination_2(
         &mut self,
-    ) -> TimeSyncDestinationW<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
-        TimeSyncDestinationW::new(self, 20)
+    ) -> TimeSyncDestination2W<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
+        TimeSyncDestination2W::new(self, 20)
     }
     #[doc = "Bit 21 - 21:21\\]
 Time Sync Destination IP Address 319 Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_destination(
+    pub fn time_sync_destination_1(
         &mut self,
-    ) -> TimeSyncDestinationW<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
-        TimeSyncDestinationW::new(self, 21)
+    ) -> TimeSyncDestination1W<CpswNcEthMac0PnTsCtlLtype2RegSpec> {
+        TimeSyncDestination1W::new(self, 21)
     }
     #[doc = "Bit 22 - 22:22\\]
 Time Sync Destination IP Address 320 Enable"]

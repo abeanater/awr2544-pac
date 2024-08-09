@@ -14,18 +14,18 @@ pub type TransmitFifoExpressR = crate::FieldReader;
 #[doc = "Field `TRANSMIT_FIFO_EXPRESS` writer - 15:8\\]
 Transmit FIFO Express Queue Priority Allow"]
 pub type TransmitFifoExpressW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `TRANSMIT_FIFO_EST` reader - 16:16\\]
+#[doc = "Field `TRANSMIT_FIFO_EST_2` reader - 16:16\\]
 Transmit FIFO EST Count Error"]
-pub type TransmitFifoEstR = crate::BitReader;
-#[doc = "Field `TRANSMIT_FIFO_EST` writer - 16:16\\]
+pub type TransmitFifoEst2R = crate::BitReader;
+#[doc = "Field `TRANSMIT_FIFO_EST_2` writer - 16:16\\]
 Transmit FIFO EST Count Error"]
-pub type TransmitFifoEstW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TRANSMIT_FIFO_EST` reader - 17:17\\]
+pub type TransmitFifoEst2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TRANSMIT_FIFO_EST_1` reader - 17:17\\]
 Transmit FIFO EST Address Error"]
-pub type TransmitFifoEstR = crate::BitReader;
-#[doc = "Field `TRANSMIT_FIFO_EST` writer - 17:17\\]
+pub type TransmitFifoEst1R = crate::BitReader;
+#[doc = "Field `TRANSMIT_FIFO_EST_1` writer - 17:17\\]
 Transmit FIFO EST Address Error"]
-pub type TransmitFifoEstW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TransmitFifoEst1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TRANSMIT_FIFO_EST` reader - 18:18\\]
 Transmit FIFO EST Buffer Active"]
 pub type TransmitFifoEstR = crate::BitReader;
@@ -48,14 +48,14 @@ Transmit FIFO Express Queue Priority Allow"]
     #[doc = "Bit 16 - 16:16\\]
 Transmit FIFO EST Count Error"]
     #[inline(always)]
-    pub fn transmit_fifo_est(&self) -> TransmitFifoEstR {
-        TransmitFifoEstR::new(((self.bits >> 16) & 1) != 0)
+    pub fn transmit_fifo_est_2(&self) -> TransmitFifoEst2R {
+        TransmitFifoEst2R::new(((self.bits >> 16) & 1) != 0)
     }
     #[doc = "Bit 17 - 17:17\\]
 Transmit FIFO EST Address Error"]
     #[inline(always)]
-    pub fn transmit_fifo_est(&self) -> TransmitFifoEstR {
-        TransmitFifoEstR::new(((self.bits >> 17) & 1) != 0)
+    pub fn transmit_fifo_est_1(&self) -> TransmitFifoEst1R {
+        TransmitFifoEst1R::new(((self.bits >> 17) & 1) != 0)
     }
     #[doc = "Bit 18 - 18:18\\]
 Transmit FIFO EST Buffer Active"]
@@ -87,15 +87,15 @@ Transmit FIFO Express Queue Priority Allow"]
 Transmit FIFO EST Count Error"]
     #[inline(always)]
     #[must_use]
-    pub fn transmit_fifo_est(&mut self) -> TransmitFifoEstW<CpswNcEthMac0PnFifoStatusRegSpec> {
-        TransmitFifoEstW::new(self, 16)
+    pub fn transmit_fifo_est_2(&mut self) -> TransmitFifoEst2W<CpswNcEthMac0PnFifoStatusRegSpec> {
+        TransmitFifoEst2W::new(self, 16)
     }
     #[doc = "Bit 17 - 17:17\\]
 Transmit FIFO EST Address Error"]
     #[inline(always)]
     #[must_use]
-    pub fn transmit_fifo_est(&mut self) -> TransmitFifoEstW<CpswNcEthMac0PnFifoStatusRegSpec> {
-        TransmitFifoEstW::new(self, 17)
+    pub fn transmit_fifo_est_1(&mut self) -> TransmitFifoEst1W<CpswNcEthMac0PnFifoStatusRegSpec> {
+        TransmitFifoEst1W::new(self, 17)
     }
     #[doc = "Bit 18 - 18:18\\]
 Transmit FIFO EST Buffer Active"]

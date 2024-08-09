@@ -2,24 +2,24 @@
 pub type R = crate::R<CpswNcTxGBufThreshSetHRegSpec>;
 #[doc = "Register `CPSW_NC_TX_G_BUF_THRESH_SET_H_REG` writer"]
 pub type W = crate::W<CpswNcTxGBufThreshSetHRegSpec>;
-#[doc = "Field `PRIORITY_BASED_FLOW` reader - 7:0\\]
+#[doc = "Field `PRIORITY_BASED_FLOW_3` reader - 7:0\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 4"]
-pub type PriorityBasedFlowR = crate::FieldReader;
-#[doc = "Field `PRIORITY_BASED_FLOW` writer - 7:0\\]
+pub type PriorityBasedFlow3R = crate::FieldReader;
+#[doc = "Field `PRIORITY_BASED_FLOW_3` writer - 7:0\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 4"]
-pub type PriorityBasedFlowW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `PRIORITY_BASED_FLOW` reader - 15:8\\]
+pub type PriorityBasedFlow3W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `PRIORITY_BASED_FLOW_2` reader - 15:8\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 5"]
-pub type PriorityBasedFlowR = crate::FieldReader;
-#[doc = "Field `PRIORITY_BASED_FLOW` writer - 15:8\\]
+pub type PriorityBasedFlow2R = crate::FieldReader;
+#[doc = "Field `PRIORITY_BASED_FLOW_2` writer - 15:8\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 5"]
-pub type PriorityBasedFlowW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `PRIORITY_BASED_FLOW` reader - 23:16\\]
+pub type PriorityBasedFlow2W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `PRIORITY_BASED_FLOW_1` reader - 23:16\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 6"]
-pub type PriorityBasedFlowR = crate::FieldReader;
-#[doc = "Field `PRIORITY_BASED_FLOW` writer - 23:16\\]
+pub type PriorityBasedFlow1R = crate::FieldReader;
+#[doc = "Field `PRIORITY_BASED_FLOW_1` writer - 23:16\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 6"]
-pub type PriorityBasedFlowW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+pub type PriorityBasedFlow1W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `PRIORITY_BASED_FLOW` reader - 31:24\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 7"]
 pub type PriorityBasedFlowR = crate::FieldReader;
@@ -30,20 +30,20 @@ impl R {
     #[doc = "Bits 0:7 - 7:0\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 4"]
     #[inline(always)]
-    pub fn priority_based_flow(&self) -> PriorityBasedFlowR {
-        PriorityBasedFlowR::new((self.bits & 0xff) as u8)
+    pub fn priority_based_flow_3(&self) -> PriorityBasedFlow3R {
+        PriorityBasedFlow3R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - 15:8\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 5"]
     #[inline(always)]
-    pub fn priority_based_flow(&self) -> PriorityBasedFlowR {
-        PriorityBasedFlowR::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn priority_based_flow_2(&self) -> PriorityBasedFlow2R {
+        PriorityBasedFlow2R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 16:23 - 23:16\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 6"]
     #[inline(always)]
-    pub fn priority_based_flow(&self) -> PriorityBasedFlowR {
-        PriorityBasedFlowR::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn priority_based_flow_1(&self) -> PriorityBasedFlow1R {
+        PriorityBasedFlow1R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 24:31 - 31:24\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 7"]
@@ -57,22 +57,22 @@ impl W {
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 4"]
     #[inline(always)]
     #[must_use]
-    pub fn priority_based_flow(&mut self) -> PriorityBasedFlowW<CpswNcTxGBufThreshSetHRegSpec> {
-        PriorityBasedFlowW::new(self, 0)
+    pub fn priority_based_flow_3(&mut self) -> PriorityBasedFlow3W<CpswNcTxGBufThreshSetHRegSpec> {
+        PriorityBasedFlow3W::new(self, 0)
     }
     #[doc = "Bits 8:15 - 15:8\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 5"]
     #[inline(always)]
     #[must_use]
-    pub fn priority_based_flow(&mut self) -> PriorityBasedFlowW<CpswNcTxGBufThreshSetHRegSpec> {
-        PriorityBasedFlowW::new(self, 8)
+    pub fn priority_based_flow_2(&mut self) -> PriorityBasedFlow2W<CpswNcTxGBufThreshSetHRegSpec> {
+        PriorityBasedFlow2W::new(self, 8)
     }
     #[doc = "Bits 16:23 - 23:16\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 6"]
     #[inline(always)]
     #[must_use]
-    pub fn priority_based_flow(&mut self) -> PriorityBasedFlowW<CpswNcTxGBufThreshSetHRegSpec> {
-        PriorityBasedFlowW::new(self, 16)
+    pub fn priority_based_flow_1(&mut self) -> PriorityBasedFlow1W<CpswNcTxGBufThreshSetHRegSpec> {
+        PriorityBasedFlow1W::new(self, 16)
     }
     #[doc = "Bits 24:31 - 31:24\\]
 Priority Based Flow Control Global Buffer Usage Threshold for Priority 7"]

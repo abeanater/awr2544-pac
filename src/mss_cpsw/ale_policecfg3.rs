@@ -2,12 +2,12 @@
 pub type R = crate::R<AlePolicecfg3Spec>;
 #[doc = "Register `ALE_POLICECFG3` writer"]
 pub type W = crate::W<AlePolicecfg3Spec>;
-#[doc = "Field `IP_SOURCE_ADDRESS` reader - 4:0\\]
+#[doc = "Field `IP_SOURCE_ADDRESS_1` reader - 4:0\\]
 IP Source Address Table Entry Index - Specifies the ALE IP Source address lookup table index to match for the selected policing/classifier entry"]
-pub type IpSourceAddressR = crate::FieldReader;
-#[doc = "Field `IP_SOURCE_ADDRESS` writer - 4:0\\]
+pub type IpSourceAddress1R = crate::FieldReader;
+#[doc = "Field `IP_SOURCE_ADDRESS_1` writer - 4:0\\]
 IP Source Address Table Entry Index - Specifies the ALE IP Source address lookup table index to match for the selected policing/classifier entry"]
-pub type IpSourceAddressW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type IpSourceAddress1W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `IP_SOURCE_ADDRESS` reader - 15:15\\]
 IP Source Address Match Enable - Enables frame IP Source address match for the selected policing/classifier entry"]
 pub type IpSourceAddressR = crate::BitReader;
@@ -30,8 +30,8 @@ impl R {
     #[doc = "Bits 0:4 - 4:0\\]
 IP Source Address Table Entry Index - Specifies the ALE IP Source address lookup table index to match for the selected policing/classifier entry"]
     #[inline(always)]
-    pub fn ip_source_address(&self) -> IpSourceAddressR {
-        IpSourceAddressR::new((self.bits & 0x1f) as u8)
+    pub fn ip_source_address_1(&self) -> IpSourceAddress1R {
+        IpSourceAddress1R::new((self.bits & 0x1f) as u8)
     }
     #[doc = "Bit 15 - 15:15\\]
 IP Source Address Match Enable - Enables frame IP Source address match for the selected policing/classifier entry"]
@@ -57,8 +57,8 @@ impl W {
 IP Source Address Table Entry Index - Specifies the ALE IP Source address lookup table index to match for the selected policing/classifier entry"]
     #[inline(always)]
     #[must_use]
-    pub fn ip_source_address(&mut self) -> IpSourceAddressW<AlePolicecfg3Spec> {
-        IpSourceAddressW::new(self, 0)
+    pub fn ip_source_address_1(&mut self) -> IpSourceAddress1W<AlePolicecfg3Spec> {
+        IpSourceAddress1W::new(self, 0)
     }
     #[doc = "Bit 15 - 15:15\\]
 IP Source Address Match Enable - Enables frame IP Source address match for the selected policing/classifier entry"]

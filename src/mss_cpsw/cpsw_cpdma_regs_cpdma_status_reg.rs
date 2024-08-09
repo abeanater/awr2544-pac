@@ -20,12 +20,12 @@ pub type CpdmaFhostErrorR = crate::FieldReader;
 #[doc = "Field `CPDMA_FHOST_ERROR` writer - 18:16\\]
 CPDMA FHost Error Channel Number"]
 pub type CpdmaFhostErrorW<'a, REG> = crate::FieldWriter<'a, REG, 3>;
-#[doc = "Field `CPDMA_FHOST_HOST` reader - 23:20\\]
+#[doc = "Field `CPDMA_FHOST_HOST_1` reader - 23:20\\]
 CPDMA FHost Host Error Code"]
-pub type CpdmaFhostHostR = crate::FieldReader;
-#[doc = "Field `CPDMA_FHOST_HOST` writer - 23:20\\]
+pub type CpdmaFhostHost1R = crate::FieldReader;
+#[doc = "Field `CPDMA_FHOST_HOST_1` writer - 23:20\\]
 CPDMA FHost Host Error Code"]
-pub type CpdmaFhostHostW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+pub type CpdmaFhostHost1W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `CPDMA_FHOST_HOST` reader - 31:31\\]
 CPDMA FHost Host Error Code"]
 pub type CpdmaFhostHostR = crate::BitReader;
@@ -54,8 +54,8 @@ CPDMA FHost Error Channel Number"]
     #[doc = "Bits 20:23 - 23:20\\]
 CPDMA FHost Host Error Code"]
     #[inline(always)]
-    pub fn cpdma_fhost_host(&self) -> CpdmaFhostHostR {
-        CpdmaFhostHostR::new(((self.bits >> 20) & 0x0f) as u8)
+    pub fn cpdma_fhost_host_1(&self) -> CpdmaFhostHost1R {
+        CpdmaFhostHost1R::new(((self.bits >> 20) & 0x0f) as u8)
     }
     #[doc = "Bit 31 - 31:31\\]
 CPDMA FHost Host Error Code"]
@@ -90,8 +90,8 @@ CPDMA FHost Error Channel Number"]
 CPDMA FHost Host Error Code"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_fhost_host(&mut self) -> CpdmaFhostHostW<CpswCpdmaRegsCpdmaStatusRegSpec> {
-        CpdmaFhostHostW::new(self, 20)
+    pub fn cpdma_fhost_host_1(&mut self) -> CpdmaFhostHost1W<CpswCpdmaRegsCpdmaStatusRegSpec> {
+        CpdmaFhostHost1W::new(self, 20)
     }
     #[doc = "Bit 31 - 31:31\\]
 CPDMA FHost Host Error Code"]

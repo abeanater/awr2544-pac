@@ -2,48 +2,48 @@
 pub type R = crate::R<SecEnableClrReg0Spec>;
 #[doc = "Register `sec_enable_clr_reg0` writer"]
 pub type W = crate::W<SecEnableClrReg0Spec>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_7` reader - 0:0\\]
 Interrupt Enable Clear Register for mss_l2slv0_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 0:0\\]
+pub type InterruptEnableClear7R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_7` writer - 0:0\\]
 Interrupt Enable Clear Register for mss_l2slv0_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 1:1\\]
+pub type InterruptEnableClear7W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_6` reader - 1:1\\]
 Interrupt Enable Clear Register for mss_l2slv1_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 1:1\\]
+pub type InterruptEnableClear6R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_6` writer - 1:1\\]
 Interrupt Enable Clear Register for mss_l2slv1_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 2:2\\]
+pub type InterruptEnableClear6W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_5` reader - 2:2\\]
 Interrupt Enable Clear Register for mss_mbox_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 2:2\\]
+pub type InterruptEnableClear5R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_5` writer - 2:2\\]
 Interrupt Enable Clear Register for mss_mbox_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 3:3\\]
+pub type InterruptEnableClear5W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_4` reader - 3:3\\]
 Interrupt Enable Clear Register for mss_retram_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 3:3\\]
+pub type InterruptEnableClear4R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_4` writer - 3:3\\]
 Interrupt Enable Clear Register for mss_retram_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 4:4\\]
+pub type InterruptEnableClear4W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_3` reader - 4:4\\]
 Interrupt Enable Clear Register for gpadc_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 4:4\\]
+pub type InterruptEnableClear3R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_3` writer - 4:4\\]
 Interrupt Enable Clear Register for gpadc_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 5:5\\]
+pub type InterruptEnableClear3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_2` reader - 5:5\\]
 Interrupt Enable Clear Register for tptc_a0_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 5:5\\]
+pub type InterruptEnableClear2R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_2` writer - 5:5\\]
 Interrupt Enable Clear Register for tptc_a0_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 6:6\\]
+pub type InterruptEnableClear2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_1` reader - 6:6\\]
 Interrupt Enable Clear Register for tptc_a1_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 6:6\\]
+pub type InterruptEnableClear1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_1` writer - 6:6\\]
 Interrupt Enable Clear Register for tptc_a1_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptEnableClear1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 7:7\\]
 Interrupt Enable Clear Register for mss_l2_bankc_pend"]
 pub type InterruptEnableClearR = crate::BitReader;
@@ -54,44 +54,44 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Interrupt Enable Clear Register for mss_l2slv0_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new((self.bits & 1) != 0)
+    pub fn interrupt_enable_clear_7(&self) -> InterruptEnableClear7R {
+        InterruptEnableClear7R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Enable Clear Register for mss_l2slv1_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new(((self.bits >> 1) & 1) != 0)
+    pub fn interrupt_enable_clear_6(&self) -> InterruptEnableClear6R {
+        InterruptEnableClear6R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt Enable Clear Register for mss_mbox_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new(((self.bits >> 2) & 1) != 0)
+    pub fn interrupt_enable_clear_5(&self) -> InterruptEnableClear5R {
+        InterruptEnableClear5R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt Enable Clear Register for mss_retram_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new(((self.bits >> 3) & 1) != 0)
+    pub fn interrupt_enable_clear_4(&self) -> InterruptEnableClear4R {
+        InterruptEnableClear4R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 Interrupt Enable Clear Register for gpadc_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new(((self.bits >> 4) & 1) != 0)
+    pub fn interrupt_enable_clear_3(&self) -> InterruptEnableClear3R {
+        InterruptEnableClear3R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 5:5\\]
 Interrupt Enable Clear Register for tptc_a0_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new(((self.bits >> 5) & 1) != 0)
+    pub fn interrupt_enable_clear_2(&self) -> InterruptEnableClear2R {
+        InterruptEnableClear2R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 Interrupt Enable Clear Register for tptc_a1_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new(((self.bits >> 6) & 1) != 0)
+    pub fn interrupt_enable_clear_1(&self) -> InterruptEnableClear1R {
+        InterruptEnableClear1R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 7:7\\]
 Interrupt Enable Clear Register for mss_l2_bankc_pend"]
@@ -105,50 +105,50 @@ impl W {
 Interrupt Enable Clear Register for mss_l2slv0_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<SecEnableClrReg0Spec> {
-        InterruptEnableClearW::new(self, 0)
+    pub fn interrupt_enable_clear_7(&mut self) -> InterruptEnableClear7W<SecEnableClrReg0Spec> {
+        InterruptEnableClear7W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Enable Clear Register for mss_l2slv1_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<SecEnableClrReg0Spec> {
-        InterruptEnableClearW::new(self, 1)
+    pub fn interrupt_enable_clear_6(&mut self) -> InterruptEnableClear6W<SecEnableClrReg0Spec> {
+        InterruptEnableClear6W::new(self, 1)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt Enable Clear Register for mss_mbox_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<SecEnableClrReg0Spec> {
-        InterruptEnableClearW::new(self, 2)
+    pub fn interrupt_enable_clear_5(&mut self) -> InterruptEnableClear5W<SecEnableClrReg0Spec> {
+        InterruptEnableClear5W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt Enable Clear Register for mss_retram_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<SecEnableClrReg0Spec> {
-        InterruptEnableClearW::new(self, 3)
+    pub fn interrupt_enable_clear_4(&mut self) -> InterruptEnableClear4W<SecEnableClrReg0Spec> {
+        InterruptEnableClear4W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 Interrupt Enable Clear Register for gpadc_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<SecEnableClrReg0Spec> {
-        InterruptEnableClearW::new(self, 4)
+    pub fn interrupt_enable_clear_3(&mut self) -> InterruptEnableClear3W<SecEnableClrReg0Spec> {
+        InterruptEnableClear3W::new(self, 4)
     }
     #[doc = "Bit 5 - 5:5\\]
 Interrupt Enable Clear Register for tptc_a0_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<SecEnableClrReg0Spec> {
-        InterruptEnableClearW::new(self, 5)
+    pub fn interrupt_enable_clear_2(&mut self) -> InterruptEnableClear2W<SecEnableClrReg0Spec> {
+        InterruptEnableClear2W::new(self, 5)
     }
     #[doc = "Bit 6 - 6:6\\]
 Interrupt Enable Clear Register for tptc_a1_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<SecEnableClrReg0Spec> {
-        InterruptEnableClearW::new(self, 6)
+    pub fn interrupt_enable_clear_1(&mut self) -> InterruptEnableClear1W<SecEnableClrReg0Spec> {
+        InterruptEnableClear1W::new(self, 6)
     }
     #[doc = "Bit 7 - 7:7\\]
 Interrupt Enable Clear Register for mss_l2_bankc_pend"]

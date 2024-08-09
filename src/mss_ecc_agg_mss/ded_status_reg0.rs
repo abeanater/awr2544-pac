@@ -2,48 +2,48 @@
 pub type R = crate::R<DedStatusReg0Spec>;
 #[doc = "Register `ded_status_reg0` writer"]
 pub type W = crate::W<DedStatusReg0Spec>;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_PENDING_STATUS_7` reader - 0:0\\]
 Interrupt Pending Status for mss_l2slv0_pend"]
-pub type InterruptPendingStatusR = crate::BitReader;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` writer - 0:0\\]
+pub type InterruptPendingStatus7R = crate::BitReader;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_7` writer - 0:0\\]
 Interrupt Pending Status for mss_l2slv0_pend"]
-pub type InterruptPendingStatusW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 1:1\\]
+pub type InterruptPendingStatus7W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_6` reader - 1:1\\]
 Interrupt Pending Status for mss_l2slv1_pend"]
-pub type InterruptPendingStatusR = crate::BitReader;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` writer - 1:1\\]
+pub type InterruptPendingStatus6R = crate::BitReader;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_6` writer - 1:1\\]
 Interrupt Pending Status for mss_l2slv1_pend"]
-pub type InterruptPendingStatusW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 2:2\\]
+pub type InterruptPendingStatus6W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_5` reader - 2:2\\]
 Interrupt Pending Status for mss_mbox_pend"]
-pub type InterruptPendingStatusR = crate::BitReader;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` writer - 2:2\\]
+pub type InterruptPendingStatus5R = crate::BitReader;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_5` writer - 2:2\\]
 Interrupt Pending Status for mss_mbox_pend"]
-pub type InterruptPendingStatusW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 3:3\\]
+pub type InterruptPendingStatus5W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_4` reader - 3:3\\]
 Interrupt Pending Status for mss_retram_pend"]
-pub type InterruptPendingStatusR = crate::BitReader;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` writer - 3:3\\]
+pub type InterruptPendingStatus4R = crate::BitReader;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_4` writer - 3:3\\]
 Interrupt Pending Status for mss_retram_pend"]
-pub type InterruptPendingStatusW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 4:4\\]
+pub type InterruptPendingStatus4W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_3` reader - 4:4\\]
 Interrupt Pending Status for gpadc_pend"]
-pub type InterruptPendingStatusR = crate::BitReader;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` writer - 4:4\\]
+pub type InterruptPendingStatus3R = crate::BitReader;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_3` writer - 4:4\\]
 Interrupt Pending Status for gpadc_pend"]
-pub type InterruptPendingStatusW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 5:5\\]
+pub type InterruptPendingStatus3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_2` reader - 5:5\\]
 Interrupt Pending Status for tptc_a0_pend"]
-pub type InterruptPendingStatusR = crate::BitReader;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` writer - 5:5\\]
+pub type InterruptPendingStatus2R = crate::BitReader;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_2` writer - 5:5\\]
 Interrupt Pending Status for tptc_a0_pend"]
-pub type InterruptPendingStatusW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 6:6\\]
+pub type InterruptPendingStatus2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_1` reader - 6:6\\]
 Interrupt Pending Status for tptc_a1_pend"]
-pub type InterruptPendingStatusR = crate::BitReader;
-#[doc = "Field `INTERRUPT_PENDING_STATUS` writer - 6:6\\]
+pub type InterruptPendingStatus1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_PENDING_STATUS_1` writer - 6:6\\]
 Interrupt Pending Status for tptc_a1_pend"]
-pub type InterruptPendingStatusW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptPendingStatus1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_PENDING_STATUS` reader - 7:7\\]
 Interrupt Pending Status for mss_l2_bankc_pend"]
 pub type InterruptPendingStatusR = crate::BitReader;
@@ -54,44 +54,44 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Interrupt Pending Status for mss_l2slv0_pend"]
     #[inline(always)]
-    pub fn interrupt_pending_status(&self) -> InterruptPendingStatusR {
-        InterruptPendingStatusR::new((self.bits & 1) != 0)
+    pub fn interrupt_pending_status_7(&self) -> InterruptPendingStatus7R {
+        InterruptPendingStatus7R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Pending Status for mss_l2slv1_pend"]
     #[inline(always)]
-    pub fn interrupt_pending_status(&self) -> InterruptPendingStatusR {
-        InterruptPendingStatusR::new(((self.bits >> 1) & 1) != 0)
+    pub fn interrupt_pending_status_6(&self) -> InterruptPendingStatus6R {
+        InterruptPendingStatus6R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt Pending Status for mss_mbox_pend"]
     #[inline(always)]
-    pub fn interrupt_pending_status(&self) -> InterruptPendingStatusR {
-        InterruptPendingStatusR::new(((self.bits >> 2) & 1) != 0)
+    pub fn interrupt_pending_status_5(&self) -> InterruptPendingStatus5R {
+        InterruptPendingStatus5R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt Pending Status for mss_retram_pend"]
     #[inline(always)]
-    pub fn interrupt_pending_status(&self) -> InterruptPendingStatusR {
-        InterruptPendingStatusR::new(((self.bits >> 3) & 1) != 0)
+    pub fn interrupt_pending_status_4(&self) -> InterruptPendingStatus4R {
+        InterruptPendingStatus4R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 Interrupt Pending Status for gpadc_pend"]
     #[inline(always)]
-    pub fn interrupt_pending_status(&self) -> InterruptPendingStatusR {
-        InterruptPendingStatusR::new(((self.bits >> 4) & 1) != 0)
+    pub fn interrupt_pending_status_3(&self) -> InterruptPendingStatus3R {
+        InterruptPendingStatus3R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 5:5\\]
 Interrupt Pending Status for tptc_a0_pend"]
     #[inline(always)]
-    pub fn interrupt_pending_status(&self) -> InterruptPendingStatusR {
-        InterruptPendingStatusR::new(((self.bits >> 5) & 1) != 0)
+    pub fn interrupt_pending_status_2(&self) -> InterruptPendingStatus2R {
+        InterruptPendingStatus2R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 Interrupt Pending Status for tptc_a1_pend"]
     #[inline(always)]
-    pub fn interrupt_pending_status(&self) -> InterruptPendingStatusR {
-        InterruptPendingStatusR::new(((self.bits >> 6) & 1) != 0)
+    pub fn interrupt_pending_status_1(&self) -> InterruptPendingStatus1R {
+        InterruptPendingStatus1R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 7:7\\]
 Interrupt Pending Status for mss_l2_bankc_pend"]
@@ -105,50 +105,50 @@ impl W {
 Interrupt Pending Status for mss_l2slv0_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_pending_status(&mut self) -> InterruptPendingStatusW<DedStatusReg0Spec> {
-        InterruptPendingStatusW::new(self, 0)
+    pub fn interrupt_pending_status_7(&mut self) -> InterruptPendingStatus7W<DedStatusReg0Spec> {
+        InterruptPendingStatus7W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Pending Status for mss_l2slv1_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_pending_status(&mut self) -> InterruptPendingStatusW<DedStatusReg0Spec> {
-        InterruptPendingStatusW::new(self, 1)
+    pub fn interrupt_pending_status_6(&mut self) -> InterruptPendingStatus6W<DedStatusReg0Spec> {
+        InterruptPendingStatus6W::new(self, 1)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt Pending Status for mss_mbox_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_pending_status(&mut self) -> InterruptPendingStatusW<DedStatusReg0Spec> {
-        InterruptPendingStatusW::new(self, 2)
+    pub fn interrupt_pending_status_5(&mut self) -> InterruptPendingStatus5W<DedStatusReg0Spec> {
+        InterruptPendingStatus5W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt Pending Status for mss_retram_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_pending_status(&mut self) -> InterruptPendingStatusW<DedStatusReg0Spec> {
-        InterruptPendingStatusW::new(self, 3)
+    pub fn interrupt_pending_status_4(&mut self) -> InterruptPendingStatus4W<DedStatusReg0Spec> {
+        InterruptPendingStatus4W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 Interrupt Pending Status for gpadc_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_pending_status(&mut self) -> InterruptPendingStatusW<DedStatusReg0Spec> {
-        InterruptPendingStatusW::new(self, 4)
+    pub fn interrupt_pending_status_3(&mut self) -> InterruptPendingStatus3W<DedStatusReg0Spec> {
+        InterruptPendingStatus3W::new(self, 4)
     }
     #[doc = "Bit 5 - 5:5\\]
 Interrupt Pending Status for tptc_a0_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_pending_status(&mut self) -> InterruptPendingStatusW<DedStatusReg0Spec> {
-        InterruptPendingStatusW::new(self, 5)
+    pub fn interrupt_pending_status_2(&mut self) -> InterruptPendingStatus2W<DedStatusReg0Spec> {
+        InterruptPendingStatus2W::new(self, 5)
     }
     #[doc = "Bit 6 - 6:6\\]
 Interrupt Pending Status for tptc_a1_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_pending_status(&mut self) -> InterruptPendingStatusW<DedStatusReg0Spec> {
-        InterruptPendingStatusW::new(self, 6)
+    pub fn interrupt_pending_status_1(&mut self) -> InterruptPendingStatus1W<DedStatusReg0Spec> {
+        InterruptPendingStatus1W::new(self, 6)
     }
     #[doc = "Bit 7 - 7:7\\]
 Interrupt Pending Status for mss_l2_bankc_pend"]

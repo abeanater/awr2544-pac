@@ -2,12 +2,12 @@
 pub type R = crate::R<CpswNcCppiP0ControlRegSpec>;
 #[doc = "Register `CPSW_NC_CPPI_P0_CONTROL_REG` writer"]
 pub type W = crate::W<CpswNcCppiP0ControlRegSpec>;
-#[doc = "Field `PORT_0_RECEIVE` reader - 0:0\\]
+#[doc = "Field `PORT_0_RECEIVE_1` reader - 0:0\\]
 Port 0 Receive Checksum Enable"]
-pub type Port0ReceiveR = crate::BitReader;
-#[doc = "Field `PORT_0_RECEIVE` writer - 0:0\\]
+pub type Port0Receive1R = crate::BitReader;
+#[doc = "Field `PORT_0_RECEIVE_1` writer - 0:0\\]
 Port 0 Receive Checksum Enable"]
-pub type Port0ReceiveW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Port0Receive1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `PORT_0_IPV4` reader - 1:1\\]
 Port 0 IPv4 DSCP enable"]
 pub type Port0Ipv4R = crate::BitReader;
@@ -20,12 +20,12 @@ pub type Port0Ipv6R = crate::BitReader;
 #[doc = "Field `PORT_0_IPV6` writer - 2:2\\]
 Port 0 IPv6 DSCP enable"]
 pub type Port0Ipv6W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `PORT_0_TRANSMIT` reader - 3:3\\]
+#[doc = "Field `PORT_0_TRANSMIT_1` reader - 3:3\\]
 Port 0 Transmit Checksum Enable"]
-pub type Port0TransmitR = crate::BitReader;
-#[doc = "Field `PORT_0_TRANSMIT` writer - 3:3\\]
+pub type Port0Transmit1R = crate::BitReader;
+#[doc = "Field `PORT_0_TRANSMIT_1` writer - 3:3\\]
 Port 0 Transmit Checksum Enable"]
-pub type Port0TransmitW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Port0Transmit1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `PORT_0_TRANSMIT` reader - 14:14\\]
 Port 0 Transmit ECC Error Enable"]
 pub type Port0TransmitR = crate::BitReader;
@@ -38,18 +38,18 @@ pub type Port0ReceiveR = crate::BitReader;
 #[doc = "Field `PORT_0_RECEIVE` writer - 15:15\\]
 Port 0 Receive ECC Error Enable"]
 pub type Port0ReceiveW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `PORT_0_REMAP` reader - 16:16\\]
+#[doc = "Field `PORT_0_REMAP_2` reader - 16:16\\]
 Port 0 Remap VLAN Enable"]
-pub type Port0RemapR = crate::BitReader;
-#[doc = "Field `PORT_0_REMAP` writer - 16:16\\]
+pub type Port0Remap2R = crate::BitReader;
+#[doc = "Field `PORT_0_REMAP_2` writer - 16:16\\]
 Port 0 Remap VLAN Enable"]
-pub type Port0RemapW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `PORT_0_REMAP` reader - 17:17\\]
+pub type Port0Remap2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_0_REMAP_1` reader - 17:17\\]
 Port 0 Remap DSCP_V4 Enable"]
-pub type Port0RemapR = crate::BitReader;
-#[doc = "Field `PORT_0_REMAP` writer - 17:17\\]
+pub type Port0Remap1R = crate::BitReader;
+#[doc = "Field `PORT_0_REMAP_1` writer - 17:17\\]
 Port 0 Remap DSCP_V4 Enable"]
-pub type Port0RemapW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Port0Remap1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `PORT_0_REMAP` reader - 18:18\\]
 Port 0 Remap DSCP_V6 Enable"]
 pub type Port0RemapR = crate::BitReader;
@@ -60,8 +60,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Port 0 Receive Checksum Enable"]
     #[inline(always)]
-    pub fn port_0_receive(&self) -> Port0ReceiveR {
-        Port0ReceiveR::new((self.bits & 1) != 0)
+    pub fn port_0_receive_1(&self) -> Port0Receive1R {
+        Port0Receive1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Port 0 IPv4 DSCP enable"]
@@ -78,8 +78,8 @@ Port 0 IPv6 DSCP enable"]
     #[doc = "Bit 3 - 3:3\\]
 Port 0 Transmit Checksum Enable"]
     #[inline(always)]
-    pub fn port_0_transmit(&self) -> Port0TransmitR {
-        Port0TransmitR::new(((self.bits >> 3) & 1) != 0)
+    pub fn port_0_transmit_1(&self) -> Port0Transmit1R {
+        Port0Transmit1R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 14 - 14:14\\]
 Port 0 Transmit ECC Error Enable"]
@@ -96,14 +96,14 @@ Port 0 Receive ECC Error Enable"]
     #[doc = "Bit 16 - 16:16\\]
 Port 0 Remap VLAN Enable"]
     #[inline(always)]
-    pub fn port_0_remap(&self) -> Port0RemapR {
-        Port0RemapR::new(((self.bits >> 16) & 1) != 0)
+    pub fn port_0_remap_2(&self) -> Port0Remap2R {
+        Port0Remap2R::new(((self.bits >> 16) & 1) != 0)
     }
     #[doc = "Bit 17 - 17:17\\]
 Port 0 Remap DSCP_V4 Enable"]
     #[inline(always)]
-    pub fn port_0_remap(&self) -> Port0RemapR {
-        Port0RemapR::new(((self.bits >> 17) & 1) != 0)
+    pub fn port_0_remap_1(&self) -> Port0Remap1R {
+        Port0Remap1R::new(((self.bits >> 17) & 1) != 0)
     }
     #[doc = "Bit 18 - 18:18\\]
 Port 0 Remap DSCP_V6 Enable"]
@@ -117,8 +117,8 @@ impl W {
 Port 0 Receive Checksum Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn port_0_receive(&mut self) -> Port0ReceiveW<CpswNcCppiP0ControlRegSpec> {
-        Port0ReceiveW::new(self, 0)
+    pub fn port_0_receive_1(&mut self) -> Port0Receive1W<CpswNcCppiP0ControlRegSpec> {
+        Port0Receive1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Port 0 IPv4 DSCP enable"]
@@ -138,8 +138,8 @@ Port 0 IPv6 DSCP enable"]
 Port 0 Transmit Checksum Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn port_0_transmit(&mut self) -> Port0TransmitW<CpswNcCppiP0ControlRegSpec> {
-        Port0TransmitW::new(self, 3)
+    pub fn port_0_transmit_1(&mut self) -> Port0Transmit1W<CpswNcCppiP0ControlRegSpec> {
+        Port0Transmit1W::new(self, 3)
     }
     #[doc = "Bit 14 - 14:14\\]
 Port 0 Transmit ECC Error Enable"]
@@ -159,15 +159,15 @@ Port 0 Receive ECC Error Enable"]
 Port 0 Remap VLAN Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn port_0_remap(&mut self) -> Port0RemapW<CpswNcCppiP0ControlRegSpec> {
-        Port0RemapW::new(self, 16)
+    pub fn port_0_remap_2(&mut self) -> Port0Remap2W<CpswNcCppiP0ControlRegSpec> {
+        Port0Remap2W::new(self, 16)
     }
     #[doc = "Bit 17 - 17:17\\]
 Port 0 Remap DSCP_V4 Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn port_0_remap(&mut self) -> Port0RemapW<CpswNcCppiP0ControlRegSpec> {
-        Port0RemapW::new(self, 17)
+    pub fn port_0_remap_1(&mut self) -> Port0Remap1W<CpswNcCppiP0ControlRegSpec> {
+        Port0Remap1W::new(self, 17)
     }
     #[doc = "Bit 18 - 18:18\\]
 Port 0 Remap DSCP_V6 Enable"]

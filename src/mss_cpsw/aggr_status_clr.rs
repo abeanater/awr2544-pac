@@ -2,12 +2,12 @@
 pub type R = crate::R<AggrStatusClrSpec>;
 #[doc = "Register `aggr_status_clr` writer"]
 pub type W = crate::W<AggrStatusClrSpec>;
-#[doc = "Field `INTERRUPT_STATUS_CLEAR` reader - 1:0\\]
+#[doc = "Field `INTERRUPT_STATUS_CLEAR_1` reader - 1:0\\]
 interrupt status clear for parity errors"]
-pub type InterruptStatusClearR = crate::FieldReader;
-#[doc = "Field `INTERRUPT_STATUS_CLEAR` writer - 1:0\\]
+pub type InterruptStatusClear1R = crate::FieldReader;
+#[doc = "Field `INTERRUPT_STATUS_CLEAR_1` writer - 1:0\\]
 interrupt status clear for parity errors"]
-pub type InterruptStatusClearW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type InterruptStatusClear1W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `INTERRUPT_STATUS_CLEAR` reader - 3:2\\]
 interrupt status clear for svbus timeout errors"]
 pub type InterruptStatusClearR = crate::FieldReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bits 0:1 - 1:0\\]
 interrupt status clear for parity errors"]
     #[inline(always)]
-    pub fn interrupt_status_clear(&self) -> InterruptStatusClearR {
-        InterruptStatusClearR::new((self.bits & 3) as u8)
+    pub fn interrupt_status_clear_1(&self) -> InterruptStatusClear1R {
+        InterruptStatusClear1R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 2:3 - 3:2\\]
 interrupt status clear for svbus timeout errors"]
@@ -33,8 +33,8 @@ impl W {
 interrupt status clear for parity errors"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_status_clear(&mut self) -> InterruptStatusClearW<AggrStatusClrSpec> {
-        InterruptStatusClearW::new(self, 0)
+    pub fn interrupt_status_clear_1(&mut self) -> InterruptStatusClear1W<AggrStatusClrSpec> {
+        InterruptStatusClear1W::new(self, 0)
     }
     #[doc = "Bits 2:3 - 3:2\\]
 interrupt status clear for svbus timeout errors"]

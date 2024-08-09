@@ -8,36 +8,36 @@ pub type Core0MiscMdioR = crate::BitReader;
 #[doc = "Field `CORE_0_MISC_MDIO` writer - 0:0\\]
 Core 0 MISC_MDIO userint interrupt enable - OR of bits 1 and 0"]
 pub type Core0MiscMdioW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CORE_0_MISC` reader - 1:1\\]
+#[doc = "Field `CORE_0_MISC_5` reader - 1:1\\]
 Core 0 MISC MDIO linkint - OR of bits 1 and 0"]
-pub type Core0MiscR = crate::BitReader;
-#[doc = "Field `CORE_0_MISC` writer - 1:1\\]
+pub type Core0Misc5R = crate::BitReader;
+#[doc = "Field `CORE_0_MISC_5` writer - 1:1\\]
 Core 0 MISC MDIO linkint - OR of bits 1 and 0"]
-pub type Core0MiscW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CORE_0_MISC` reader - 2:2\\]
+pub type Core0Misc5W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CORE_0_MISC_4` reader - 2:2\\]
 Core 0 MISC Host Interrupt Enable"]
-pub type Core0MiscR = crate::BitReader;
-#[doc = "Field `CORE_0_MISC` writer - 2:2\\]
+pub type Core0Misc4R = crate::BitReader;
+#[doc = "Field `CORE_0_MISC_4` writer - 2:2\\]
 Core 0 MISC Host Interrupt Enable"]
-pub type Core0MiscW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CORE_0_MISC` reader - 3:3\\]
+pub type Core0Misc4W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CORE_0_MISC_3` reader - 3:3\\]
 Core 0 MISC Statistics Interrupt Enable - OR of bits n downto 0"]
-pub type Core0MiscR = crate::BitReader;
-#[doc = "Field `CORE_0_MISC` writer - 3:3\\]
+pub type Core0Misc3R = crate::BitReader;
+#[doc = "Field `CORE_0_MISC_3` writer - 3:3\\]
 Core 0 MISC Statistics Interrupt Enable - OR of bits n downto 0"]
-pub type Core0MiscW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CORE_0_MISC` reader - 4:4\\]
+pub type Core0Misc3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CORE_0_MISC_2` reader - 4:4\\]
 Core 0 MISC CPTS Event Interrupt Enable"]
-pub type Core0MiscR = crate::BitReader;
-#[doc = "Field `CORE_0_MISC` writer - 4:4\\]
+pub type Core0Misc2R = crate::BitReader;
+#[doc = "Field `CORE_0_MISC_2` writer - 4:4\\]
 Core 0 MISC CPTS Event Interrupt Enable"]
-pub type Core0MiscW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CORE_0_MISC` reader - 5:5\\]
+pub type Core0Misc2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CORE_0_MISC_1` reader - 5:5\\]
 Core 0 MISC SEC Memory Protect Error Interrupt Enable"]
-pub type Core0MiscR = crate::BitReader;
-#[doc = "Field `CORE_0_MISC` writer - 5:5\\]
+pub type Core0Misc1R = crate::BitReader;
+#[doc = "Field `CORE_0_MISC_1` writer - 5:5\\]
 Core 0 MISC SEC Memory Protect Error Interrupt Enable"]
-pub type Core0MiscW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Core0Misc1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CORE_0_MISC` reader - 6:6\\]
 Core 0 MISC DED Memory Protect Error Interrupt Enable"]
 pub type Core0MiscR = crate::BitReader;
@@ -54,32 +54,32 @@ Core 0 MISC_MDIO userint interrupt enable - OR of bits 1 and 0"]
     #[doc = "Bit 1 - 1:1\\]
 Core 0 MISC MDIO linkint - OR of bits 1 and 0"]
     #[inline(always)]
-    pub fn core_0_misc(&self) -> Core0MiscR {
-        Core0MiscR::new(((self.bits >> 1) & 1) != 0)
+    pub fn core_0_misc_5(&self) -> Core0Misc5R {
+        Core0Misc5R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Core 0 MISC Host Interrupt Enable"]
     #[inline(always)]
-    pub fn core_0_misc(&self) -> Core0MiscR {
-        Core0MiscR::new(((self.bits >> 2) & 1) != 0)
+    pub fn core_0_misc_4(&self) -> Core0Misc4R {
+        Core0Misc4R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 Core 0 MISC Statistics Interrupt Enable - OR of bits n downto 0"]
     #[inline(always)]
-    pub fn core_0_misc(&self) -> Core0MiscR {
-        Core0MiscR::new(((self.bits >> 3) & 1) != 0)
+    pub fn core_0_misc_3(&self) -> Core0Misc3R {
+        Core0Misc3R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 Core 0 MISC CPTS Event Interrupt Enable"]
     #[inline(always)]
-    pub fn core_0_misc(&self) -> Core0MiscR {
-        Core0MiscR::new(((self.bits >> 4) & 1) != 0)
+    pub fn core_0_misc_2(&self) -> Core0Misc2R {
+        Core0Misc2R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 5:5\\]
 Core 0 MISC SEC Memory Protect Error Interrupt Enable"]
     #[inline(always)]
-    pub fn core_0_misc(&self) -> Core0MiscR {
-        Core0MiscR::new(((self.bits >> 5) & 1) != 0)
+    pub fn core_0_misc_1(&self) -> Core0Misc1R {
+        Core0Misc1R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 Core 0 MISC DED Memory Protect Error Interrupt Enable"]
@@ -100,36 +100,36 @@ Core 0 MISC_MDIO userint interrupt enable - OR of bits 1 and 0"]
 Core 0 MISC MDIO linkint - OR of bits 1 and 0"]
     #[inline(always)]
     #[must_use]
-    pub fn core_0_misc(&mut self) -> Core0MiscW<RegsIntSsC0MiscEnRegSpec> {
-        Core0MiscW::new(self, 1)
+    pub fn core_0_misc_5(&mut self) -> Core0Misc5W<RegsIntSsC0MiscEnRegSpec> {
+        Core0Misc5W::new(self, 1)
     }
     #[doc = "Bit 2 - 2:2\\]
 Core 0 MISC Host Interrupt Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn core_0_misc(&mut self) -> Core0MiscW<RegsIntSsC0MiscEnRegSpec> {
-        Core0MiscW::new(self, 2)
+    pub fn core_0_misc_4(&mut self) -> Core0Misc4W<RegsIntSsC0MiscEnRegSpec> {
+        Core0Misc4W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 Core 0 MISC Statistics Interrupt Enable - OR of bits n downto 0"]
     #[inline(always)]
     #[must_use]
-    pub fn core_0_misc(&mut self) -> Core0MiscW<RegsIntSsC0MiscEnRegSpec> {
-        Core0MiscW::new(self, 3)
+    pub fn core_0_misc_3(&mut self) -> Core0Misc3W<RegsIntSsC0MiscEnRegSpec> {
+        Core0Misc3W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 Core 0 MISC CPTS Event Interrupt Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn core_0_misc(&mut self) -> Core0MiscW<RegsIntSsC0MiscEnRegSpec> {
-        Core0MiscW::new(self, 4)
+    pub fn core_0_misc_2(&mut self) -> Core0Misc2W<RegsIntSsC0MiscEnRegSpec> {
+        Core0Misc2W::new(self, 4)
     }
     #[doc = "Bit 5 - 5:5\\]
 Core 0 MISC SEC Memory Protect Error Interrupt Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn core_0_misc(&mut self) -> Core0MiscW<RegsIntSsC0MiscEnRegSpec> {
-        Core0MiscW::new(self, 5)
+    pub fn core_0_misc_1(&mut self) -> Core0Misc1W<RegsIntSsC0MiscEnRegSpec> {
+        Core0Misc1W::new(self, 5)
     }
     #[doc = "Bit 6 - 6:6\\]
 Core 0 MISC DED Memory Protect Error Interrupt Enable"]

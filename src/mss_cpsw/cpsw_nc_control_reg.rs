@@ -2,12 +2,12 @@
 pub type R = crate::R<CpswNcControlRegSpec>;
 #[doc = "Register `CPSW_NC_CONTROL_REG` writer"]
 pub type W = crate::W<CpswNcControlRegSpec>;
-#[doc = "Field `VLAN_AWARE_MODE` reader - 0:0\\]
+#[doc = "Field `VLAN_AWARE_MODE_1` reader - 0:0\\]
 VLAN Aware Mode"]
-pub type VlanAwareModeR = crate::BitReader;
-#[doc = "Field `VLAN_AWARE_MODE` writer - 0:0\\]
+pub type VlanAwareMode1R = crate::BitReader;
+#[doc = "Field `VLAN_AWARE_MODE_1` writer - 0:0\\]
 VLAN Aware Mode"]
-pub type VlanAwareModeW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type VlanAwareMode1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `VLAN_AWARE_MODE` reader - 1:1\\]
 VLAN Aware Mode"]
 pub type VlanAwareModeR = crate::BitReader;
@@ -20,12 +20,12 @@ pub type Port0EnableR = crate::BitReader;
 #[doc = "Field `PORT_0_ENABLE` writer - 2:2\\]
 Port 0 Enable"]
 pub type Port0EnableW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `PORT_0_PASS` reader - 3:3\\]
+#[doc = "Field `PORT_0_PASS_1` reader - 3:3\\]
 Port 0 Pass Priority Tagged"]
-pub type Port0PassR = crate::BitReader;
-#[doc = "Field `PORT_0_PASS` writer - 3:3\\]
+pub type Port0Pass1R = crate::BitReader;
+#[doc = "Field `PORT_0_PASS_1` writer - 3:3\\]
 Port 0 Pass Priority Tagged"]
-pub type Port0PassW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Port0Pass1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `PORT_1_PASS` reader - 4:4\\]
 Port 1 Pass Priority Tagged"]
 pub type Port1PassR = crate::BitReader;
@@ -74,12 +74,12 @@ pub type Port8PassR = crate::BitReader;
 #[doc = "Field `PORT_8_PASS` writer - 11:11\\]
 Port 8 Pass Priority Tagged"]
 pub type Port8PassW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `PORT_0_TRANSMIT` reader - 12:12\\]
+#[doc = "Field `PORT_0_TRANSMIT_1` reader - 12:12\\]
 Port 0 Transmit CRC Type"]
-pub type Port0TransmitR = crate::BitReader;
-#[doc = "Field `PORT_0_TRANSMIT` writer - 12:12\\]
+pub type Port0Transmit1R = crate::BitReader;
+#[doc = "Field `PORT_0_TRANSMIT_1` writer - 12:12\\]
 Port 0 Transmit CRC Type"]
-pub type Port0TransmitW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Port0Transmit1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `PORT_0_TRANSMIT` reader - 13:13\\]
 Port 0 Transmit CRC remove"]
 pub type Port0TransmitR = crate::BitReader;
@@ -120,8 +120,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 VLAN Aware Mode"]
     #[inline(always)]
-    pub fn vlan_aware_mode(&self) -> VlanAwareModeR {
-        VlanAwareModeR::new((self.bits & 1) != 0)
+    pub fn vlan_aware_mode_1(&self) -> VlanAwareMode1R {
+        VlanAwareMode1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 VLAN Aware Mode"]
@@ -138,8 +138,8 @@ Port 0 Enable"]
     #[doc = "Bit 3 - 3:3\\]
 Port 0 Pass Priority Tagged"]
     #[inline(always)]
-    pub fn port_0_pass(&self) -> Port0PassR {
-        Port0PassR::new(((self.bits >> 3) & 1) != 0)
+    pub fn port_0_pass_1(&self) -> Port0Pass1R {
+        Port0Pass1R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 Port 1 Pass Priority Tagged"]
@@ -192,8 +192,8 @@ Port 8 Pass Priority Tagged"]
     #[doc = "Bit 12 - 12:12\\]
 Port 0 Transmit CRC Type"]
     #[inline(always)]
-    pub fn port_0_transmit(&self) -> Port0TransmitR {
-        Port0TransmitR::new(((self.bits >> 12) & 1) != 0)
+    pub fn port_0_transmit_1(&self) -> Port0Transmit1R {
+        Port0Transmit1R::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bit 13 - 13:13\\]
 Port 0 Transmit CRC remove"]
@@ -237,8 +237,8 @@ impl W {
 VLAN Aware Mode"]
     #[inline(always)]
     #[must_use]
-    pub fn vlan_aware_mode(&mut self) -> VlanAwareModeW<CpswNcControlRegSpec> {
-        VlanAwareModeW::new(self, 0)
+    pub fn vlan_aware_mode_1(&mut self) -> VlanAwareMode1W<CpswNcControlRegSpec> {
+        VlanAwareMode1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 VLAN Aware Mode"]
@@ -258,8 +258,8 @@ Port 0 Enable"]
 Port 0 Pass Priority Tagged"]
     #[inline(always)]
     #[must_use]
-    pub fn port_0_pass(&mut self) -> Port0PassW<CpswNcControlRegSpec> {
-        Port0PassW::new(self, 3)
+    pub fn port_0_pass_1(&mut self) -> Port0Pass1W<CpswNcControlRegSpec> {
+        Port0Pass1W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 Port 1 Pass Priority Tagged"]
@@ -321,8 +321,8 @@ Port 8 Pass Priority Tagged"]
 Port 0 Transmit CRC Type"]
     #[inline(always)]
     #[must_use]
-    pub fn port_0_transmit(&mut self) -> Port0TransmitW<CpswNcControlRegSpec> {
-        Port0TransmitW::new(self, 12)
+    pub fn port_0_transmit_1(&mut self) -> Port0Transmit1W<CpswNcControlRegSpec> {
+        Port0Transmit1W::new(self, 12)
     }
     #[doc = "Bit 13 - 13:13\\]
 Port 0 Transmit CRC remove"]

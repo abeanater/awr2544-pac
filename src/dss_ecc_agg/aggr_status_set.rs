@@ -2,12 +2,12 @@
 pub type R = crate::R<AggrStatusSetSpec>;
 #[doc = "Register `aggr_status_set` writer"]
 pub type W = crate::W<AggrStatusSetSpec>;
-#[doc = "Field `INTERRUPT_STATUS_SET` reader - 1:0\\]
+#[doc = "Field `INTERRUPT_STATUS_SET_1` reader - 1:0\\]
 interrupt status set for parity errors"]
-pub type InterruptStatusSetR = crate::FieldReader;
-#[doc = "Field `INTERRUPT_STATUS_SET` writer - 1:0\\]
+pub type InterruptStatusSet1R = crate::FieldReader;
+#[doc = "Field `INTERRUPT_STATUS_SET_1` writer - 1:0\\]
 interrupt status set for parity errors"]
-pub type InterruptStatusSetW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type InterruptStatusSet1W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `INTERRUPT_STATUS_SET` reader - 3:2\\]
 interrupt status set for svbus timeout errors"]
 pub type InterruptStatusSetR = crate::FieldReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bits 0:1 - 1:0\\]
 interrupt status set for parity errors"]
     #[inline(always)]
-    pub fn interrupt_status_set(&self) -> InterruptStatusSetR {
-        InterruptStatusSetR::new((self.bits & 3) as u8)
+    pub fn interrupt_status_set_1(&self) -> InterruptStatusSet1R {
+        InterruptStatusSet1R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 2:3 - 3:2\\]
 interrupt status set for svbus timeout errors"]
@@ -33,8 +33,8 @@ impl W {
 interrupt status set for parity errors"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_status_set(&mut self) -> InterruptStatusSetW<AggrStatusSetSpec> {
-        InterruptStatusSetW::new(self, 0)
+    pub fn interrupt_status_set_1(&mut self) -> InterruptStatusSet1W<AggrStatusSetSpec> {
+        InterruptStatusSet1W::new(self, 0)
     }
     #[doc = "Bits 2:3 - 3:2\\]
 interrupt status set for svbus timeout errors"]

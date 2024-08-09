@@ -44,18 +44,18 @@ pub type DropBadLengthR = crate::BitReader;
 #[doc = "Field `DROP_BAD_LENGTH` writer - 23:23\\]
 Drop Bad Length will drop any packet that the 802.3 length field is larger than the packet. Ethertypes 0-1500 are 802.3 lengths, all others are Ether types."]
 pub type DropBadLengthW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TRUNK_ENABLE_DESTINATION` reader - 24:24\\]
+#[doc = "Field `TRUNK_ENABLE_DESTINATION_1` reader - 24:24\\]
 Trunk Enable Destination IP Address - This field enables the destination IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
-pub type TrunkEnableDestinationR = crate::BitReader;
-#[doc = "Field `TRUNK_ENABLE_DESTINATION` writer - 24:24\\]
+pub type TrunkEnableDestination1R = crate::BitReader;
+#[doc = "Field `TRUNK_ENABLE_DESTINATION_1` writer - 24:24\\]
 Trunk Enable Destination IP Address - This field enables the destination IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
-pub type TrunkEnableDestinationW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TRUNK_ENABLE_SOURCE` reader - 25:25\\]
+pub type TrunkEnableDestination1W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TRUNK_ENABLE_SOURCE_1` reader - 25:25\\]
 Trunk Enable Source IP Address - This field enables the source IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
-pub type TrunkEnableSourceR = crate::BitReader;
-#[doc = "Field `TRUNK_ENABLE_SOURCE` writer - 25:25\\]
+pub type TrunkEnableSource1R = crate::BitReader;
+#[doc = "Field `TRUNK_ENABLE_SOURCE_1` writer - 25:25\\]
 Trunk Enable Source IP Address - This field enables the source IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
-pub type TrunkEnableSourceW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TrunkEnableSource1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TRUNK_ENABLE_INNER` reader - 27:27\\]
 Trunk Enable Inner VLAN - This field enables the inner VLAN ID value (C-VLANID) to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination."]
 pub type TrunkEnableInnerR = crate::BitReader;
@@ -126,14 +126,14 @@ Drop Bad Length will drop any packet that the 802.3 length field is larger than 
     #[doc = "Bit 24 - 24:24\\]
 Trunk Enable Destination IP Address - This field enables the destination IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
     #[inline(always)]
-    pub fn trunk_enable_destination(&self) -> TrunkEnableDestinationR {
-        TrunkEnableDestinationR::new(((self.bits >> 24) & 1) != 0)
+    pub fn trunk_enable_destination_1(&self) -> TrunkEnableDestination1R {
+        TrunkEnableDestination1R::new(((self.bits >> 24) & 1) != 0)
     }
     #[doc = "Bit 25 - 25:25\\]
 Trunk Enable Source IP Address - This field enables the source IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
     #[inline(always)]
-    pub fn trunk_enable_source(&self) -> TrunkEnableSourceR {
-        TrunkEnableSourceR::new(((self.bits >> 25) & 1) != 0)
+    pub fn trunk_enable_source_1(&self) -> TrunkEnableSource1R {
+        TrunkEnableSource1R::new(((self.bits >> 25) & 1) != 0)
     }
     #[doc = "Bit 27 - 27:27\\]
 Trunk Enable Inner VLAN - This field enables the inner VLAN ID value (C-VLANID) to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination."]
@@ -214,15 +214,15 @@ Drop Bad Length will drop any packet that the 802.3 length field is larger than 
 Trunk Enable Destination IP Address - This field enables the destination IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
     #[inline(always)]
     #[must_use]
-    pub fn trunk_enable_destination(&mut self) -> TrunkEnableDestinationW<AleAleCtrl2Spec> {
-        TrunkEnableDestinationW::new(self, 24)
+    pub fn trunk_enable_destination_1(&mut self) -> TrunkEnableDestination1W<AleAleCtrl2Spec> {
+        TrunkEnableDestination1W::new(self, 24)
     }
     #[doc = "Bit 25 - 25:25\\]
 Trunk Enable Source IP Address - This field enables the source IP address to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination.#br#This feature supports No tag, Priority tagged, VLAN tagged, Q-in-Q double tagging for both IPV6 and IPV4."]
     #[inline(always)]
     #[must_use]
-    pub fn trunk_enable_source(&mut self) -> TrunkEnableSourceW<AleAleCtrl2Spec> {
-        TrunkEnableSourceW::new(self, 25)
+    pub fn trunk_enable_source_1(&mut self) -> TrunkEnableSource1W<AleAleCtrl2Spec> {
+        TrunkEnableSource1W::new(self, 25)
     }
     #[doc = "Bit 27 - 27:27\\]
 Trunk Enable Inner VLAN - This field enables the inner VLAN ID value (C-VLANID) to be used with the hash function G(X) = 1 + X + X^3 and affect the trunk port transmit link determination."]

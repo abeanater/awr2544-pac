@@ -2,18 +2,18 @@
 pub type R = crate::R<ErrclrSpec>;
 #[doc = "Register `ERRCLR` writer"]
 pub type W = crate::W<ErrclrSpec>;
-#[doc = "Field `INTERRUPT_CLEAR_FOR` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_CLEAR_FOR_2` reader - 0:0\\]
 Interrupt clear for ERRSTAT.BUSERR:#br#ERRCLR.BUSERR = 0 : Writes of '0' have no effect.#br#ERRCLR.BUSERR = 1 : Write of '1' clears ERRSTAT.BUSERR bit. Write of '1' to ERRCLR.BUSERR clears the ERRDET register."]
-pub type InterruptClearForR = crate::BitReader;
-#[doc = "Field `INTERRUPT_CLEAR_FOR` writer - 0:0\\]
+pub type InterruptClearFor2R = crate::BitReader;
+#[doc = "Field `INTERRUPT_CLEAR_FOR_2` writer - 0:0\\]
 Interrupt clear for ERRSTAT.BUSERR:#br#ERRCLR.BUSERR = 0 : Writes of '0' have no effect.#br#ERRCLR.BUSERR = 1 : Write of '1' clears ERRSTAT.BUSERR bit. Write of '1' to ERRCLR.BUSERR clears the ERRDET register."]
-pub type InterruptClearForW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_CLEAR_FOR` reader - 2:2\\]
+pub type InterruptClearFor2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_CLEAR_FOR_1` reader - 2:2\\]
 Interrupt clear for ERRSTAT.TRERR:#br#ERRCLR.TRERR = 0 : Writes of '0' have no effect.#br#ERRCLR.TRERR = 1 : Write of '1' clears ERRSTAT.TRERR bit. Write of '1' to ERRCLR.TRERR does not clear the ERRDET register."]
-pub type InterruptClearForR = crate::BitReader;
-#[doc = "Field `INTERRUPT_CLEAR_FOR` writer - 2:2\\]
+pub type InterruptClearFor1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_CLEAR_FOR_1` writer - 2:2\\]
 Interrupt clear for ERRSTAT.TRERR:#br#ERRCLR.TRERR = 0 : Writes of '0' have no effect.#br#ERRCLR.TRERR = 1 : Write of '1' clears ERRSTAT.TRERR bit. Write of '1' to ERRCLR.TRERR does not clear the ERRDET register."]
-pub type InterruptClearForW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptClearFor1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_CLEAR_FOR` reader - 3:3\\]
 Interrupt clear for ERRSTAT.MMRAERR:#br#ERRCLR.MMRAERR = 0 : Writes of '0' have no effect.#br#ERRCLR.MMRAERR = 1 : Write of '1' clears ERRSTAT.MMRAERR bit. Write of '1' to ERRCLR.MMRAERR does not clear the ERRDET register."]
 pub type InterruptClearForR = crate::BitReader;
@@ -24,14 +24,14 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Interrupt clear for ERRSTAT.BUSERR:#br#ERRCLR.BUSERR = 0 : Writes of '0' have no effect.#br#ERRCLR.BUSERR = 1 : Write of '1' clears ERRSTAT.BUSERR bit. Write of '1' to ERRCLR.BUSERR clears the ERRDET register."]
     #[inline(always)]
-    pub fn interrupt_clear_for(&self) -> InterruptClearForR {
-        InterruptClearForR::new((self.bits & 1) != 0)
+    pub fn interrupt_clear_for_2(&self) -> InterruptClearFor2R {
+        InterruptClearFor2R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt clear for ERRSTAT.TRERR:#br#ERRCLR.TRERR = 0 : Writes of '0' have no effect.#br#ERRCLR.TRERR = 1 : Write of '1' clears ERRSTAT.TRERR bit. Write of '1' to ERRCLR.TRERR does not clear the ERRDET register."]
     #[inline(always)]
-    pub fn interrupt_clear_for(&self) -> InterruptClearForR {
-        InterruptClearForR::new(((self.bits >> 2) & 1) != 0)
+    pub fn interrupt_clear_for_1(&self) -> InterruptClearFor1R {
+        InterruptClearFor1R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt clear for ERRSTAT.MMRAERR:#br#ERRCLR.MMRAERR = 0 : Writes of '0' have no effect.#br#ERRCLR.MMRAERR = 1 : Write of '1' clears ERRSTAT.MMRAERR bit. Write of '1' to ERRCLR.MMRAERR does not clear the ERRDET register."]
@@ -45,15 +45,15 @@ impl W {
 Interrupt clear for ERRSTAT.BUSERR:#br#ERRCLR.BUSERR = 0 : Writes of '0' have no effect.#br#ERRCLR.BUSERR = 1 : Write of '1' clears ERRSTAT.BUSERR bit. Write of '1' to ERRCLR.BUSERR clears the ERRDET register."]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_clear_for(&mut self) -> InterruptClearForW<ErrclrSpec> {
-        InterruptClearForW::new(self, 0)
+    pub fn interrupt_clear_for_2(&mut self) -> InterruptClearFor2W<ErrclrSpec> {
+        InterruptClearFor2W::new(self, 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt clear for ERRSTAT.TRERR:#br#ERRCLR.TRERR = 0 : Writes of '0' have no effect.#br#ERRCLR.TRERR = 1 : Write of '1' clears ERRSTAT.TRERR bit. Write of '1' to ERRCLR.TRERR does not clear the ERRDET register."]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_clear_for(&mut self) -> InterruptClearForW<ErrclrSpec> {
-        InterruptClearForW::new(self, 2)
+    pub fn interrupt_clear_for_1(&mut self) -> InterruptClearFor1W<ErrclrSpec> {
+        InterruptClearFor1W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt clear for ERRSTAT.MMRAERR:#br#ERRCLR.MMRAERR = 0 : Writes of '0' have no effect.#br#ERRCLR.MMRAERR = 1 : Write of '1' clears ERRSTAT.MMRAERR bit. Write of '1' to ERRCLR.MMRAERR does not clear the ERRDET register."]

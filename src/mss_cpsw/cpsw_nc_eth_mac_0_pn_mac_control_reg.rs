@@ -50,12 +50,12 @@ pub type GigabitModeR = crate::BitReader;
 #[doc = "Field `GIGABIT_MODE` writer - 7:7\\]
 Gigabit Mode"]
 pub type GigabitModeW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TRANSMIT_SHORT_GAP` reader - 10:10\\]
+#[doc = "Field `TRANSMIT_SHORT_GAP_1` reader - 10:10\\]
 Transmit Short Gap Enable"]
-pub type TransmitShortGapR = crate::BitReader;
-#[doc = "Field `TRANSMIT_SHORT_GAP` writer - 10:10\\]
+pub type TransmitShortGap1R = crate::BitReader;
+#[doc = "Field `TRANSMIT_SHORT_GAP_1` writer - 10:10\\]
 Transmit Short Gap Enable"]
-pub type TransmitShortGapW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TransmitShortGap1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `COMMAND_IDLE` reader - 11:11\\]
 Command Idle"]
 pub type CommandIdleR = crate::BitReader;
@@ -180,8 +180,8 @@ Gigabit Mode"]
     #[doc = "Bit 10 - 10:10\\]
 Transmit Short Gap Enable"]
     #[inline(always)]
-    pub fn transmit_short_gap(&self) -> TransmitShortGapR {
-        TransmitShortGapR::new(((self.bits >> 10) & 1) != 0)
+    pub fn transmit_short_gap_1(&self) -> TransmitShortGap1R {
+        TransmitShortGap1R::new(((self.bits >> 10) & 1) != 0)
     }
     #[doc = "Bit 11 - 11:11\\]
 Command Idle"]
@@ -325,8 +325,8 @@ Gigabit Mode"]
 Transmit Short Gap Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn transmit_short_gap(&mut self) -> TransmitShortGapW<CpswNcEthMac0PnMacControlRegSpec> {
-        TransmitShortGapW::new(self, 10)
+    pub fn transmit_short_gap_1(&mut self) -> TransmitShortGap1W<CpswNcEthMac0PnMacControlRegSpec> {
+        TransmitShortGap1W::new(self, 10)
     }
     #[doc = "Bit 11 - 11:11\\]
 Command Idle"]

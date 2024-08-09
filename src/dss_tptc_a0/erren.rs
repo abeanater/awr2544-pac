@@ -2,18 +2,18 @@
 pub type R = crate::R<ErrenSpec>;
 #[doc = "Register `ERREN` writer"]
 pub type W = crate::W<ErrenSpec>;
-#[doc = "Field `INTERRUPT_ENABLE_FOR` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_ENABLE_FOR_2` reader - 0:0\\]
 Interrupt enable for ERRSTAT.BUSERR:#br#ERREN.BUSERR = 0 : BUSERR is disabled.#br#ERREN.BUSERR = 1 : BUSERR is enabled and contributes to the TPTC error interrupt generation."]
-pub type InterruptEnableForR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_FOR` writer - 0:0\\]
+pub type InterruptEnableFor2R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_FOR_2` writer - 0:0\\]
 Interrupt enable for ERRSTAT.BUSERR:#br#ERREN.BUSERR = 0 : BUSERR is disabled.#br#ERREN.BUSERR = 1 : BUSERR is enabled and contributes to the TPTC error interrupt generation."]
-pub type InterruptEnableForW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTERRUPT_ENABLE_FOR` reader - 2:2\\]
+pub type InterruptEnableFor2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTERRUPT_ENABLE_FOR_1` reader - 2:2\\]
 Interrupt enable for ERRSTAT.TRERR:#br#ERREN.TRERR = 0 : BUSERR is disabled.#br#ERREN.TRERR = 1 : TRERR is enabled and contributes to the TPTC error interrupt generation."]
-pub type InterruptEnableForR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_FOR` writer - 2:2\\]
+pub type InterruptEnableFor1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_FOR_1` writer - 2:2\\]
 Interrupt enable for ERRSTAT.TRERR:#br#ERREN.TRERR = 0 : BUSERR is disabled.#br#ERREN.TRERR = 1 : TRERR is enabled and contributes to the TPTC error interrupt generation."]
-pub type InterruptEnableForW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptEnableFor1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_ENABLE_FOR` reader - 3:3\\]
 Interrupt enable for ERRSTAT.MMRAERR:#br#ERREN.MMRAERR = 0 : BUSERR is disabled.#br#ERREN.MMRAERR = 1 : MMRAERR is enabled and contributes to the TPTC error interrupt generation."]
 pub type InterruptEnableForR = crate::BitReader;
@@ -24,14 +24,14 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Interrupt enable for ERRSTAT.BUSERR:#br#ERREN.BUSERR = 0 : BUSERR is disabled.#br#ERREN.BUSERR = 1 : BUSERR is enabled and contributes to the TPTC error interrupt generation."]
     #[inline(always)]
-    pub fn interrupt_enable_for(&self) -> InterruptEnableForR {
-        InterruptEnableForR::new((self.bits & 1) != 0)
+    pub fn interrupt_enable_for_2(&self) -> InterruptEnableFor2R {
+        InterruptEnableFor2R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt enable for ERRSTAT.TRERR:#br#ERREN.TRERR = 0 : BUSERR is disabled.#br#ERREN.TRERR = 1 : TRERR is enabled and contributes to the TPTC error interrupt generation."]
     #[inline(always)]
-    pub fn interrupt_enable_for(&self) -> InterruptEnableForR {
-        InterruptEnableForR::new(((self.bits >> 2) & 1) != 0)
+    pub fn interrupt_enable_for_1(&self) -> InterruptEnableFor1R {
+        InterruptEnableFor1R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt enable for ERRSTAT.MMRAERR:#br#ERREN.MMRAERR = 0 : BUSERR is disabled.#br#ERREN.MMRAERR = 1 : MMRAERR is enabled and contributes to the TPTC error interrupt generation."]
@@ -45,15 +45,15 @@ impl W {
 Interrupt enable for ERRSTAT.BUSERR:#br#ERREN.BUSERR = 0 : BUSERR is disabled.#br#ERREN.BUSERR = 1 : BUSERR is enabled and contributes to the TPTC error interrupt generation."]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_for(&mut self) -> InterruptEnableForW<ErrenSpec> {
-        InterruptEnableForW::new(self, 0)
+    pub fn interrupt_enable_for_2(&mut self) -> InterruptEnableFor2W<ErrenSpec> {
+        InterruptEnableFor2W::new(self, 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Interrupt enable for ERRSTAT.TRERR:#br#ERREN.TRERR = 0 : BUSERR is disabled.#br#ERREN.TRERR = 1 : TRERR is enabled and contributes to the TPTC error interrupt generation."]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_for(&mut self) -> InterruptEnableForW<ErrenSpec> {
-        InterruptEnableForW::new(self, 2)
+    pub fn interrupt_enable_for_1(&mut self) -> InterruptEnableFor1W<ErrenSpec> {
+        InterruptEnableFor1W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 Interrupt enable for ERRSTAT.MMRAERR:#br#ERREN.MMRAERR = 0 : BUSERR is disabled.#br#ERREN.MMRAERR = 1 : MMRAERR is enabled and contributes to the TPTC error interrupt generation."]

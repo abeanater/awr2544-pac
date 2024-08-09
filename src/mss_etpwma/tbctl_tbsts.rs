@@ -50,12 +50,12 @@ pub type TbctlPhsdirR = crate::BitReader;
 #[doc = "Field `TBCTL_PHSDIR` writer - 13:13\\]
 Phase Direction Bit. This bit is only used when the time-base counter is configured in the up-down-count mode. The PHSDIR bit indicates the direction the time-base counter (TBCTR) will count after a synchronization event occurs and a new phase value is loaded from the phase (TBPHS) register. This is irrespective of the direction of the counter before the synchronization event.. In the up-count and down-count modes this bit is ignored. 0 Count down after the synchronization event. 1 Count up after the synchronization event"]
 pub type TbctlPhsdirW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TBCTL_FREE_SOFT` reader - 15:14\\]
+#[doc = "Field `TBCTL_FREE__SOFT` reader - 15:14\\]
 Emulation Mode Bits. These bits select the behavior of the ePWM time-base counter during emulation events: 0 Stop after the next time-base counter increment or decrement 1h Stop when counter completes a whole cycle: ΓÇó Up-count mode: stop when the time-base counter = period (TBCTR = TBPRD) ΓÇó Down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) ΓÇó Up-down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) 2h-3h Free run"]
-pub type TbctlFreeSoftR = crate::FieldReader;
-#[doc = "Field `TBCTL_FREE_SOFT` writer - 15:14\\]
+pub type TbctlFree_SoftR = crate::FieldReader;
+#[doc = "Field `TBCTL_FREE__SOFT` writer - 15:14\\]
 Emulation Mode Bits. These bits select the behavior of the ePWM time-base counter during emulation events: 0 Stop after the next time-base counter increment or decrement 1h Stop when counter completes a whole cycle: ΓÇó Up-count mode: stop when the time-base counter = period (TBCTR = TBPRD) ΓÇó Down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) ΓÇó Up-down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) 2h-3h Free run"]
-pub type TbctlFreeSoftW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type TbctlFree_SoftW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `TBSTS_CTRDIR` reader - 16:16\\]
 Time-Base Counter Direction Status Bit. At reset, the counter is frozen; therefore, this bit has no meaning. To make this bit meaningful, you must first set the appropriate mode via TBCTL\\[CTRMODE\\]. 0 Time-Base Counter is currently counting down. 1 Time-Base Counter is currently counting up."]
 pub type TbstsCtrdirR = crate::BitReader;
@@ -126,8 +126,8 @@ Phase Direction Bit. This bit is only used when the time-base counter is configu
     #[doc = "Bits 14:15 - 15:14\\]
 Emulation Mode Bits. These bits select the behavior of the ePWM time-base counter during emulation events: 0 Stop after the next time-base counter increment or decrement 1h Stop when counter completes a whole cycle: ΓÇó Up-count mode: stop when the time-base counter = period (TBCTR = TBPRD) ΓÇó Down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) ΓÇó Up-down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) 2h-3h Free run"]
     #[inline(always)]
-    pub fn tbctl_free_soft(&self) -> TbctlFreeSoftR {
-        TbctlFreeSoftR::new(((self.bits >> 14) & 3) as u8)
+    pub fn tbctl_free__soft(&self) -> TbctlFree_SoftR {
+        TbctlFree_SoftR::new(((self.bits >> 14) & 3) as u8)
     }
     #[doc = "Bit 16 - 16:16\\]
 Time-Base Counter Direction Status Bit. At reset, the counter is frozen; therefore, this bit has no meaning. To make this bit meaningful, you must first set the appropriate mode via TBCTL\\[CTRMODE\\]. 0 Time-Base Counter is currently counting down. 1 Time-Base Counter is currently counting up."]
@@ -209,8 +209,8 @@ Phase Direction Bit. This bit is only used when the time-base counter is configu
 Emulation Mode Bits. These bits select the behavior of the ePWM time-base counter during emulation events: 0 Stop after the next time-base counter increment or decrement 1h Stop when counter completes a whole cycle: ΓÇó Up-count mode: stop when the time-base counter = period (TBCTR = TBPRD) ΓÇó Down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) ΓÇó Up-down-count mode: stop when the time-base counter = 0x0000 (TBCTR = 0x0000) 2h-3h Free run"]
     #[inline(always)]
     #[must_use]
-    pub fn tbctl_free_soft(&mut self) -> TbctlFreeSoftW<TbctlTbstsSpec> {
-        TbctlFreeSoftW::new(self, 14)
+    pub fn tbctl_free__soft(&mut self) -> TbctlFree_SoftW<TbctlTbstsSpec> {
+        TbctlFree_SoftW::new(self, 14)
     }
     #[doc = "Bit 16 - 16:16\\]
 Time-Base Counter Direction Status Bit. At reset, the counter is frozen; therefore, this bit has no meaning. To make this bit meaningful, you must first set the appropriate mode via TBCTL\\[CTRMODE\\]. 0 Time-Base Counter is currently counting down. 1 Time-Base Counter is currently counting up."]

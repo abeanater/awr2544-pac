@@ -2,12 +2,12 @@
 pub type R = crate::R<AggrEnableClrSpec>;
 #[doc = "Register `aggr_enable_clr` writer"]
 pub type W = crate::W<AggrEnableClrSpec>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_1` reader - 0:0\\]
 interrupt enable clear for parity errors"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 0:0\\]
+pub type InterruptEnableClear1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_1` writer - 0:0\\]
 interrupt enable clear for parity errors"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptEnableClear1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 1:1\\]
 interrupt enable clear for svbus timeout errors"]
 pub type InterruptEnableClearR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 interrupt enable clear for parity errors"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new((self.bits & 1) != 0)
+    pub fn interrupt_enable_clear_1(&self) -> InterruptEnableClear1R {
+        InterruptEnableClear1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 interrupt enable clear for svbus timeout errors"]
@@ -33,8 +33,8 @@ impl W {
 interrupt enable clear for parity errors"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<AggrEnableClrSpec> {
-        InterruptEnableClearW::new(self, 0)
+    pub fn interrupt_enable_clear_1(&mut self) -> InterruptEnableClear1W<AggrEnableClrSpec> {
+        InterruptEnableClear1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 interrupt enable clear for svbus timeout errors"]

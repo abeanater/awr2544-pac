@@ -2,54 +2,54 @@
 pub type R = crate::R<CpswNcEthMac0PnTsCtlRegSpec>;
 #[doc = "Register `CPSW_NC_ETH_MAC_0_PN_TS_CTL_REG` writer"]
 pub type W = crate::W<CpswNcEthMac0PnTsCtlRegSpec>;
-#[doc = "Field `TIME_SYNCE_RECEIVE` reader - 0:0\\]
+#[doc = "Field `TIME_SYNCE_RECEIVE_2` reader - 0:0\\]
 Time Synce Receive Annex F Enable"]
-pub type TimeSynceReceiveR = crate::BitReader;
-#[doc = "Field `TIME_SYNCE_RECEIVE` writer - 0:0\\]
+pub type TimeSynceReceive2R = crate::BitReader;
+#[doc = "Field `TIME_SYNCE_RECEIVE_2` writer - 0:0\\]
 Time Synce Receive Annex F Enable"]
-pub type TimeSynceReceiveW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_RECEIVE` reader - 1:1\\]
+pub type TimeSynceReceive2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_RECEIVE_1` reader - 1:1\\]
 Time Sync Receive VLAN LTYPE 1 enable"]
-pub type TimeSyncReceiveR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_RECEIVE` writer - 1:1\\]
+pub type TimeSyncReceive1R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_RECEIVE_1` writer - 1:1\\]
 Time Sync Receive VLAN LTYPE 1 enable"]
-pub type TimeSyncReceiveW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TimeSyncReceive1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TIME_SYNC_RECEIVE` reader - 2:2\\]
 Time Sync Receive VLAN LTYPE 2 enable"]
 pub type TimeSyncReceiveR = crate::BitReader;
 #[doc = "Field `TIME_SYNC_RECEIVE` writer - 2:2\\]
 Time Sync Receive VLAN LTYPE 2 enable"]
 pub type TimeSyncReceiveW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNCE_RECEIVE` reader - 3:3\\]
+#[doc = "Field `TIME_SYNCE_RECEIVE_1` reader - 3:3\\]
 Time Synce Receive Annex D Enable"]
-pub type TimeSynceReceiveR = crate::BitReader;
-#[doc = "Field `TIME_SYNCE_RECEIVE` writer - 3:3\\]
+pub type TimeSynceReceive1R = crate::BitReader;
+#[doc = "Field `TIME_SYNCE_RECEIVE_1` writer - 3:3\\]
 Time Synce Receive Annex D Enable"]
-pub type TimeSynceReceiveW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNCE_TRANSMIT` reader - 4:4\\]
+pub type TimeSynceReceive1W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNCE_TRANSMIT_2` reader - 4:4\\]
 Time Synce Transmit Annex F Enable"]
-pub type TimeSynceTransmitR = crate::BitReader;
-#[doc = "Field `TIME_SYNCE_TRANSMIT` writer - 4:4\\]
+pub type TimeSynceTransmit2R = crate::BitReader;
+#[doc = "Field `TIME_SYNCE_TRANSMIT_2` writer - 4:4\\]
 Time Synce Transmit Annex F Enable"]
-pub type TimeSynceTransmitW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_TRANSMIT` reader - 5:5\\]
+pub type TimeSynceTransmit2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_TRANSMIT_2` reader - 5:5\\]
 Time Sync Transmit VLAN LTYPE 1 enable"]
-pub type TimeSyncTransmitR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_TRANSMIT` writer - 5:5\\]
+pub type TimeSyncTransmit2R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_TRANSMIT_2` writer - 5:5\\]
 Time Sync Transmit VLAN LTYPE 1 enable"]
-pub type TimeSyncTransmitW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNC_TRANSMIT` reader - 6:6\\]
+pub type TimeSyncTransmit2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNC_TRANSMIT_1` reader - 6:6\\]
 Time Sync Transmit VLAN LTYPE 2 enable"]
-pub type TimeSyncTransmitR = crate::BitReader;
-#[doc = "Field `TIME_SYNC_TRANSMIT` writer - 6:6\\]
+pub type TimeSyncTransmit1R = crate::BitReader;
+#[doc = "Field `TIME_SYNC_TRANSMIT_1` writer - 6:6\\]
 Time Sync Transmit VLAN LTYPE 2 enable"]
-pub type TimeSyncTransmitW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `TIME_SYNCE_TRANSMIT` reader - 7:7\\]
+pub type TimeSyncTransmit1W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `TIME_SYNCE_TRANSMIT_1` reader - 7:7\\]
 Time Synce Transmit Annex D Enable"]
-pub type TimeSynceTransmitR = crate::BitReader;
-#[doc = "Field `TIME_SYNCE_TRANSMIT` writer - 7:7\\]
+pub type TimeSynceTransmit1R = crate::BitReader;
+#[doc = "Field `TIME_SYNCE_TRANSMIT_1` writer - 7:7\\]
 Time Synce Transmit Annex D Enable"]
-pub type TimeSynceTransmitW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type TimeSynceTransmit1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TIME_SYNC_LTYPE` reader - 8:8\\]
 Time Sync LTYPE 2 enable transmit and receive"]
 pub type TimeSyncLtypeR = crate::BitReader;
@@ -84,14 +84,14 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Time Synce Receive Annex F Enable"]
     #[inline(always)]
-    pub fn time_synce_receive(&self) -> TimeSynceReceiveR {
-        TimeSynceReceiveR::new((self.bits & 1) != 0)
+    pub fn time_synce_receive_2(&self) -> TimeSynceReceive2R {
+        TimeSynceReceive2R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Time Sync Receive VLAN LTYPE 1 enable"]
     #[inline(always)]
-    pub fn time_sync_receive(&self) -> TimeSyncReceiveR {
-        TimeSyncReceiveR::new(((self.bits >> 1) & 1) != 0)
+    pub fn time_sync_receive_1(&self) -> TimeSyncReceive1R {
+        TimeSyncReceive1R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 Time Sync Receive VLAN LTYPE 2 enable"]
@@ -102,32 +102,32 @@ Time Sync Receive VLAN LTYPE 2 enable"]
     #[doc = "Bit 3 - 3:3\\]
 Time Synce Receive Annex D Enable"]
     #[inline(always)]
-    pub fn time_synce_receive(&self) -> TimeSynceReceiveR {
-        TimeSynceReceiveR::new(((self.bits >> 3) & 1) != 0)
+    pub fn time_synce_receive_1(&self) -> TimeSynceReceive1R {
+        TimeSynceReceive1R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 Time Synce Transmit Annex F Enable"]
     #[inline(always)]
-    pub fn time_synce_transmit(&self) -> TimeSynceTransmitR {
-        TimeSynceTransmitR::new(((self.bits >> 4) & 1) != 0)
+    pub fn time_synce_transmit_2(&self) -> TimeSynceTransmit2R {
+        TimeSynceTransmit2R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 5:5\\]
 Time Sync Transmit VLAN LTYPE 1 enable"]
     #[inline(always)]
-    pub fn time_sync_transmit(&self) -> TimeSyncTransmitR {
-        TimeSyncTransmitR::new(((self.bits >> 5) & 1) != 0)
+    pub fn time_sync_transmit_2(&self) -> TimeSyncTransmit2R {
+        TimeSyncTransmit2R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 Time Sync Transmit VLAN LTYPE 2 enable"]
     #[inline(always)]
-    pub fn time_sync_transmit(&self) -> TimeSyncTransmitR {
-        TimeSyncTransmitR::new(((self.bits >> 6) & 1) != 0)
+    pub fn time_sync_transmit_1(&self) -> TimeSyncTransmit1R {
+        TimeSyncTransmit1R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 7:7\\]
 Time Synce Transmit Annex D Enable"]
     #[inline(always)]
-    pub fn time_synce_transmit(&self) -> TimeSynceTransmitR {
-        TimeSynceTransmitR::new(((self.bits >> 7) & 1) != 0)
+    pub fn time_synce_transmit_1(&self) -> TimeSynceTransmit1R {
+        TimeSynceTransmit1R::new(((self.bits >> 7) & 1) != 0)
     }
     #[doc = "Bit 8 - 8:8\\]
 Time Sync LTYPE 2 enable transmit and receive"]
@@ -165,15 +165,15 @@ impl W {
 Time Synce Receive Annex F Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_synce_receive(&mut self) -> TimeSynceReceiveW<CpswNcEthMac0PnTsCtlRegSpec> {
-        TimeSynceReceiveW::new(self, 0)
+    pub fn time_synce_receive_2(&mut self) -> TimeSynceReceive2W<CpswNcEthMac0PnTsCtlRegSpec> {
+        TimeSynceReceive2W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Time Sync Receive VLAN LTYPE 1 enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_receive(&mut self) -> TimeSyncReceiveW<CpswNcEthMac0PnTsCtlRegSpec> {
-        TimeSyncReceiveW::new(self, 1)
+    pub fn time_sync_receive_1(&mut self) -> TimeSyncReceive1W<CpswNcEthMac0PnTsCtlRegSpec> {
+        TimeSyncReceive1W::new(self, 1)
     }
     #[doc = "Bit 2 - 2:2\\]
 Time Sync Receive VLAN LTYPE 2 enable"]
@@ -186,36 +186,36 @@ Time Sync Receive VLAN LTYPE 2 enable"]
 Time Synce Receive Annex D Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_synce_receive(&mut self) -> TimeSynceReceiveW<CpswNcEthMac0PnTsCtlRegSpec> {
-        TimeSynceReceiveW::new(self, 3)
+    pub fn time_synce_receive_1(&mut self) -> TimeSynceReceive1W<CpswNcEthMac0PnTsCtlRegSpec> {
+        TimeSynceReceive1W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 Time Synce Transmit Annex F Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_synce_transmit(&mut self) -> TimeSynceTransmitW<CpswNcEthMac0PnTsCtlRegSpec> {
-        TimeSynceTransmitW::new(self, 4)
+    pub fn time_synce_transmit_2(&mut self) -> TimeSynceTransmit2W<CpswNcEthMac0PnTsCtlRegSpec> {
+        TimeSynceTransmit2W::new(self, 4)
     }
     #[doc = "Bit 5 - 5:5\\]
 Time Sync Transmit VLAN LTYPE 1 enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_transmit(&mut self) -> TimeSyncTransmitW<CpswNcEthMac0PnTsCtlRegSpec> {
-        TimeSyncTransmitW::new(self, 5)
+    pub fn time_sync_transmit_2(&mut self) -> TimeSyncTransmit2W<CpswNcEthMac0PnTsCtlRegSpec> {
+        TimeSyncTransmit2W::new(self, 5)
     }
     #[doc = "Bit 6 - 6:6\\]
 Time Sync Transmit VLAN LTYPE 2 enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_sync_transmit(&mut self) -> TimeSyncTransmitW<CpswNcEthMac0PnTsCtlRegSpec> {
-        TimeSyncTransmitW::new(self, 6)
+    pub fn time_sync_transmit_1(&mut self) -> TimeSyncTransmit1W<CpswNcEthMac0PnTsCtlRegSpec> {
+        TimeSyncTransmit1W::new(self, 6)
     }
     #[doc = "Bit 7 - 7:7\\]
 Time Synce Transmit Annex D Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn time_synce_transmit(&mut self) -> TimeSynceTransmitW<CpswNcEthMac0PnTsCtlRegSpec> {
-        TimeSynceTransmitW::new(self, 7)
+    pub fn time_synce_transmit_1(&mut self) -> TimeSynceTransmit1W<CpswNcEthMac0PnTsCtlRegSpec> {
+        TimeSynceTransmit1W::new(self, 7)
     }
     #[doc = "Bit 8 - 8:8\\]
 Time Sync LTYPE 2 enable transmit and receive"]

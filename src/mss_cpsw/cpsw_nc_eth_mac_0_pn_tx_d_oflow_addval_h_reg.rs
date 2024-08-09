@@ -2,24 +2,24 @@
 pub type R = crate::R<CpswNcEthMac0PnTxDOflowAddvalHRegSpec>;
 #[doc = "Register `CPSW_NC_ETH_MAC_0_PN_TX_D_OFLOW_ADDVAL_H_REG` writer"]
 pub type W = crate::W<CpswNcEthMac0PnTxDOflowAddvalHRegSpec>;
-#[doc = "Field `PORT_PFC_DESTINATION` reader - 4:0\\]
+#[doc = "Field `PORT_PFC_DESTINATION_3` reader - 4:0\\]
 Port PFC Destination Based Out Flow Add Value for Priority 4"]
-pub type PortPfcDestinationR = crate::FieldReader;
-#[doc = "Field `PORT_PFC_DESTINATION` writer - 4:0\\]
+pub type PortPfcDestination3R = crate::FieldReader;
+#[doc = "Field `PORT_PFC_DESTINATION_3` writer - 4:0\\]
 Port PFC Destination Based Out Flow Add Value for Priority 4"]
-pub type PortPfcDestinationW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
-#[doc = "Field `PORT_PFC_DESTINATION` reader - 12:8\\]
+pub type PortPfcDestination3W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `PORT_PFC_DESTINATION_2` reader - 12:8\\]
 Port PFC Destination Based Out Flow Add Value for Priority 5"]
-pub type PortPfcDestinationR = crate::FieldReader;
-#[doc = "Field `PORT_PFC_DESTINATION` writer - 12:8\\]
+pub type PortPfcDestination2R = crate::FieldReader;
+#[doc = "Field `PORT_PFC_DESTINATION_2` writer - 12:8\\]
 Port PFC Destination Based Out Flow Add Value for Priority 5"]
-pub type PortPfcDestinationW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
-#[doc = "Field `PORT_PFC_DESTINATION` reader - 20:16\\]
+pub type PortPfcDestination2W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `PORT_PFC_DESTINATION_1` reader - 20:16\\]
 Port PFC Destination Based Out Flow Add Value for Priority 6"]
-pub type PortPfcDestinationR = crate::FieldReader;
-#[doc = "Field `PORT_PFC_DESTINATION` writer - 20:16\\]
+pub type PortPfcDestination1R = crate::FieldReader;
+#[doc = "Field `PORT_PFC_DESTINATION_1` writer - 20:16\\]
 Port PFC Destination Based Out Flow Add Value for Priority 6"]
-pub type PortPfcDestinationW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type PortPfcDestination1W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `PORT_PFC_DESTINATION` reader - 28:24\\]
 Port PFC Destination Based Out Flow Add Value for Priority 7"]
 pub type PortPfcDestinationR = crate::FieldReader;
@@ -30,20 +30,20 @@ impl R {
     #[doc = "Bits 0:4 - 4:0\\]
 Port PFC Destination Based Out Flow Add Value for Priority 4"]
     #[inline(always)]
-    pub fn port_pfc_destination(&self) -> PortPfcDestinationR {
-        PortPfcDestinationR::new((self.bits & 0x1f) as u8)
+    pub fn port_pfc_destination_3(&self) -> PortPfcDestination3R {
+        PortPfcDestination3R::new((self.bits & 0x1f) as u8)
     }
     #[doc = "Bits 8:12 - 12:8\\]
 Port PFC Destination Based Out Flow Add Value for Priority 5"]
     #[inline(always)]
-    pub fn port_pfc_destination(&self) -> PortPfcDestinationR {
-        PortPfcDestinationR::new(((self.bits >> 8) & 0x1f) as u8)
+    pub fn port_pfc_destination_2(&self) -> PortPfcDestination2R {
+        PortPfcDestination2R::new(((self.bits >> 8) & 0x1f) as u8)
     }
     #[doc = "Bits 16:20 - 20:16\\]
 Port PFC Destination Based Out Flow Add Value for Priority 6"]
     #[inline(always)]
-    pub fn port_pfc_destination(&self) -> PortPfcDestinationR {
-        PortPfcDestinationR::new(((self.bits >> 16) & 0x1f) as u8)
+    pub fn port_pfc_destination_1(&self) -> PortPfcDestination1R {
+        PortPfcDestination1R::new(((self.bits >> 16) & 0x1f) as u8)
     }
     #[doc = "Bits 24:28 - 28:24\\]
 Port PFC Destination Based Out Flow Add Value for Priority 7"]
@@ -57,28 +57,28 @@ impl W {
 Port PFC Destination Based Out Flow Add Value for Priority 4"]
     #[inline(always)]
     #[must_use]
-    pub fn port_pfc_destination(
+    pub fn port_pfc_destination_3(
         &mut self,
-    ) -> PortPfcDestinationW<CpswNcEthMac0PnTxDOflowAddvalHRegSpec> {
-        PortPfcDestinationW::new(self, 0)
+    ) -> PortPfcDestination3W<CpswNcEthMac0PnTxDOflowAddvalHRegSpec> {
+        PortPfcDestination3W::new(self, 0)
     }
     #[doc = "Bits 8:12 - 12:8\\]
 Port PFC Destination Based Out Flow Add Value for Priority 5"]
     #[inline(always)]
     #[must_use]
-    pub fn port_pfc_destination(
+    pub fn port_pfc_destination_2(
         &mut self,
-    ) -> PortPfcDestinationW<CpswNcEthMac0PnTxDOflowAddvalHRegSpec> {
-        PortPfcDestinationW::new(self, 8)
+    ) -> PortPfcDestination2W<CpswNcEthMac0PnTxDOflowAddvalHRegSpec> {
+        PortPfcDestination2W::new(self, 8)
     }
     #[doc = "Bits 16:20 - 20:16\\]
 Port PFC Destination Based Out Flow Add Value for Priority 6"]
     #[inline(always)]
     #[must_use]
-    pub fn port_pfc_destination(
+    pub fn port_pfc_destination_1(
         &mut self,
-    ) -> PortPfcDestinationW<CpswNcEthMac0PnTxDOflowAddvalHRegSpec> {
-        PortPfcDestinationW::new(self, 16)
+    ) -> PortPfcDestination1W<CpswNcEthMac0PnTxDOflowAddvalHRegSpec> {
+        PortPfcDestination1W::new(self, 16)
     }
     #[doc = "Bits 24:28 - 28:24\\]
 Port PFC Destination Based Out Flow Add Value for Priority 7"]

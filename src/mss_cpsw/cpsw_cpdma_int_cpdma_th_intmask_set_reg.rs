@@ -2,96 +2,96 @@
 pub type R = crate::R<CpswCpdmaIntCpdmaThIntmaskSetRegSpec>;
 #[doc = "Register `CPSW_CPDMA_INT_CPDMA_TH_INTMASK_SET_REG` writer"]
 pub type W = crate::W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 0:0\\]
+#[doc = "Field `CPDMA_THOST_CHANNEL_15` reader - 0:0\\]
 CPDMA THost Channel 0 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 0:0\\]
+pub type CpdmaThostChannel15R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_15` writer - 0:0\\]
 CPDMA THost Channel 0 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 1:1\\]
+pub type CpdmaThostChannel15W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_14` reader - 1:1\\]
 CPDMA THost Channel 1 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 1:1\\]
+pub type CpdmaThostChannel14R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_14` writer - 1:1\\]
 CPDMA THost Channel 1 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 2:2\\]
+pub type CpdmaThostChannel14W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_13` reader - 2:2\\]
 CPDMA THost Channel 2 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 2:2\\]
+pub type CpdmaThostChannel13R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_13` writer - 2:2\\]
 CPDMA THost Channel 2 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 3:3\\]
+pub type CpdmaThostChannel13W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_12` reader - 3:3\\]
 CPDMA THost Channel 3 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 3:3\\]
+pub type CpdmaThostChannel12R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_12` writer - 3:3\\]
 CPDMA THost Channel 3 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 4:4\\]
+pub type CpdmaThostChannel12W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_11` reader - 4:4\\]
 CPDMA THost Channel 4 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 4:4\\]
+pub type CpdmaThostChannel11R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_11` writer - 4:4\\]
 CPDMA THost Channel 4 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 5:5\\]
+pub type CpdmaThostChannel11W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_10` reader - 5:5\\]
 CPDMA THost Channel 5 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 5:5\\]
+pub type CpdmaThostChannel10R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_10` writer - 5:5\\]
 CPDMA THost Channel 5 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 6:6\\]
+pub type CpdmaThostChannel10W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_9` reader - 6:6\\]
 CPDMA THost Channel 6 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 6:6\\]
+pub type CpdmaThostChannel9R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_9` writer - 6:6\\]
 CPDMA THost Channel 6 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 7:7\\]
+pub type CpdmaThostChannel9W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_8` reader - 7:7\\]
 CPDMA THost Channel 7 Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 7:7\\]
+pub type CpdmaThostChannel8R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_8` writer - 7:7\\]
 CPDMA THost Channel 7 Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 8:8\\]
+pub type CpdmaThostChannel8W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_7` reader - 8:8\\]
 CPDMA THost Channel 0 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 8:8\\]
+pub type CpdmaThostChannel7R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_7` writer - 8:8\\]
 CPDMA THost Channel 0 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 9:9\\]
+pub type CpdmaThostChannel7W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_6` reader - 9:9\\]
 CPDMA THost Channel 1 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 9:9\\]
+pub type CpdmaThostChannel6R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_6` writer - 9:9\\]
 CPDMA THost Channel 1 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 10:10\\]
+pub type CpdmaThostChannel6W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_5` reader - 10:10\\]
 CPDMA THost Channel 2 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 10:10\\]
+pub type CpdmaThostChannel5R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_5` writer - 10:10\\]
 CPDMA THost Channel 2 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 11:11\\]
+pub type CpdmaThostChannel5W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_4` reader - 11:11\\]
 CPDMA THost Channel 3 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 11:11\\]
+pub type CpdmaThostChannel4R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_4` writer - 11:11\\]
 CPDMA THost Channel 3 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 12:12\\]
+pub type CpdmaThostChannel4W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_3` reader - 12:12\\]
 CPDMA THost Channel 4 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 12:12\\]
+pub type CpdmaThostChannel3R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_3` writer - 12:12\\]
 CPDMA THost Channel 4 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 13:13\\]
+pub type CpdmaThostChannel3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_2` reader - 13:13\\]
 CPDMA THost Channel 5 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 13:13\\]
+pub type CpdmaThostChannel2R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_2` writer - 13:13\\]
 CPDMA THost Channel 5 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CPDMA_THOST_CHANNEL` reader - 14:14\\]
+pub type CpdmaThostChannel2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CPDMA_THOST_CHANNEL_1` reader - 14:14\\]
 CPDMA THost Channel 6 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelR = crate::BitReader;
-#[doc = "Field `CPDMA_THOST_CHANNEL` writer - 14:14\\]
+pub type CpdmaThostChannel1R = crate::BitReader;
+#[doc = "Field `CPDMA_THOST_CHANNEL_1` writer - 14:14\\]
 CPDMA THost Channel 6 Threshold Interrupt Pending SET"]
-pub type CpdmaThostChannelW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CpdmaThostChannel1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CPDMA_THOST_CHANNEL` reader - 15:15\\]
 CPDMA THost Channel 7 Threshold Interrupt Pending SET"]
 pub type CpdmaThostChannelR = crate::BitReader;
@@ -102,92 +102,92 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 CPDMA THost Channel 0 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new((self.bits & 1) != 0)
+    pub fn cpdma_thost_channel_15(&self) -> CpdmaThostChannel15R {
+        CpdmaThostChannel15R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA THost Channel 1 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 1) & 1) != 0)
+    pub fn cpdma_thost_channel_14(&self) -> CpdmaThostChannel14R {
+        CpdmaThostChannel14R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 2:2\\]
 CPDMA THost Channel 2 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 2) & 1) != 0)
+    pub fn cpdma_thost_channel_13(&self) -> CpdmaThostChannel13R {
+        CpdmaThostChannel13R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 3:3\\]
 CPDMA THost Channel 3 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 3) & 1) != 0)
+    pub fn cpdma_thost_channel_12(&self) -> CpdmaThostChannel12R {
+        CpdmaThostChannel12R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 4:4\\]
 CPDMA THost Channel 4 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 4) & 1) != 0)
+    pub fn cpdma_thost_channel_11(&self) -> CpdmaThostChannel11R {
+        CpdmaThostChannel11R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 5:5\\]
 CPDMA THost Channel 5 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 5) & 1) != 0)
+    pub fn cpdma_thost_channel_10(&self) -> CpdmaThostChannel10R {
+        CpdmaThostChannel10R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 6:6\\]
 CPDMA THost Channel 6 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 6) & 1) != 0)
+    pub fn cpdma_thost_channel_9(&self) -> CpdmaThostChannel9R {
+        CpdmaThostChannel9R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 7:7\\]
 CPDMA THost Channel 7 Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 7) & 1) != 0)
+    pub fn cpdma_thost_channel_8(&self) -> CpdmaThostChannel8R {
+        CpdmaThostChannel8R::new(((self.bits >> 7) & 1) != 0)
     }
     #[doc = "Bit 8 - 8:8\\]
 CPDMA THost Channel 0 Threshold Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 8) & 1) != 0)
+    pub fn cpdma_thost_channel_7(&self) -> CpdmaThostChannel7R {
+        CpdmaThostChannel7R::new(((self.bits >> 8) & 1) != 0)
     }
     #[doc = "Bit 9 - 9:9\\]
 CPDMA THost Channel 1 Threshold Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 9) & 1) != 0)
+    pub fn cpdma_thost_channel_6(&self) -> CpdmaThostChannel6R {
+        CpdmaThostChannel6R::new(((self.bits >> 9) & 1) != 0)
     }
     #[doc = "Bit 10 - 10:10\\]
 CPDMA THost Channel 2 Threshold Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 10) & 1) != 0)
+    pub fn cpdma_thost_channel_5(&self) -> CpdmaThostChannel5R {
+        CpdmaThostChannel5R::new(((self.bits >> 10) & 1) != 0)
     }
     #[doc = "Bit 11 - 11:11\\]
 CPDMA THost Channel 3 Threshold Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 11) & 1) != 0)
+    pub fn cpdma_thost_channel_4(&self) -> CpdmaThostChannel4R {
+        CpdmaThostChannel4R::new(((self.bits >> 11) & 1) != 0)
     }
     #[doc = "Bit 12 - 12:12\\]
 CPDMA THost Channel 4 Threshold Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 12) & 1) != 0)
+    pub fn cpdma_thost_channel_3(&self) -> CpdmaThostChannel3R {
+        CpdmaThostChannel3R::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bit 13 - 13:13\\]
 CPDMA THost Channel 5 Threshold Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 13) & 1) != 0)
+    pub fn cpdma_thost_channel_2(&self) -> CpdmaThostChannel2R {
+        CpdmaThostChannel2R::new(((self.bits >> 13) & 1) != 0)
     }
     #[doc = "Bit 14 - 14:14\\]
 CPDMA THost Channel 6 Threshold Interrupt Pending SET"]
     #[inline(always)]
-    pub fn cpdma_thost_channel(&self) -> CpdmaThostChannelR {
-        CpdmaThostChannelR::new(((self.bits >> 14) & 1) != 0)
+    pub fn cpdma_thost_channel_1(&self) -> CpdmaThostChannel1R {
+        CpdmaThostChannel1R::new(((self.bits >> 14) & 1) != 0)
     }
     #[doc = "Bit 15 - 15:15\\]
 CPDMA THost Channel 7 Threshold Interrupt Pending SET"]
@@ -201,136 +201,136 @@ impl W {
 CPDMA THost Channel 0 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_15(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 0)
+    ) -> CpdmaThostChannel15W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel15W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 CPDMA THost Channel 1 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_14(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 1)
+    ) -> CpdmaThostChannel14W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel14W::new(self, 1)
     }
     #[doc = "Bit 2 - 2:2\\]
 CPDMA THost Channel 2 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_13(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 2)
+    ) -> CpdmaThostChannel13W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel13W::new(self, 2)
     }
     #[doc = "Bit 3 - 3:3\\]
 CPDMA THost Channel 3 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_12(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 3)
+    ) -> CpdmaThostChannel12W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel12W::new(self, 3)
     }
     #[doc = "Bit 4 - 4:4\\]
 CPDMA THost Channel 4 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_11(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 4)
+    ) -> CpdmaThostChannel11W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel11W::new(self, 4)
     }
     #[doc = "Bit 5 - 5:5\\]
 CPDMA THost Channel 5 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_10(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 5)
+    ) -> CpdmaThostChannel10W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel10W::new(self, 5)
     }
     #[doc = "Bit 6 - 6:6\\]
 CPDMA THost Channel 6 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_9(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 6)
+    ) -> CpdmaThostChannel9W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel9W::new(self, 6)
     }
     #[doc = "Bit 7 - 7:7\\]
 CPDMA THost Channel 7 Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_8(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 7)
+    ) -> CpdmaThostChannel8W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel8W::new(self, 7)
     }
     #[doc = "Bit 8 - 8:8\\]
 CPDMA THost Channel 0 Threshold Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_7(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 8)
+    ) -> CpdmaThostChannel7W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel7W::new(self, 8)
     }
     #[doc = "Bit 9 - 9:9\\]
 CPDMA THost Channel 1 Threshold Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_6(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 9)
+    ) -> CpdmaThostChannel6W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel6W::new(self, 9)
     }
     #[doc = "Bit 10 - 10:10\\]
 CPDMA THost Channel 2 Threshold Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_5(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 10)
+    ) -> CpdmaThostChannel5W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel5W::new(self, 10)
     }
     #[doc = "Bit 11 - 11:11\\]
 CPDMA THost Channel 3 Threshold Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_4(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 11)
+    ) -> CpdmaThostChannel4W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel4W::new(self, 11)
     }
     #[doc = "Bit 12 - 12:12\\]
 CPDMA THost Channel 4 Threshold Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_3(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 12)
+    ) -> CpdmaThostChannel3W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel3W::new(self, 12)
     }
     #[doc = "Bit 13 - 13:13\\]
 CPDMA THost Channel 5 Threshold Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_2(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 13)
+    ) -> CpdmaThostChannel2W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel2W::new(self, 13)
     }
     #[doc = "Bit 14 - 14:14\\]
 CPDMA THost Channel 6 Threshold Interrupt Pending SET"]
     #[inline(always)]
     #[must_use]
-    pub fn cpdma_thost_channel(
+    pub fn cpdma_thost_channel_1(
         &mut self,
-    ) -> CpdmaThostChannelW<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
-        CpdmaThostChannelW::new(self, 14)
+    ) -> CpdmaThostChannel1W<CpswCpdmaIntCpdmaThIntmaskSetRegSpec> {
+        CpdmaThostChannel1W::new(self, 14)
     }
     #[doc = "Bit 15 - 15:15\\]
 CPDMA THost Channel 7 Threshold Interrupt Pending SET"]

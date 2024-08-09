@@ -2,12 +2,12 @@
 pub type R = crate::R<DedEnableSetReg1Spec>;
 #[doc = "Register `ded_enable_set_reg1` writer"]
 pub type W = crate::W<DedEnableSetReg1Spec>;
-#[doc = "Field `INTERRUPT_ENABLE_SET` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_ENABLE_SET_1` reader - 0:0\\]
 Interrupt Enable Set Register for b1tcm1_bank0_pend"]
-pub type InterruptEnableSetR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_SET` writer - 0:0\\]
+pub type InterruptEnableSet1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_SET_1` writer - 0:0\\]
 Interrupt Enable Set Register for b1tcm1_bank0_pend"]
-pub type InterruptEnableSetW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptEnableSet1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_ENABLE_SET` reader - 1:1\\]
 Interrupt Enable Set Register for b1tcm1_bank1_pend"]
 pub type InterruptEnableSetR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Interrupt Enable Set Register for b1tcm1_bank0_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_set(&self) -> InterruptEnableSetR {
-        InterruptEnableSetR::new((self.bits & 1) != 0)
+    pub fn interrupt_enable_set_1(&self) -> InterruptEnableSet1R {
+        InterruptEnableSet1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Enable Set Register for b1tcm1_bank1_pend"]
@@ -33,8 +33,8 @@ impl W {
 Interrupt Enable Set Register for b1tcm1_bank0_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_set(&mut self) -> InterruptEnableSetW<DedEnableSetReg1Spec> {
-        InterruptEnableSetW::new(self, 0)
+    pub fn interrupt_enable_set_1(&mut self) -> InterruptEnableSet1W<DedEnableSetReg1Spec> {
+        InterruptEnableSet1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Enable Set Register for b1tcm1_bank1_pend"]

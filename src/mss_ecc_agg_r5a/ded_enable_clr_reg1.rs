@@ -2,12 +2,12 @@
 pub type R = crate::R<DedEnableClrReg1Spec>;
 #[doc = "Register `ded_enable_clr_reg1` writer"]
 pub type W = crate::W<DedEnableClrReg1Spec>;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 0:0\\]
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_1` reader - 0:0\\]
 Interrupt Enable Clear Register for b1tcm1_bank0_pend"]
-pub type InterruptEnableClearR = crate::BitReader;
-#[doc = "Field `INTERRUPT_ENABLE_CLEAR` writer - 0:0\\]
+pub type InterruptEnableClear1R = crate::BitReader;
+#[doc = "Field `INTERRUPT_ENABLE_CLEAR_1` writer - 0:0\\]
 Interrupt Enable Clear Register for b1tcm1_bank0_pend"]
-pub type InterruptEnableClearW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InterruptEnableClear1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `INTERRUPT_ENABLE_CLEAR` reader - 1:1\\]
 Interrupt Enable Clear Register for b1tcm1_bank1_pend"]
 pub type InterruptEnableClearR = crate::BitReader;
@@ -18,8 +18,8 @@ impl R {
     #[doc = "Bit 0 - 0:0\\]
 Interrupt Enable Clear Register for b1tcm1_bank0_pend"]
     #[inline(always)]
-    pub fn interrupt_enable_clear(&self) -> InterruptEnableClearR {
-        InterruptEnableClearR::new((self.bits & 1) != 0)
+    pub fn interrupt_enable_clear_1(&self) -> InterruptEnableClear1R {
+        InterruptEnableClear1R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Enable Clear Register for b1tcm1_bank1_pend"]
@@ -33,8 +33,8 @@ impl W {
 Interrupt Enable Clear Register for b1tcm1_bank0_pend"]
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_enable_clear(&mut self) -> InterruptEnableClearW<DedEnableClrReg1Spec> {
-        InterruptEnableClearW::new(self, 0)
+    pub fn interrupt_enable_clear_1(&mut self) -> InterruptEnableClear1W<DedEnableClrReg1Spec> {
+        InterruptEnableClear1W::new(self, 0)
     }
     #[doc = "Bit 1 - 1:1\\]
 Interrupt Enable Clear Register for b1tcm1_bank1_pend"]

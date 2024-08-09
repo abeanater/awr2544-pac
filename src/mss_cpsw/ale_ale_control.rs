@@ -62,12 +62,12 @@ pub type MirrorSourcePortR = crate::BitReader;
 #[doc = "Field `MIRROR_SOURCE_PORT` writer - 10:10\\]
 Mirror Source Port Enable - This field enables the source port mirror option. When this bit is set any port with the ~ipX_mirror_sp set in the ALE Port Control registers set will have its received traffic also sent to the ~imirror_top port."]
 pub type MirrorSourcePortW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `MIRROR_DESTINATION_PORT` reader - 11:11\\]
+#[doc = "Field `MIRROR_DESTINATION_PORT_1` reader - 11:11\\]
 Mirror Destination Port Enable - This field enables the destination port mirror option. When this bit is set any traffic destined for the ~imirror_dp port will have its transmit traffic also sent to the ~imirror_top port."]
-pub type MirrorDestinationPortR = crate::BitReader;
-#[doc = "Field `MIRROR_DESTINATION_PORT` writer - 11:11\\]
+pub type MirrorDestinationPort1R = crate::BitReader;
+#[doc = "Field `MIRROR_DESTINATION_PORT_1` writer - 11:11\\]
 Mirror Destination Port Enable - This field enables the destination port mirror option. When this bit is set any traffic destined for the ~imirror_dp port will have its transmit traffic also sent to the ~imirror_top port."]
-pub type MirrorDestinationPortW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type MirrorDestinationPort1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `MIRROR_MATCH_ENTRY` reader - 12:12\\]
 Mirror Match Entry Enable - This field enables the match mirror option. When this bit is set any traffic whose destination, source, VLAN or OUI matches the ~imirror_midx entry index will have that traffic also sent to the ~imirror_top port."]
 pub type MirrorMatchEntryR = crate::BitReader;
@@ -186,8 +186,8 @@ Mirror Source Port Enable - This field enables the source port mirror option. Wh
     #[doc = "Bit 11 - 11:11\\]
 Mirror Destination Port Enable - This field enables the destination port mirror option. When this bit is set any traffic destined for the ~imirror_dp port will have its transmit traffic also sent to the ~imirror_top port."]
     #[inline(always)]
-    pub fn mirror_destination_port(&self) -> MirrorDestinationPortR {
-        MirrorDestinationPortR::new(((self.bits >> 11) & 1) != 0)
+    pub fn mirror_destination_port_1(&self) -> MirrorDestinationPort1R {
+        MirrorDestinationPort1R::new(((self.bits >> 11) & 1) != 0)
     }
     #[doc = "Bit 12 - 12:12\\]
 Mirror Match Entry Enable - This field enables the match mirror option. When this bit is set any traffic whose destination, source, VLAN or OUI matches the ~imirror_midx entry index will have that traffic also sent to the ~imirror_top port."]
@@ -319,8 +319,8 @@ Mirror Source Port Enable - This field enables the source port mirror option. Wh
 Mirror Destination Port Enable - This field enables the destination port mirror option. When this bit is set any traffic destined for the ~imirror_dp port will have its transmit traffic also sent to the ~imirror_top port."]
     #[inline(always)]
     #[must_use]
-    pub fn mirror_destination_port(&mut self) -> MirrorDestinationPortW<AleAleControlSpec> {
-        MirrorDestinationPortW::new(self, 11)
+    pub fn mirror_destination_port_1(&mut self) -> MirrorDestinationPort1W<AleAleControlSpec> {
+        MirrorDestinationPort1W::new(self, 11)
     }
     #[doc = "Bit 12 - 12:12\\]
 Mirror Match Entry Enable - This field enables the match mirror option. When this bit is set any traffic whose destination, source, VLAN or OUI matches the ~imirror_midx entry index will have that traffic also sent to the ~imirror_top port."]
